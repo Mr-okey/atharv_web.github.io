@@ -38,7 +38,7 @@ html{
     background-color: whitesmoke;
     position: absolute;
     left: calc(100vw - 85%);
-    padding-left: 1vw;
+/*     padding-left: 1vw; */
     border-left: 1vw solid rgba(128, 0, 128, 0.271);
 }
 
