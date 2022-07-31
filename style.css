@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    flex-shrink: 50%;
+}
+.navbar{
+    position: fixed;
+    background:linear-gradient(
+        90deg,
+        purple,
+        rgba(128, 0, 128, 0.87),
+        rgba(128, 0, 128, 0.671),
+        rgba(128, 0, 128, 0.571),
+        rgba(128, 0, 128, 0.471),
+        rgba(128, 0, 128, 0.371),
+        rgba(128, 0, 128, 0.271),
+        rgba(128, 0, 128, 0.220),
+        rgba(128, 0, 128, 0.671)
+        );
+        background-color: gainsboro;
+        overflow:scroll;
+        width: 15%;
+        z-index: 999;
+        height: 100vh;
+    }
+.page{
+    /* background-image: url("./images/page-bag.webp"); */
+    background-color: whitesmoke;
+    position: absolute;
+    left: calc(100vw - 85%);
+    padding: 1vw;
+    border-left: 1vw solid rgba(128, 0, 128, 0.271);
+}
+
+/* styling inside nav */
+.profile-pic{
+    background-color: purple;
+    background-image: url("./images/profile-img.png");
+    background-position: center;
+    background-size:110px;
+    background-repeat: no-repeat;
+    position: static;
+    width: 100px;
+    content: "profile pic";
+    height: 100px;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-top: 25%;
+}
+.profile-pic:hover{
+    background-size: 100px;
+    background-color: white;
+    cursor: pointer;
+}
+.list{
+    margin-inline: auto;
+    list-style:none;
+    font-size: 15px;
+    margin-top: 30%;
+}
+.list li a{
+    all:unset;
+    text-shadow: 2px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(56, 2, 56);
+    text-decoration:none;
+}
+.list li a:hover{
+    font-size: calc(15vw - 13.5vw);
+    color:black;    
+}
+
+/* styling page inside  */
+
+/* Home page */
+.home-pg, .about-me, .achivements, .projects{
+    background: transparent;
+    height: 100vh;
+    padding: 2vh 2vw;
+    z-index: 0;
+}
+.home-pg{
+    width:82vw;
+}
+#spider-man:hover{
+    position: relative;
+    cursor: pointer;
+    /* animation: ani-spider-man 2s linear infinite; */
+}
+.info *{
+    all: none;
+    display: inline;
+    font-size: 15px;
+}
+.links a{
+    color:black
+}
+.links a:hover:nth-last-of-type(1), .links a:hover:nth-last-of-type(6),.links a:hover:nth-last-of-type(2){
+    color: blue;
+}
+.links a:hover:nth-last-of-type(3){
+    color:rgb(188, 240, 1);
+}
+.links a:hover:nth-last-of-type(4){
+    color:red ;
+}
+.links a:hover:nth-last-of-type(5){
+    background: linear-gradient(
+        pink 20%,
+        red 40%,
+        pink 40%
+    );
+    border-radius: 50%;
+}
+.links a{
+    position: inherit;
+    margin-left:0.7%;
+    margin-top:5%;
+    font-size: 150%;
+}
+.status{
+    width: 90%;
+    height: 1.5%;
+    background-color: rgba(255, 255, 0, 0.363);
+    position: absolute;
+    top:75vh;
+    padding: 0.5%;;
+    overflow: hidden;
+}
+.moving-text{
+    position: relative;
+    animation-name: move-t;
+    /* animation-duration:  8s; */
+    animation-timing-function:  linear;
+    /* animation-iteration-count:  infinite; */
+}
+@keyframes move-t{
+    from{left:0px;}
+    to{left:1000px;}
+}
+
+/* about page */
+.about-me h1{
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    border: 2px solid rgba(0, 0, 0, 0.151);
+}
