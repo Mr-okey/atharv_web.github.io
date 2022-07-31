@@ -2,16 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-size: 25px; */
+    font-size: 1em;
 }
+h1{
+    font-size:40px;
+}
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 .main{
     background-color: red;
     display: grid;
     grid-template-columns: 15vw 85vw;
-    /* flex-shrink: 50%; */
 }
 .navbar{
     position: fixed;
@@ -28,7 +31,7 @@ html{
         rgba(128, 0, 128, 0.671)
         );
         background-color: gainsboro;
-        overflow:scroll;
+        overflow:hidden;
         width: 15%;
         z-index: 999;
         height: 100vh;
@@ -37,8 +40,8 @@ html{
     /* background-image: url("./images/page-bag.webp"); */
     background-color: whitesmoke;
     position: absolute;
-    left: calc(100vw - 85%);
-    padding: 1vw;
+    left: calc(100vw - 86%);
+    padding-left: 2vw ;
     border-left: 1vw solid rgba(128, 0, 128, 0.271);
 }
 
@@ -150,14 +153,53 @@ html{
     animation-iteration-count:  infinite;
 }
 @keyframes move-t{
-    from{left:0px;}
-    to{left:1000px;}
+    from{left:-1000px;}
+    to{left:1500px;}
 }
 
 /* about page */
 .about-me h1{
-    text-align: center;
     font-weight: bold;
     color: green;
     border: 2px solid rgba(0, 0, 0, 0.151);
+}
+.about-me *{
+    text-align: center;
+}
+.about-me #Hello-text-about-pg{
+    margin-top: 5vh;
+}
+.about-me quote{
+    font-style: italic;
+}
+.about-me :not(h1){
+    font-size: 20px;
+}
+.about-cont{
+    position: unset;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 25vw 30vw 20vw;
+}
+
+.block{
+    width: auto;
+    height: 30vh;
+    line-height: 40px;
+    margin-top: 2vh;
+    border-radius: 30px;
+    margin-inline:1vw ;
+    background:linear-gradient(
+        gray,
+        rgba(128, 128, 128, 0.956),
+        rgba(128, 128, 128, 0.856),
+        rgba(128, 128, 128, 0.756),
+        rgba(128, 128, 128, 0.656),
+        rgba(128, 128, 128, 0.556),
+        rgba(128, 128, 128, 0.456),
+        rgba(128, 128, 128, 0.356),
+        rgba(128, 128, 128, 0.256),
+        rgba(128, 128, 128, 0.156),
+        rgba(128, 128, 128, 0.056)
+    );
 }
