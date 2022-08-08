@@ -7,43 +7,45 @@
 h1{
     font-size:40px;
 }
-
 html{
     scroll-behavior:smooth;
 }
 .main{
-    background-color: red;
+    /* background-color: red; */
     display: grid;
-    grid-template-columns: 15vw 85vw;
-    max-width: 100vw;
+    grid-template-columns: 16vw 86vw;
+    background-color: rgba(128, 0, 128, 0.377);
+    /* max-width: 100vw; */
 }
 .navbar{
     position: fixed;
     background:linear-gradient(
         90deg,
-        purple,
-        rgba(128, 0, 128, 0.87),
-        rgba(128, 0, 128, 0.671),
-        rgba(128, 0, 128, 0.571),
-        rgba(128, 0, 128, 0.471),
-        rgba(128, 0, 128, 0.371),
-        rgba(128, 0, 128, 0.271),
-        rgba(128, 0, 128, 0.220),
-        rgba(128, 0, 128, 0.671)
+        /* purple, */
+        rgba(255, 102, 0, 1),
+        rgba(255, 102, 0, 0.87),
+        rgba(255, 102, 0, 0.671),
+        rgba(255, 102, 0, 0.571),
+        rgba(255, 102, 0, 0.471),
+        rgba(255, 102, 0, 0.371),
+        rgba(255, 102, 0, 0.271),
+        rgba(255, 102, 0, 0.220),
+        rgba(255, 102, 0, 0.671)
         );
         background-color: gainsboro;
+        overflow-wrap: break-word;
         overflow:hidden;
         width: 15%;
         z-index: 999;
-        height: 100vh;
+        height: 100%;
     }
 .page{
+    width:fit-content;
     /* background-image: url("./images/page-bag.webp"); */
-    background-color: whitesmoke;
     position: absolute;
-    left: calc(100vw - 86%);
-    padding-left: 2vw ;
-    border-left: 1vw solid rgba(128, 0, 128, 0.271);
+    left: calc(100vw - 85%);
+    border-left: 2vw;
+    border-right: 1vw solid transparent;
 }
 
 /* styling inside nav */
@@ -117,7 +119,7 @@ html{
     display: inline;
     position: relative;
     top:-42%;
-    left:80%
+    left:80%;
 }
 .links a{
     color:black
@@ -153,6 +155,10 @@ html{
     top:75vh;
     padding: 21px;
     overflow: hidden;
+}
+.status:hover, .moving-text:hover{
+    animation: none;
+    text-align: center;
 }
 .moving-text{
     font-size: 20px;
