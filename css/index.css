@@ -1,0 +1,132 @@
+:root {
+    --lightB1: #DFF6FF;
+    --lightB2: #47B5FF;
+    --darkB1: #1363DF;
+    --darkB2: #06283D;
+    --dark: #252525;
+    --white: #ffffff;
+    /* --std_border: var(--dark) 1px solid; */
+}
+
+.underConstruction {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    /* margin: 0px; */
+    margin: 2px;
+    border: var(--std_border);
+}
+body {
+    background-image: url(../images/backgroundImage.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 72% 26%;
+    column-gap: 2%;
+}
+
+/* styling for col1 */
+.col1 {
+    padding: 5%;
+}
+.infoCard {
+    background-color: var(--lightB2);
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 85% 15%;
+    column-gap: 5%;
+    height: calc(100vh/100 * 60);
+    border-radius: 1.5em;
+}
+#name {
+    text-align: center;
+    font-size: 1.7em;
+}
+/* img tag */
+#profileImg {
+    height: 100%;
+    width: 100%;
+    border-radius: 50% ;
+}
+/* img div */
+.profileImg {
+    display: grid;
+    align-content: center;
+    border-radius: 50%;
+}
+#Info {
+    font-size: 1.2em;
+}
+.links {
+    display: flex ;
+    justify-content:space-evenly;
+
+    background-color: var(--lightB2);
+    margin-top: 8%;
+    height: calc(100vh/100 * 20);
+    border-radius: 1.5em;
+    width: 85%;
+    margin-inline: auto;
+    padding: 5%;
+}
+.projects a:hover {
+    color: blue;
+}
+.projects a {
+    border-radius: 1em;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #1365df4c;
+}
+
+/* styling for col2 */
+
+.col2 {
+    padding: 5%;
+}
+.clock {
+    height: calc(100vh/100 * 25);
+    background-color: var(--lightB2);
+    border-radius: 1.5em;
+}
+.clock {
+    font-size: 1.2em;    display: grid;
+    align-content: center;
+    text-align: center;
+}
+.time {
+    display:flex;
+    justify-content: center;
+}
+#hh::after, #mm::after {
+    content: " : ";
+}
+#DD::after, #MM::after {
+    content: " / ";
+}
+
+.box {
+    margin-top: 10%;
+    height: calc(100vh/100 * 65);
+    text-align: center;
+    border-radius: 1.5em;
+    background-color: var(--lightB2);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 700px){
+    body {
+        visibility: hidden;
+    }
+    .underConstruction {
+        display: block;
+        visibility: visible;
+        text-align: center;
+    }
+}
