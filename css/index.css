@@ -11,6 +11,7 @@
 .underConstruction {
     display: none;
 }
+
 * {
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -19,6 +20,7 @@
     margin: 2px;
     border: var(--std_border);
 }
+
 body {
     background-image: url(../images/backgroundImage.png);
     background-size: 100vw;
@@ -32,9 +34,11 @@ body {
 .col1 {
     padding: 5%;
 }
+
 .infoCard {
     background-color: var(--lightB2);
     padding: 2%;
+    overflow: auto;
     display: grid;
     grid-template-columns: 35% 60%;
     grid-template-rows: 85% 15%;
@@ -42,40 +46,49 @@ body {
     height: calc(100vh/100 * 60);
     border-radius: 1.5em;
 }
+
 #name {
     text-align: center;
     font-size: 1.7em;
 }
+
 /* img tag */
 #profileImg {
     height: 100%;
     width: 100%;
-    border-radius: 50% ;
+    border-radius: 50%;
 }
+
 /* img div */
 .profileImg {
     display: grid;
     align-content: center;
     border-radius: 50%;
 }
+
 #Info {
     font-size: 1.2em;
 }
+
 .links {
-    /* display: flex ;
-    justify-content:space-evenly; */
+    display: flex ;
+    justify-content:space-evenly;
+    flex-direction: column;
     text-align: center;
     background-color: var(--lightB2);
     margin-top: 8%;
     height: calc(100vh/100 * 20);
     border-radius: 1.5em;
     width: 85%;
-    margin-inline: auto;
     padding: 2%;
+    overflow-x: scroll;
+    /* margin-inline: auto; */
 }
+
 .projects a:hover {
     color: blue;
 }
+
 .projects a {
     border-radius: 1em;
     color: black;
@@ -89,24 +102,32 @@ body {
 .col2 {
     padding: 5%;
 }
+
 .clock {
     height: calc(100vh/100 * 25);
     background-color: var(--lightB2);
     border-radius: 1.5em;
 }
+
 .clock {
-    font-size: 1.2em;    display: grid;
+    font-size: 1.2em;
+    display: grid;
     align-content: center;
     text-align: center;
 }
+
 .time {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-#hh::after, #mm::after {
+
+#hh::after,
+#mm::after {
     content: " : ";
 }
-#DD::after, #MM::after {
+
+#DD::after,
+#MM::after {
     content: " / ";
 }
 
@@ -119,15 +140,35 @@ body {
     background-color: var(--lightB2);
 }
 
+.box button:active {
+    transform: scale(0.95);
+    box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.324);
+}
+.box button:hover {
+    opacity: 0.9;
+}
+.box button {
+    background: rgba(0, 0, 0, 0.138);
+    border: 1px solid --darkB1;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.324);
+    padding: 2%;
+    letter-spacing: 1px;
+}
+
+
+
+
+
 /* media queries */
 
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px) {
     body {
         visibility: hidden;
     }
+
     .underConstruction {
         display: block;
         visibility: visible;
         text-align: center;
     }
-}
+} */
