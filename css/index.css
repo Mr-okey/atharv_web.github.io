@@ -70,6 +70,23 @@ body {
     font-size: 1.2em;
 }
 
+.SocialHandels * {
+    margin-inline: 10px;
+}
+.SocialHandels {
+    display: inline;
+}
+.SocialHandels a:active {
+    transform: scale(0.8);
+}
+.SocialHandels a {
+    all: unset;
+    cursor: pointer;
+}
+.SocialHandels i {
+    transform: scale(1.5);
+}
+
 .links {
     display: flex ;
     justify-content:space-evenly;
@@ -159,9 +176,9 @@ body {
 
 
 
-/* media queries */
+/* media queries */ 
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     body {
         visibility: hidden;
     }
@@ -171,4 +188,4 @@ body {
         visibility: visible;
         text-align: center;
     }
-} */
+}
