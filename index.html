@@ -6,73 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://kit.fontawesome.com/b25cc2a94e.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Atharv vyas</title>
+
 </head>
 
 <body>
-    <!-- will be hidden until zoomed above 300% -->
-    <div class="underConstruction">
-        <h1>Not responsive yet <br> still under development</h1>
-        <p>Try zooming OUT</p>
-        <p>check Desktop site may help</p>
-    </div>
-    
-    <div class="col1">
-        <div class="infoCard">
-            <div class="profileImg">
-                <img id="profileImg" src="./images/profilePic.gif" alt="Profile picture">
-            </div>
-            <div id="Info">
-                <span>
-                    Hey fallas !! Atharv here <br>
-                    I am a web Developer <br>
-                    Am.. dont judge me on this website solely it is still under development <br>
-                    Exiting js Comming Soon ..<br> 
-                </span>
-                <br>
-                <div class="SocialHandels">
-                    <a href="https://github.com/Mr-okey" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mstatharv/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/atharvvyas12" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <div class="mainContainer">
+
+        <div class="flex1">
+
+            <div class="profileContainer">
+                <div class="ProfileImage">
+                    <img src="./images/profilePic.gif" width="250px" alt="" />
+                    <div class="SocialHandels">
+                        <a href="#"><i style="font-size: 1.5em;" class="fa-brands fa-github"></i></a>
+                        <a href="#"><i style="font-size: 1.5em;" class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i style="font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i style="font-size: 1.5em;" class="fa-regular fa-envelope"></i></a>
+                    </div>
                 </div>
-                <br>
-                <br>
-                <span>Ideal zoom level 150%</span>
+                <div class="IntroText">
+                    <h1 id="name">Hey Fallas !!</h1>
+                    <span>
+                        <p id="helloText">My self Atharv vyas <br />
+                            i am a web developer <i style="font-size: medium;" class="fa-solid fa-code"></i> <br />
+                        </p>
+                    </span>
+                </div>
             </div>
-            <span id="name"><strong>Atharv vyas</strong></span>
-        </div>
-        <div class="links">
-            <h1>Projects</h1>
-            <div class="projects">
-                <a href="./projects/Phoenix/">Phoenix</a>
-                <a href="./projects/calcWithJS/">Calculator</a>
-                <a href="./projects/dark-mode-Css/">Mode</a>
-                <a href="./projects/skyline/">Skyline</a>
-                <a href="./projects/digital-clock/">Clock With JS</a>
+
+            <div class="projectContainer">
+                <fieldset class="projectLinks FieldsetBox">
+                    <legend>Projects</legend>
+                    <div class="projectLinks">
+                        <a href="./projects/calcWithJS/" target="_blank"><button>Calculator</button></a>
+                        <a href="./projects/dark-mode-Css/" target="_blank"><button>DarkMode switch</button></a>
+                        <a href="./projects/digital-clock/" target="_blank"><button>Digital clock</button></a>
+                        <a href="./projects/Phoenix/" target="_blank"><button>Phoenix UX/UI</button></a>
+                    </div>
+                </fieldset>
             </div>
         </div>
+
+        <div class="flex2">
+
+            <div class="clockContainer">
+                <div class="clockTitle">
+                    <h1>Date and Time</h1>
+                </div>
+                <div class="clock">
+                    <span id="hh">00</span>
+                    <span id="mm">00</span>
+                    <span id="ss">00</span>
+                </div>
+                <div class="date">
+                    <span id="DD">dd</span>
+                    <span id="MM">mm</span>
+                    <span id="YY">yyyy</span>
+                </div>
+            </div>
+
+            <div class="rightContainer">
+                <div class="Box1">
+                    <span>
+                        exiting Stuff <br />
+                        comming Soon...  
+                    </span>
+                </div>
+                <div class="Notes">
+                    <a href="./pages/notes.html"><button>Notes</button></a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="col2">
-        <div class="clock">
-            <b>Date & Time</b>
-            <div class="time">
-                <span id="hh">00</span>
-                <span id="mm">00</span>
-                <span id="ss">00</span>
-            </div>
-            <div class="date">
-                <span id="DD">dd</span>
-                <span id="MM">mm</span>
-                <span id="YY">yyyy</span>
-            </div>
-        </div>
-        <div class="box">
-            <b>Material</b>
-            <br>
-            <a href="./pages/notes.html"><button>Notes</button></a>
-        </div>
-    </div>
+
 </body>
 
 </html>

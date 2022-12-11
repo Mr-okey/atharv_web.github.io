@@ -6,186 +6,180 @@
     --dark: #252525;
     --white: #ffffff;
     /* --std_border: var(--dark) 1px solid; */
-}
-
-.underConstruction {
-    display: none;
+    --std_border: none;
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0px;
-    /* margin: 0px; */
-    margin: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     border: var(--std_border);
 }
 
-body {
-    background-image: url(../images/backgroundImage.png);
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 72% 26%;
-    column-gap: 2%;
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
 }
 
-/* styling for col1 */
-.col1 {
-    padding: 5%;
+.flex1 {
+    width: 73%;
+    padding: 50px;
 }
 
-.infoCard {
+.profileContainer {
+    padding: 50px;
     background-color: var(--lightB2);
-    padding: 2%;
-    overflow: auto;
-    display: grid;
-    grid-template-columns: 35% 60%;
-    grid-template-rows: 85% 15%;
-    column-gap: 5%;
-    height: calc(100vh/100 * 60);
-    border-radius: 1.5em;
+    display: flex;
+    border-radius: 5vh;
+}
+
+.ProfileImage img {
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.SocialHandels {
+    display: flex;
+    width: 250px;
+    padding-top: 10px;
+    justify-content: space-evenly;
 }
 
 #name {
-    text-align: center;
-    font-size: 1.7em;
+    font-size: 60px;
 }
 
-/* img tag */
-#profileImg {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+#helloText {
+    font-size: 25px;
 }
 
-/* img div */
-.profileImg {
+.fa-github {
+    color: #000000;
+}
+
+.fa-linkedin-in {
+    color: rgb(0, 0, 45);
+}
+
+.fa-twitter {
+    color: rgb(39, 39, 255);
+}
+
+.fa-envelope {
+    color: rgb(28, 28, 28)
+}
+
+/* ProjectContainer styling  */
+.projectContainer {
+    width: 70%;
+    border-radius: 5vh;
+    margin-top: 50px;
+    margin-inline: auto;
+    background-color: var(--lightB2);
+    display: flex;
+    padding: 20px;
+    overflow: auto;
+}
+
+.projectLinks legend {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.FieldsetBox {
+    border: 2px soldi black;
+}
+
+.projectLinks {
+    padding: 10px;
+    position: relative;
     display: grid;
-    align-content: center;
-    border-radius: 50%;
+    grid-auto-flow: column;
+    align-items: center;
 }
 
-#Info {
-    font-size: 1.2em;
+.projectLinks a button {
+    background-color: transparent;
+    border: 1px solid #ccc !important;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.154);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 1px;
 }
-
-.SocialHandels * {
+.projectLinks a button:active {
+    box-shadow: none;
+    transform: scale(0.9);
+}
+.projectLinks a button:hover {
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.417);
+}
+.projectLinks a {
     margin-inline: 10px;
 }
-.SocialHandels {
-    display: inline;
-}
-.SocialHandels a:active {
-    transform: scale(0.8);
-}
-.SocialHandels a {
-    all: unset;
-    cursor: pointer;
-}
-.SocialHandels i {
-    transform: scale(1.5);
+
+
+/* flex2 styling */
+.flex2 {
+    width: 25%;
+    padding: 10px;
 }
 
-.links {
-    display: flex ;
-    justify-content:space-evenly;
-    flex-direction: column;
-    text-align: center;
+/* clockContainer styling  */
+.clockContainer {
     background-color: var(--lightB2);
-    margin-top: 8%;
-    height: calc(100vh/100 * 20);
-    border-radius: 1.5em;
-    width: 85%;
-    padding: 2%;
-    overflow-x: scroll;
-    /* margin-inline: auto; */
-}
-
-.projects a:hover {
-    color: blue;
-}
-
-.projects a {
-    border-radius: 1em;
-    color: black;
-    padding: 5px;
-    text-decoration: none;
-    background-color: #1365df4c;
-}
-
-/* styling for col2 */
-
-.col2 {
-    padding: 5%;
-}
-
-.clock {
-    height: calc(100vh/100 * 25);
-    background-color: var(--lightB2);
-    border-radius: 1.5em;
-}
-
-.clock {
-    font-size: 1.2em;
-    display: grid;
-    align-content: center;
-    text-align: center;
-}
-
-.time {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    border-radius: 5vh;
+    padding: 10px;
 }
-
-#hh::after,
-#mm::after {
+.clockTitle {
+    text-align: center;
+}
+.clock {
+    text-align: center;
+}
+#mm::after, #hh::after {
     content: " : ";
 }
-
-#DD::after,
-#MM::after {
+.date {
+    text-align: center;
+}
+#MM::after, #DD::after {
     content: " / ";
 }
 
-.box {
-    padding: 5%;
-    margin-top: 10%;
-    height: calc(100vh/100 * 65);
-    text-align: center;
-    border-radius: 1.5em;
+/* rightContainer styling  */
+.rightContainer {
+    margin-top: 50px;
     background-color: var(--lightB2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5vh;
+    padding: 20px;
 }
-
-.box button:active {
-    transform: scale(0.95);
-    box-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.324);
+.Box1 {
+    text-align: center;
 }
-.box button:hover {
-    opacity: 0.9;
+.Notes {
+    margin-top: 10px;
+    margin-inline: auto;
 }
-.box button {
-    background: rgba(0, 0, 0, 0.138);
-    border: 1px solid --darkB1;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.324);
-    padding: 2%;
+.Notes a button {
+    background-color: transparent;
+    border: 1px solid #ccc !important;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.154);
+    border-radius: 10px;
+    padding: 5px;
     letter-spacing: 1px;
 }
-
-
-
-
-
-/* media queries */ 
-
-@media only screen and (max-width: 700px) {
-    body {
-        visibility: hidden;
-    }
-
-    .underConstruction {
-        display: block;
-        visibility: visible;
-        text-align: center;
-    }
+.Notes a button:active {
+    box-shadow: none;
+    transform: scale(0.9);
+}
+.Notes a button:hover {
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.417);
 }
