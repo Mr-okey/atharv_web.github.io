@@ -9,6 +9,21 @@
     --std_border: none;
 }
 
+body::-webkit-scrollbar, .profileContainer::-webkit-scrollbar  {
+    width: 15px;
+    height: 15px;
+}
+
+body::-webkit-scrollbar-track, .profileContainer::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb, .profileContainer::-webkit-scrollbar-thumb {
+    background-color: var(--lightB1);
+    outline: 1px solid var(--lightB1)
+    ;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -39,7 +54,7 @@
 .ProfileImage img {
     border-radius: 50%;
     margin-right: 50px;
-    width:250px;
+    width: 250px;
 }
 
 .SocialHandels {
@@ -110,13 +125,16 @@
     padding: 5px;
     letter-spacing: 1px;
 }
+
 .projectLinks a button:active {
     box-shadow: none;
     transform: scale(0.9);
 }
+
 .projectLinks a button:hover {
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.417);
 }
+
 .projectLinks a {
     margin-inline: 10px;
 }
@@ -136,19 +154,26 @@
     border-radius: 5vh;
     padding: 10px;
 }
+
 .clockTitle {
     text-align: center;
 }
+
 .clock {
     text-align: center;
 }
-#mm::after, #hh::after {
+
+#mm::after,
+#hh::after {
     content: " : ";
 }
+
 .date {
     text-align: center;
 }
-#MM::after, #DD::after {
+
+#MM::after,
+#DD::after {
     content: " / ";
 }
 
@@ -162,13 +187,16 @@
     border-radius: 5vh;
     padding: 20px;
 }
+
 .Box1 {
     text-align: center;
 }
+
 .Notes {
     margin-top: 10px;
     margin-inline: auto;
 }
+
 .Notes a button {
     background-color: transparent;
     border: 1px solid #ccc !important;
@@ -177,29 +205,40 @@
     padding: 5px;
     letter-spacing: 1px;
 }
+
 .Notes a button:active {
     box-shadow: none;
     transform: scale(0.9);
 }
+
 .Notes a button:hover {
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.417);
 }
 
 
-@media only screen and (max-width:840px){
+@media only screen and (max-width:840px) {
 
     .mainContainer {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .flex1 {
         width: 100%;
-        margin: 10px;
+        margin-inline: 10px;
+        margin-top: 0;
+    }
+    .ProfileImage img {
+        width: 200px;
+    }
+    #name {
+        font-size: x-large;
     }
 
     .flex2 {
-        padding: 50px;
+        padding-inline: 50px;
+        padding-top: 50px;
         width: 100%;
-        margin: 10px;
     }
+
 }
