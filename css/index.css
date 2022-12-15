@@ -39,6 +39,7 @@
 .ProfileImage img {
     border-radius: 50%;
     margin-right: 50px;
+    width:250px;
 }
 
 .SocialHandels {
@@ -182,4 +183,23 @@
 }
 .Notes a button:hover {
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.417);
+}
+
+
+@media only screen and (max-width:840px){
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .flex1 {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .flex2 {
+        padding: 50px;
+        width: 100%;
+        margin: 10px;
+    }
 }
