@@ -5,84 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://kit.fontawesome.com/b25cc2a94e.js" crossorigin="anonymous"></script>
-    <title>Atharv vyas</title>
-
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="mainContainer">
+    <nav id="navBar">
+        <a href="#"><span id="home"><i class="fa-solid fa-house"></i></span></a>
+        <a href="#"><span id="info"><i class="fa-solid fa-circle-info"></i></span></a>
+        <a href="#"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
+        <a href="#"><span id="contact"><i class="fa-solid fa-phone"></i></span></a>
+        <a href="#"><span id="modeSwitch"><i class="fa-solid fa-circle-half-stroke"></i></span></a>
+    </nav>
 
-        <div class="flex1">
-
-            <div class="profileContainer">
-                <div class="ProfileImage">
-                    <img src="./images/profilePic.gif" alt="profile picture" />
-                    <div class="SocialHandels">
-                        <a href="#"><i style="font-size: 1.5em;" class="fa-brands fa-github"></i></a>
-                        <a href="#"><i style="font-size: 1.5em;" class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i style="font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i style="font-size: 1.5em;" class="fa-regular fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="IntroText">
-                    <h1 id="name">Hey Fallas !!</h1>
-                    <span>
-                        <p id="helloText">My self Atharv vyas <br />
-                            i am a web developer <i style="font-size: medium;" class="fa-solid fa-code"></i> <br />
-                        </p>
-                    </span>
-                </div>
-            </div>
-
-            <div class="projectContainer">
-                <fieldset class="projectLinks FieldsetBox">
-                    <legend>Projects</legend>
-                    <div class="projectLinks">
-                        <a href="./projects/calcWithJS/" target="_blank"><button>Calculator</button></a>
-                        <a href="./projects/dark-mode-Css/" target="_blank"><button>DarkMode switch</button></a>
-                        <a href="./projects/digital-clock/" target="_blank"><button>Digital clock</button></a>
-                        <a href="./projects/Phoenix/" target="_blank"><button>Phoenix UX/UI</button></a>
-                    </div>
-                </fieldset>
+    <div class="mainCard">
+        <div class="ProfilePic">
+            <img src="./images/profilePic.gif" alt="">
+            <div class="socialLinks">
+                <span>
+                    <a href="https://github.com/mr-okey/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mstatharv/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/atharvvyas12" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </span>
             </div>
         </div>
 
-        <div class="flex2">
-
-            <div class="clockContainer">
-                <div class="clockTitle">
-                    <h1>Date and Time</h1>
-                </div>
-                <div class="clock">
-                    <span id="hh">00</span>
-                    <span id="mm">00</span>
-                    <span id="ss">00</span>
-                </div>
-                <div class="date">
-                    <span id="DD">dd</span>
-                    <span id="MM">mm</span>
-                    <span id="YY">yyyy</span>
-                </div>
-            </div>
-
-            <div class="rightContainer">
-                <div class="Box1">
-                    <span>
-                        exiting Stuff <br />
-                        comming Soon...  
-                    </span>
-                </div>
-                <div class="Notes">
-                    <a href="./pages/notes.html"><button>Notes</button></a>
-                </div>
-            </div>
+        <div class="infoText">
+            <h1>Hey fallas!! </h1> <br>
+            <span>My Self Atharv Vyas <br> I am a Web-Developer <br> Currently a second year student with SPPU
+                <br></span>
         </div>
 
     </div>
 
+    <div class="content">
+        <p><b style="font-size: 25px;">Content</b></p>
+        <div class="contentCards">
+            <div class="contentCard1" onclick="show()">
+                <div class="cardVisible">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
+                    <p id="proText">projects</p>
+                </div>
+                <div class="projects">
+                    <a href="./projects/Phoenix/" target="_blank">phoenix</a>
+                    <a href="./projects/calcWithJS/" target="_blank">Calc</a>
+                    <a href="./projects/digital-clock/" target="_blank">Clock</a>
+                    <a href="./projects/dark-mode-Css/" target="_blank">darkmode</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <hr>
+        <hr>
+        <div class="footerContainers">
+            <div class="footercontainer">
+
+            </div>
+        </div>
+        <hr>
+        <hr>
+    </footer>
 </body>
+
+<script type="text/javascript" src="./js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
 </html>
