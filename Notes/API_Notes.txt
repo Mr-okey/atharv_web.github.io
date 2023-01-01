@@ -1,0 +1,55 @@
+Talking about API (Application programming interface) 
+Just the thing we were using in our everyday life but never noticed that its actually an API request
+so have you ever used "sort" method in "python" But never knew how it is actually doing that (Its a tim sort BTW)
+aa... its a concept of abstraction (Hiding unusefull onformation) 
+definately You got it right, this is actually what an APi dose.
+Have you ever heard about Command Line Interface, Graphical user interface..
+Here we simply have a Application Programming interface, Its an interface 
+We have something complex written somewhere and what we need to careis all about the functionality we need
+ex. sort method we talked about earlier
+ex. Spotify play music	
+	- yes sir (Played music) 
+	But the programmers of Spotify have they actually been coading 010101010 signals sent to speakers. NO !
+	here OS comes in role 
+	just call the method to send audio-format to speakers and done (Melodyyy)
+	this is a API too.
+	The functionality provided by our mighty OS.
+
+- Ok so now i got what APIs are but why havent you talked about web till now 
+Yes, WEB based API(s) they are a kind of API(s) not all API are web based 
+As we talked about interface, it need to have some written code somewhere
+- Oh on the cloud ? 
+Absolutely correct this is a web based API 
+
+- can i build bu own API ? 
+Why Not 
+But if everyone builds their own API it would be a mess
+to avoid this some standard has to be ment. 
+- have some REST ! 
+Hurry we have our standard what we call as "REST API"
+You must have heard about this thing earlier 
+be restfull coz all REST APIs will follow RESTfull
+
+- What is REST ? 
+Representational state transfer
+Here we will have some constraints to call a API RESTfull
+1. Client-Server Architecture
+2. Statelessness
+3. Layered system
+4. Cacheability
+5. Uniform Design
+6. Code on demand
+
+- Btw do you know what is a url : universal resource locater
+we also have something called uri : universal resource identifier
+also heard of .. json : javascript object notation
+
+- lets take our hands with some apis now 
+its twilio : its an api service which helps us send text messeges, calls...
+(its paid btw but a great to study you wil get a trial $15 )
+
+- postman starting with a chrome extension now it is a full fledge application 
+you can use it to make all your api requests organised at one place 
+
+_________________________________________________________________________
+ "incomplete" ....

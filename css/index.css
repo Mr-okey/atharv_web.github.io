@@ -1,9 +1,22 @@
 :root {
     /* --std-border: 1px solid black; */
     --std-border : none;
+    --body_bag: white;
+    --mainCardBackground: white;
+    --white: white;
+    --black: black;
+    --naviconColor: #E3E3E3;
+    --modetoggleHover: rgba(0, 0, 0, 0.722);
+    --mainCardShadow: #B7B7B7;
+    --socialLinksHoverBlue: rgba(172, 172, 246, 0.863);
+    --contentBoxBackground: #CDCDCD;
+    --contentCardsShadow: #bdbdbd;
+    --projectLinkBackground: rgba(197, 197, 197, 0.486);
+    --instagramQRBackground: white;
 }
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
     /* padding: 0; */
@@ -12,6 +25,7 @@
 }
 
 body {
+    background-color: var(--body_bag);
     max-width: 1200px;
     min-width: 1000px;
     margin-inline: auto;
@@ -27,7 +41,7 @@ body {
 }
 
 #navBar a {
-    color: black;
+    color: var(--black);
 }
 
 #navBar a:hover {
@@ -49,13 +63,13 @@ body {
 
 #navBar a span {
     padding: 10px;
-    background-color: #E3E3E3;
+    background-color: var(--naviconColor);
     border-radius: 50%;
 }
 
 #modeSwitch:hover {
     animation: modeSwitchGlow 0.4s linear 1;
-    background-color: rgba(0, 0, 0, 0.722);
+    background-color: var(--modetoggleHover);
 }
 
 @keyframes modeSwitchGlow {
@@ -68,15 +82,16 @@ body {
     }
 
     to {
-        background-color: rgba(0, 0, 0, 0.722);
+        background-color: var(--modetoggleHover);
     }
 }
 
 /* mainCard styling */
 
 .mainCard {
-    box-shadow: 2px 2px 4px #B7B7B7;
+    box-shadow: 2px 2px 4px var(--mainCardShadow);
     display: flex;
+    background: var(--mainCardBackground);
     width: 700px;
     justify-content: space-around;
     padding: 20px;
@@ -91,6 +106,9 @@ body {
     border-radius: 50%;
 }
 
+.socialLinks span a {
+    color: unset;
+}
 .socialLinks span {
     display: flex;
     justify-content: space-between;
@@ -104,9 +122,29 @@ body {
 }
 
 .socialLinks span i:hover {
-    animation: socialLinksFillBlue 0.4s ease;
-    background-color: rgba(0, 0, 255, 0.548);
+    animation: socialLinksFillBlue 0.4s linear;
+    background-color: var(--socialLinksHoverBlue);
 }
+#instagramLink {
+    margin-top: 0px;
+}
+#instagramLink i{
+    animation: none;
+    background-color: transparent;
+}
+#instagramQR {
+    width: 200px;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--instagramQRBackground);
+}
+#instagramLink:hover #instagramQR{
+    display: block;
+    animation: collapse 0.5s ease;
+}
+
 
 @keyframes socialLinksFillBlue {
     from {
@@ -114,7 +152,7 @@ body {
     }
 
     to {
-        background-color: rgba(172, 172, 246, 0.863);
+        background-color: var(--socialLinksHoverBlue);
     }
 }
 
@@ -128,8 +166,8 @@ body {
 /* Content Tyling */
 .content {
     margin-top: 20px;
-    background-color: #CDCDCD;
-    border-radius:5px ;
+    background-color: var(--contentBoxBackground);
+    border-radius: 25px 10px 10px 25px;
     padding: 20px;
 }
 
@@ -140,48 +178,59 @@ body {
     flex-direction: row;
 }
 
-.contentCard1 {
+.contentCard1, .contentCard2{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     padding: 20px;
-    background-color: white;
-    box-shadow: 4px 4px 4px #bdbdbd;
+    background-color: var(--white);
+    box-shadow: 4px 4px 4px var(--contentCardsShadow);
     border-radius: 20px;
+    cursor: pointer;
     /* width: 200px; */
     min-width: 200px;
 }
+.contentCard2 {
+    margin-left: 20px;
+}
+.contentCard2 a {
+    display: flex;
+    justify-content: center;
+}
 
-.cardVisible {
+.card1Visible, .contentCard2{
     display: flex;
     flex-direction: column;
 }
-.cardVisible img {
+.card1Visible img, .contentCard2 img{
     margin: auto;
     align-self: center;
     width: 100px;
 }
 
-#proText {
+#proText, #noteText{
     font-size: 3em;
     display: none;
-    color: black;
+    color: var(--black);
+    margin-top: 10px;
 }
 
-.contentCard1:hover img {
+.contentCard1:hover img , .contentCard2:hover img{
     animation: fade 0.2s ease-out;
     opacity: 0.5;
 }
 
-.contentCard1:hover #proText {
+.contentCard1:hover #proText, .contentCard2:hover #noteText {
     display: block;
     opacity: 1;
     font-size: 2em;
     text-align: center;
     text-decoration: none;
     text-decoration-line: none;
-    animation: collapse 0.2s ease-out 0ms 1;
+    animation-name: collapse;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes fade {
@@ -218,10 +267,10 @@ body {
 }
 
 .projects a {
-    background-color: rgba(197, 197, 197, 0.486);
+    background-color: var(--projectLinkBackground);
     padding: 5px;
     font-size: 1.2em;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: var(--black);
 } 
