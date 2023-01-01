@@ -14,20 +14,28 @@
     <nav id="navBar">
         <a href="#"><span id="home"><i class="fa-solid fa-house"></i></span></a>
         <a href="#"><span id="info"><i class="fa-solid fa-circle-info"></i></span></a>
-        <a href="#"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
+        <a href="#notes"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
         <a href="#"><span id="contact"><i class="fa-solid fa-phone"></i></span></a>
         <a href="#"><span id="modeSwitch"><i class="fa-solid fa-circle-half-stroke"></i></span></a>
     </nav>
-
+    
     <div class="mainCard">
         <div class="ProfilePic">
             <img src="./images/profilePic.gif" alt="">
             <div class="socialLinks">
                 <span>
-                    <a href="https://github.com/mr-okey/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mstatharv/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/atharvvyas12" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/mr-okey/" id="githubLink" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mstatharv/" id="linkedinLink" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/atharvvyas12" id="twitterLink" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                        <span id="instagramLink">
+                            <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><img
+                                    src="./images/instagraQR.jpg" alt="instagramQR" id="instagramQR"></a>
+                                </span>
                 </span>
             </div>
         </div>
@@ -36,15 +44,15 @@
             <h1>Hey fallas!! </h1> <br>
             <span>My Self Atharv Vyas <br> I am a Web-Developer <br> Currently a second year student with SPPU
                 <br></span>
+            </div>
+            
         </div>
-
-    </div>
-
+        
     <div class="content">
         <p><b style="font-size: 25px;">Content</b></p>
         <div class="contentCards">
-            <div class="contentCard1" onclick="show()">
-                <div class="cardVisible">
+            <div class="contentCard1" click() onclick="show()">
+                <div class="card1Visible">
                     <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
                     <p id="proText">projects</p>
                 </div>
@@ -55,15 +63,22 @@
                     <a href="./projects/dark-mode-Css/" target="_blank">darkmode</a>
                 </div>
             </div>
+            
+            <div class="contentCard2" id="notes">
+                <a href="./pages/notes.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="">
+                </a>
+                <p id="noteText">Notes</p>
+            </div>
         </div>
     </div>
-
+    
     <footer id="footer">
         <hr>
         <hr>
         <div class="footerContainers">
             <div class="footercontainer">
-
+                
             </div>
         </div>
         <hr>
@@ -72,6 +87,7 @@
 </body>
 
 <script type="text/javascript" src="./js/index.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
 </html>
