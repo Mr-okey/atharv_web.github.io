@@ -9,7 +9,6 @@ cssBtn.onclick = function(){open(2)}
 jsBtn.onclick = function(){open(3)}
 APIBtn.onclick = function(){open(4)}
 
-
 // ../Notes/learner-html.txt
 // ../Notes/learn-js-basics.txt
 // ../Notes/learn-CSS.txt

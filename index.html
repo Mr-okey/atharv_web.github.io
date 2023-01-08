@@ -7,18 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b25cc2a94e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
+    <title>Atharv Vyas</title>
 </head>
 
 <body>
     <nav id="navBar">
-        <a href="#"><span id="home"><i class="fa-solid fa-house"></i></span></a>
-        <a href="#"><span id="info"><i class="fa-solid fa-circle-info"></i></span></a>
-        <a href="#notes"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
-        <a href="#"><span id="contact"><i class="fa-solid fa-phone"></i></span></a>
-        <a href="#"><span id="modeSwitch"><i class="fa-solid fa-circle-half-stroke"></i></span></a>
+        <div id="date">
+            <b>Date : </b>
+            <span>
+                <b id="DD">dd</b>
+                <b id="MM">mm</b>
+                <b id="YYYY">yyyy</b>
+            </span>
+        </div>
+        <div class="navicons">
+            <a href="#"><span id="home"><i class="fa-solid fa-house"></i></span></a>
+            <a href="#"><span id="info"><i class="fa-solid fa-circle-info"></i></span></a>
+            <a href="#notes"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
+            <a href="#"><span id="contact"><i class="fa-solid fa-phone"></i></span></a>
+            <a href="#"><span id="modeSwitch"><i class="fa-solid fa-circle-half-stroke"></i></span></a>
+        </div>
+        <div id="time">
+            <p id="hh">00</p>
+            <p id="mm">00</p>
+            <p id="ss">00</p>
+        </div>
     </nav>
-    
+
     <div class="mainCard">
         <div class="ProfilePic">
             <img src="./images/profilePic.gif" alt="">
@@ -29,56 +47,62 @@
                     <a href="https://www.linkedin.com/in/mstatharv/" id="linkedinLink" target="_blank"><i
                             class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://twitter.com/atharvvyas12" id="twitterLink" target="_blank"><i
-                        class="fa-brands fa-twitter"></i></a>
-                        <span id="instagramLink">
-                            <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <span id="instagramLink">
+                        <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><img
-                                    src="./images/instagraQR.jpg" alt="instagramQR" id="instagramQR"></a>
-                                </span>
+                        <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><img
+                                src="./images/instagraQR.jpg" alt="instagramQR" id="instagramQR"></a>
+                    </span>
                 </span>
             </div>
         </div>
 
         <div class="infoText">
             <h1>Hey fallas!! </h1> <br>
-            <span>My Self Atharv Vyas <br> I am a Web-Developer <br> Currently a second year student with SPPU
-                <br></span>
-            </div>
-            
+            <span>My Self Atharv Vyas <br>
+                I am a Web-Developer <br>
+                Currently an 2<sup>nd</sup> year Engineering student <br>
+
+            </span>
         </div>
-        
+
+    </div>
+
     <div class="content">
-        <p><b style="font-size: 25px;">Content</b></p>
+        <b style="font-size: 25px;">Content</b>
         <div class="contentCards">
-            <div class="contentCard1" click() onclick="show()">
-                <div class="card1Visible">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
-                    <p id="proText">projects</p>
-                </div>
-                <div class="projects">
-                    <a href="./projects/Phoenix/" target="_blank">phoenix</a>
-                    <a href="./projects/calcWithJS/" target="_blank">Calc</a>
-                    <a href="./projects/digital-clock/" target="_blank">Clock</a>
-                    <a href="./projects/dark-mode-Css/" target="_blank">darkmode</a>
+            <div class="contentCard2-container">
+                <div class="contentCard1" click() onclick="show()">
+                    <div class="card1Visible">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
+                        <p id="proText">projects</p>
+                    </div>
+                    <div class="projects">
+                        <a href="./projects/Phoenix/" target="_blank">phoenix</a>
+                        <a href="./projects/calcWithJS/" target="_blank">Calc</a>
+                        <a href="./projects/digital-clock/" target="_blank">Clock</a>
+                        <a href="./projects/dark-mode-Css/" target="_blank">darkmode</a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="contentCard2" id="notes">
-                <a href="./pages/notes.html">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="">
-                </a>
-                <p id="noteText">Notes</p>
+            <div class="contentCard2-container">
+                <div class="contentCard2" id="notes">
+                    <a href="./pages/notes.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="">
+                    </a>
+                    <p id="noteText">Notes</p>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <footer id="footer">
         <hr>
         <hr>
         <div class="footerContainers">
             <div class="footercontainer">
-                
+
             </div>
         </div>
         <hr>
@@ -87,7 +111,7 @@
 </body>
 
 <script type="text/javascript" src="./js/index.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.3.js"
-    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
 
 </html>

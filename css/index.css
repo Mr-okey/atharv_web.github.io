@@ -1,6 +1,6 @@
 :root {
     /* --std-border: 1px solid black; */
-    --std-border : none;
+    --std-border: none;
     --body_bag: white;
     --mainCardBackground: white;
     --white: white;
@@ -18,10 +18,9 @@
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    margin: 0;
-    /* padding: 0; */
+    font-family: 'Signika Negative';
+    padding: 0;
     border: var(--std-border);
-    padding: 1;
 }
 
 body {
@@ -31,20 +30,42 @@ body {
     margin-inline: auto;
 }
 
+.clock {
+    position: absolute;
+}
+
 #navBar {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     margin-top: 10px;
-    justify-content: space-around;
-    width: 400px;
+    align-items: center;
     padding: 10px;
+}
+
+#date,
+#date>span {
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+
+#date>span {
+    gap: 0.1em;
+}
+
+.navicons {
+    gap: 15px;
+    justify-content: space-around;
+    display: flex;
     margin-inline: auto;
 }
 
-#navBar a {
+.navicons a {
     color: var(--black);
 }
 
-#navBar a:hover {
+.navicons a:hover {
     animation-name: scaleUp;
     animation-timing-function: ease;
     animation-duration: 0.2s;
@@ -86,6 +107,13 @@ body {
     }
 }
 
+#time {
+    display: flex;
+    gap: 0.5em;
+    padding-inline: 1em;
+}
+
+
 /* mainCard styling */
 
 .mainCard {
@@ -109,6 +137,7 @@ body {
 .socialLinks span a {
     color: unset;
 }
+
 .socialLinks span {
     display: flex;
     justify-content: space-between;
@@ -125,13 +154,16 @@ body {
     animation: socialLinksFillBlue 0.4s linear;
     background-color: var(--socialLinksHoverBlue);
 }
+
 #instagramLink {
     margin-top: 0px;
 }
-#instagramLink i{
+
+#instagramLink i {
     animation: none;
     background-color: transparent;
 }
+
 #instagramQR {
     width: 200px;
     display: none;
@@ -140,7 +172,8 @@ body {
     padding: 5px;
     background-color: var(--instagramQRBackground);
 }
-#instagramLink:hover #instagramQR{
+
+#instagramLink:hover #instagramQR {
     display: block;
     animation: collapse 0.5s ease;
 }
@@ -178,7 +211,8 @@ body {
     flex-direction: row;
 }
 
-.contentCard1, .contentCard2{
+.contentCard1,
+.contentCard2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,37 +225,46 @@ body {
     /* width: 200px; */
     min-width: 200px;
 }
+
 .contentCard2 {
     margin-left: 20px;
 }
+
 .contentCard2 a {
     display: flex;
     justify-content: center;
 }
 
-.card1Visible, .contentCard2{
+.card1Visible,
+.contentCard2 {
     display: flex;
     flex-direction: column;
 }
-.card1Visible img, .contentCard2 img{
+
+.card1Visible img,
+.contentCard2 img {
     margin: auto;
     align-self: center;
     width: 100px;
 }
 
-#proText, #noteText{
+#proText,
+#noteText {
     font-size: 3em;
     display: none;
     color: var(--black);
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
-.contentCard1:hover img , .contentCard2:hover img{
+.contentCard1:hover img,
+.contentCard2:hover img {
     animation: fade 0.2s ease-out;
     opacity: 0.5;
 }
 
-.contentCard1:hover #proText, .contentCard2:hover #noteText {
+.contentCard1:hover #proText,
+.contentCard2:hover #noteText {
     display: block;
     opacity: 1;
     font-size: 2em;
@@ -273,4 +316,4 @@ body {
     text-decoration: none;
     text-align: center;
     color: var(--black);
-} 
+}
