@@ -1,6 +1,6 @@
 :root {
-    /* --std-border : none; */
-    --std-border : 1px solid black;
+    --std-border : none;
+    /* --std-border : 1px solid black; */
 }
 
 * {
@@ -17,6 +17,8 @@
     text-align: center;
     width: 250px;
     gap: 50px;
+    border: 2px solid goldenrod;
+    border-radius: 25px;
     margin: auto;
 }
 #main-box {
