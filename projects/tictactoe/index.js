@@ -81,9 +81,9 @@ const move = (box) => {
         disableClick() 
 
         if(win1) {
-            mainContainer.style["background-color"] = "#ffc960";
-        } else {
             mainContainer.style["background-color"] = "#89d1ff";
+        } else {
+            mainContainer.style["background-color"] = "#ffc960";
         }
         
         // resetTimer countDown
