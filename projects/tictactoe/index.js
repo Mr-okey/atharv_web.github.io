@@ -58,6 +58,7 @@ const move = (box) => {
     if(box.style["background-color"] === "white"){
         if(moveNo%2 === 0){
             box.style["background-color"] = "#87b7eb";    
+            // box.style["box-shadow"] = "#87b7eb";    
             user1moves.push(box.dataset.id)
             moveNo += 1
         } else {
