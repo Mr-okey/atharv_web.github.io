@@ -76,15 +76,17 @@ const move = (box) => {
     
     win1 = checkWin(user1moves)
     win2 = checkWin(user2moves)
-
-    if (win1 || win2) {
+    win = user1moves.length + user2moves.length === 9
+    if (win1 || win2 || win) {
 
         disableClick() 
 
         if(win1) {
             mainContainer.style["background-color"] = "#89d1ff";
-        } else {
+        } else if(win2) {
             mainContainer.style["background-color"] = "#ffc960";
+        } else { 
+            mainContainer.style["background-color"] = "#EBEBEB";
         }
         
         // resetTimer countDown
