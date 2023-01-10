@@ -118,9 +118,18 @@ function show() {
         hund = Math.floor(integer/100)
         tens = Math.floor((integer - (hund*100))/10)
         ones = Math.floor((integer - (hund*100)) - (tens*10))
+        dispNum(num1, hund, color)
+        dispNum(num2, tens, color)
+        dispNum(num3, ones, color)
     }
-    dispNum(num1, hund, color)
-    dispNum(num2, tens, color)
-    dispNum(num3, ones, color)
+    else if (integer <= 99) {
+        tens = Math.floor(integer/10)
+        ones = Math.floor((integer - (tens*10)))
+        dispNum(num1, tens, color)
+        dispNum(num2, ones, color)
+    } else if(integer <= 9) {
+        ones = integer
+        dispNum(num1, ones, color)
+    }
     
 }

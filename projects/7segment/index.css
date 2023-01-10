@@ -25,7 +25,7 @@
 /* 7section display bars styling */
 .bar {
     border-radius: 30%;
-    /* background: rebeccapurple; */
+        border: 0.5px solid rgba(68, 182, 214, 0.277);
 }
 .topBar, .midBar, .bottomBar {
     width: 4em;
@@ -51,22 +51,26 @@
 }
 #color {
     all: unset;
-    width: 4em;
+    width: 2em;
     margin: 0.2em;
     border-radius: 35px;
-    height: 1em;
+    height: 1.5em;
 }
 #number {
     all: unset;
     width: 70px;
+    border: 0.5px solid rgb(123, 150, 218);
 }
 #number:focus {
     background: rgba(0, 0, 0, 0.125);
 }
 #controls > button {
-    background: rgba(255, 217, 0, 0.433);
+    background: rgba(73, 143, 241, 0.433);
     text-align: center;
     padding: 0.5em;
     border: none;
     cursor: pointer;
+}
+#controls > button:hover {
+    background: rgba(73, 143, 241, 0.533);
 }
