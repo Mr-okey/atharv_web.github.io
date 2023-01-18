@@ -1,18 +1,3 @@
-// toggle projects card
-function show() {
-    var proText = document.querySelector("#proText");
-    var projects = document.querySelector(".projects");
-    if (projects.style.display === "none") {
-        projects.style.display = "flex";
-        proText.style["animation-name"] = "none";
-        proText.style["font-size"] = "0px";
-    } else {
-        projects.style.display = "none";
-        proText.style["animation-name"] = "collapse";
-        proText.style["font-size"] = "2em";
-    }
-}
-
 // toggle dark mode
 const modeSwitch = document.getElementById("modeSwitch");
 

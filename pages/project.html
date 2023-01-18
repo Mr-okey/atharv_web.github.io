@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porjects</title>
+    <style>
+        a {
+            all: unset;
+        }
+
+        #main {
+            display: flex;
+            margin: auto;
+            padding: 2em;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1em;
+            width: auto;
+            background: transparent;
+            transition: 0.5s ease-in-out;
+            border: 1px solid rgba(37, 37, 37, 0.349);
+            border-radius: 1em;
+        }
+
+        .card:hover {
+            border-radius: 2em;
+            border: 2px solid rgba(31, 14, 68, 0.737);
+        }
+
+        .card-text {
+            font-size: 1.5em;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            display: none;
+            text-align: center;
+        }
+
+        .card:hover .card-text {
+            display: block;
+            animation: fadein 0.2s ease-in-out 1;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                font-size: 0px;
+            }
+
+            to {
+                opacity: 1;
+                font-size: 1.5em;
+            }
+        }
+
+        .card img {
+            margin-inline: auto;
+            width: 10em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <a href="../projects/tictactoe/">
+            <div class="card" id="tictactoe">
+                <img src="https://t3.ftcdn.net/jpg/02/66/49/72/360_F_266497240_sbKnQ0BEoOPafo9JaefZZz00WK7t8LHq.jpg"
+                    alt="">
+                <p class="card-text">TicTacToe</p>
+            </div>
+        </a>
+        <a href="../projects/7segment/">
+            <div class="card" id="7segment">
+                <img src="https://freesvg.org/img/7Segment5.png" alt="">
+                <p class="card-text">7Segment Dipslay</p>
+            </div>
+        </a>
+        <a href="../projects/CHess/">
+            <div class="card" id="CHess">
+                <img src="https://png.pngtree.com/png-vector/20221210/ourmid/pngtree-black-chess-knight-horse-stallion-png-image_6519423.png"
+                    alt="">
+                <p class="card-text">Chess</p>
+            </div>
+        </a>
+        <a href="../projects/calcWithJS/">
+            <div class="card" id="Calc">
+                <img src="https://storage.needpix.com/rsynced_images/calculator-black-clipart.jpg" alt="">
+                <p class="card-text">Calculator</p>
+            </div>
+        </a>
+        <a href="../projects/Phoenix/">
+            <div class="card" id="phoenix">
+                <img src="https://www.pngitem.com/pimgs/m/293-2937661_how-to-draw-phoenix-bird-easy-drawing-hd.png"
+                    alt="">
+                <p class="card-text">Phoenix Frontend</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>
