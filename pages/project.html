@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porjects</title>
+    <style>
+        /* * {
+            border: solid black 1px
+        } */
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 90%;
+            margin: auto;
+        }
+        a {
+            all: unset;
+            max-width: 12em;
+            padding: 1em;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.11) ;
+            border-radius: 0.5em;
+        }
+        .card-text {
+            font-size: 0px;
+            transition: 0.5s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.11) ;
+        }
+        .card:hover .card-text {
+            font-size: 2em;
+        }
+        img {
+            padding: 1em;
+            margin: auto;
+            max-width: 10em;
+            max-height: 10em;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <a href="../projects/tictactoe/index.html">
+            <div class="card" id="tictactoe">
+                <img src="https://t3.ftcdn.net/jpg/02/66/49/72/360_F_266497240_sbKnQ0BEoOPafo9JaefZZz00WK7t8LHq.jpg"
+                    alt="">
+                <p class="card-text">TicTacToe</p>
+            </div>
+        </a>
+        <a href="https://mr-okey.github.io/stonePaperScissor/">
+            <div class="card" id="phoenix">
+                <img src="https://cdn-icons-png.flaticon.com/512/6727/6727646.png" alt="">
+                <p class="card-text">Rock paper Scissor</p>
+            </div>
+        </a>
+        <a href="../projects/7segment/index.html">
+            <div class="card" id="7segment">
+                <img src="https://freesvg.org/img/7Segment5.png" alt="">
+                <p class="card-text">7Segment Dipslay</p>
+            </div>
+        </a>
+        <a href="../projects/CHess/index.html">
+            <div class="card" id="CHess">
+                <img src="https://png.pngtree.com/png-vector/20221210/ourmid/pngtree-black-chess-knight-horse-stallion-png-image_6519423.png"
+                    alt="">
+                <p class="card-text">Chess</p>
+            </div>
+        </a>
+        <a href="../projects/calcWithJS/index.html">
+            <div class="card" id="Calc">
+                <img src="https://storage.needpix.com/rsynced_images/calculator-black-clipart.jpg" alt="">
+                <p class="card-text">Calculator</p>
+            </div>
+        </a>
+        <a href="../projects/Phoenix/index.html">
+            <div class="card" id="phoenix">
+                <img src="https://cdn-icons-png.flaticon.com/512/2620/2620971.png" alt="">
+                <p class="card-text">Phoenix Frontend</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>

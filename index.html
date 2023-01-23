@@ -5,67 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b25cc2a94e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
+    <title>Atharv Vyas</title>
 </head>
 
 <body>
-    <!-- will be hidden until zoomed above 300% -->
-    <div class="underConstruction">
-        <h1>Not responsive yet <br> still under development</h1>
-        <p>Try zooming OUT</p>
-        <p>check Desktop site may help</p>
-    </div>
-    
-    <div class="col1">
-        <div class="infoCard">
-            <div class="profileImg">
-                <img id="profileImg" src="./images/profilePic.gif" alt="Profile picture">
-            </div>
-            <div id="Info">
+    <nav id="navBar">
+        <div id="date">
+            <b>Date : </b>
+            <span>
+                <b id="DD">dd</b>
+                <b id="MM">mm</b>
+                <b id="YYYY">yyyy</b>
+            </span>
+        </div>
+        <div class="navicons">
+            <a href="#"><span id="home"><i class="fa-solid fa-house"></i></span></a>
+            <a href="#"><span id="info"><i class="fa-solid fa-circle-info"></i></span></a>
+            <a href="#notes"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
+            <a href="#"><span id="contact"><i class="fa-solid fa-phone"></i></span></a>
+            <a href="#"><span id="modeSwitch"><i class="fa-solid fa-circle-half-stroke"></i></span></a>
+        </div>
+        <div id="time">
+            <p id="hh">00</p>
+            <p id="mm">00</p>
+            <p id="ss">00</p>
+        </div>
+    </nav>
+
+    <div class="mainCard">
+        <div class="ProfilePic">
+            <img src="./images/profilePic.gif" alt="">
+            <div class="socialLinks">
                 <span>
-                    Hey fallas !! Atharv here <br>
-                    I am a web Developer <br>
-                    Am.. dont judge me on this website solely it is still under development <br>
-                    Exiting js Comming Soon ..<br> 
+                    <a href="https://github.com/mr-okey/" id="githubLink" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mstatharv/" id="linkedinLink" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/atharvvyas12" id="twitterLink" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <span id="instagramLink">
+                        <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><img
+                                src="./images/instagraQR.jpg" alt="instagramQR" id="instagramQR"></a>
+                    </span>
                 </span>
-                <br>
-                <br>
-                <span>Ideal zoom level 150%</span>
             </div>
-            <span id="name"><strong>Atharv vyas</strong></span>
         </div>
-        <div class="links">
-            <h1>Projects</h1>
-            <div class="projects">
-                <a href="./projects/Phoenix/">Phoenix</a>
-                <a href="./projects/calcWithJS/">Calculator</a>
-                <a href="./projects/dark-mode-Css/">Mode</a>
-                <a href="./projects/skyline/">Skyline</a>
-                <a href="./projects/digital-clock/">Clock With JS</a>
+
+        <div class="infoText">
+            <h1>Hey fellas!! </h1> <br>
+            <span>My Self Atharv Vyas <br>
+                I am a Web-Developer <br>
+                Currently an 2<sup>nd</sup> year Engineering student <br>
+
+            </span>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <b style="font-size: 25px;">Content</b>
+        <div class="contentCards">
+            <div class="contentCard2-container">
+                <div class="contentCard1">
+                    <div class="card1Visible">
+                        <a href="./pages/project.html">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
+                            <p id="proText">projects</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contentCard2-container">
+                <div class="contentCard2" id="notes">
+                    <a href="./pages/notes.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="">
+                    </a>
+                    <p id="noteText">Notes</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col2">
-        <div class="clock">
-            <b>Date & Time</b>
-            <div class="time">
-                <span id="hh">00</span>
-                <span id="mm">00</span>
-                <span id="ss">00</span>
-            </div>
-            <div class="date">
-                <span id="DD">dd</span>
-                <span id="MM">mm</span>
-                <span id="YY">yyyy</span>
+
+    <footer id="footer">
+        <hr>
+        <hr>
+        <div class="footerContainers">
+            <div class="footercontainer">
+
             </div>
         </div>
-        <div class="box">
-            <b>Material</b>
-            <br>
-            <a href="./pages/notes.html"><button>Notes</button></a>
-        </div>
-    </div>
+        <hr>
+        <hr>
+    </footer>
 </body>
+
+<script type="text/javascript" src="./js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
 
 </html>
