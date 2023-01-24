@@ -45,13 +45,16 @@ body {
 
 #date,
 #date>span {
-    gap: 1em;
+    /* gap: 1em; */
     display: flex;
     align-items: center;
 }
 
 #date>span {
     gap: 0.1em;
+}
+#underline {
+    border: 1px solid black;
 }
 
 .navicons {
@@ -109,8 +112,14 @@ body {
 
 #time {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#time-disp {
+    display: flex;
     gap: 0.5em;
     padding-inline: 1em;
+    color: var(--black);
 }
 
 

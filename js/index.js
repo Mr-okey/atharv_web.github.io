@@ -1,22 +1,26 @@
 // toggle dark mode
 const modeSwitch = document.getElementById("modeSwitch");
 
-
+let dark = false
 modeSwitch.onclick = () => {
     const root = document.querySelector(":root");
-    // dark condition 
+    // light condition
     if (
         root.style.getPropertyValue("--body_bag") === "#5e5e5e"
     ) {
+        dark = false
         root.style.setProperty("--body_bag", "#ffffff");
         root.style.setProperty("--mainCardBackground", "#ffffff");
         root.style.setProperty("--modetoggleHover", "rgba(0, 0, 0, 0.722)");
         root.style.setProperty("--white", "#fff");
         root.style.setProperty("--contentBoxBackground", "#CDCDCD");
         root.style.setProperty("--instagramQRBackground", "#fff");
+        document.getElementById("time-disp").style.color = "#252525"
     }
-    // light condition
+    // dark condition 
     else {
+        dark = true
+        document.getElementById("time-disp").style.color = "#f7f6f7";
         root.style.setProperty("--mainCardBackground", "#6e6e6e");
         root.style.setProperty("--body_bag", "#5e5e5e");
         root.style.setProperty("--modetoggleHover", "#fff");
@@ -36,7 +40,8 @@ const YYYY = document.getElementById("YYYY");
 const hh = document.getElementById("hh");
 const mm = document.getElementById("mm");
 const ss = document.getElementById("ss");
-const time_container = document.getElementById("time")
+const underline = document.getElementById("underline")
+const time_container = document.getElementById("time-disp")
 
 date = d.getDate();
 month = d.getMonth() + 1;
@@ -62,13 +67,16 @@ setInterval(() => {
     mm.innerHTML = min;
     ss.innerHTML = sec;
 
-    var scalex = sec / 100 + 1;
+    var scalex = (sec / 60) * 100;
+    underline.style.width = scalex + "%"
 
-    time_container.style.transform = "scale(" + scalex + ")"
+    // console.log(scalex+"%")
+
     if (sec > 55) {
         time_container.style.color = "red"
     } else {
-        time_container.style.color = "black"
+        if (dark) { time_container.style.color = "#f7f6f7" }
+        else {  time_container.style.color = "#252525" }
     }
 
     delete d;
