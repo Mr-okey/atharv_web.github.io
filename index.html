@@ -75,22 +75,31 @@
     <div class="content">
         <b style="font-size: 25px;">Content</b>
         <div class="contentCards">
-            <div class="contentCard2-container">
-                <div class="contentCard1">
-                    <div class="card1Visible">
-                        <a href="./pages/project.html">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
-                            <p id="proText">projects</p>
-                        </a>
-                    </div>
+            <div class="contentCard-container">
+                <div class="contentcard Card1">
+                    <a href="./pages/project.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
+                        <!-- <p id="proText">projects</p> -->
+                    </a>
+                    <p id="Text">projects</p>
                 </div>
             </div>
-            <div class="contentCard2-container">
-                <div class="contentCard2" id="notes">
+            <div class="contentCard-container">
+                <div class="contentcard Card2" id="notes">
                     <a href="./pages/notes.html">
                         <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="">
                     </a>
-                    <p id="noteText">Notes</p>
+                    <p id="Text">Notes</p>
+                    <!-- <p id="noteText">Notes</p> -->
+                </div>
+            </div>
+            <div class="contentCard-container">
+                <div class="contentcard Card3" id="notes">
+                    <a href="./pages/notes.html">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1187/1187595.png" alt="">
+                    </a>
+                    <p id="Text">Blogs (comming Soon)</p>
+                    <!-- <p id="blogText">Notes</p> -->
                 </div>
             </div>
         </div>
@@ -98,13 +107,44 @@
 
     <footer id="footer">
         <hr>
-        <hr>
+        <hr class="wid75 toleft">
         <div class="footerContainers">
             <div class="footercontainer">
-
+                <div class="footercards">
+                    <div class="footcard">
+                        <h3>About</h3>
+                        <pre>Geeky Head,
+pinocchio,
+                        </pre>
+                    </div>
+                    <div class="footcard">
+                        <h3>contact</h3>
+                        <a href="" id="footer-icon-call">
+                            <img src="https://cdn-icons-png.flaticon.com/128/597/597177.png" class="icon" alt="">
+                            &emsp;+91 *******889
+                        </a>
+                        <a href="mailto:vyasatharv889@gmail.com" id="footer-icon-mail">
+                            <img src="https://cdn-icons-png.flaticon.com/128/646/646135.png" class="icon" alt="">
+                            &emsp;@mail
+                        </a>
+                        <a href="#" id="footer-icon-facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" class="icon" alt="">
+                            &emsp;Facebook
+                            <script>
+                                let first = 0
+                                document.getElementById("footer-icon-facebook").addEventListener("click", (e)=>{
+                                    first += 1
+                                    if (first == 1){
+                                        e.target.innerHTML += "😂"
+                                    } 
+                                })
+                            </script>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <hr>
+        <hr class="wid75 toright">
         <hr>
     </footer>
 </body>

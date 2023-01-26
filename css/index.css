@@ -1,6 +1,6 @@
 :root {
+    /* --std-border: ""; */
     /* --std-border: 1px solid black; */
-    --std-border: none;
     --body_bag: white;
     --mainCardBackground: white;
     --white: white;
@@ -20,7 +20,7 @@
     box-sizing: border-box;
     font-family: 'Signika Negative';
     padding: 0;
-    border: var(--std-border);
+    /* border: var(--std-border); */
 }
 
 body {
@@ -219,64 +219,58 @@ body {
     display: flex;
     flex-direction: row;
 }
-
-.contentCard1,
-.contentCard2 {
+.contentcard {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     padding: 20px;
     background-color: var(--white);
     box-shadow: 4px 4px 4px var(--contentCardsShadow);
     border-radius: 20px;
     cursor: pointer;
-    /* width: 200px; */
-    min-width: 200px;
-}
-
-.contentCard2 {
+    width: 200px;
+    /* min-width: 200px; */
     margin-left: 20px;
 }
-
-.contentCard2 a {
+.contentcard a {
     display: flex;
     justify-content: center;
 }
 
 .card1Visible,
-.contentCard2 {
+.Card2 {
     display: flex;
     flex-direction: column;
 }
 
-.card1Visible img,
-.contentCard2 img {
+.contentcard img {
     margin: auto;
     align-self: center;
     width: 100px;
 }
 
-#proText,
-#noteText {
-    font-size: 3em;
+#Text {
+/* #noteText { */
+    font-size: 1em;
     display: none;
     color: var(--black);
     margin-top: 10px;
     margin-bottom: 0px;
+    transition: 0.2s ease;
 }
 
-.contentCard1:hover img,
-.contentCard2:hover img {
+.contentcard:hover img {
     animation: fade 0.2s ease-out;
     opacity: 0.5;
 }
 
-.contentCard1:hover #proText,
-.contentCard2:hover #noteText {
+/* .Card1:hover #proText,
+.Card2:hover #noteText { */
+.contentcard:hover #Text {
     display: block;
     opacity: 1;
-    font-size: 2em;
+    font-size: 1.2em;
     text-align: center;
     text-decoration: none;
     text-decoration-line: none;
@@ -305,11 +299,40 @@ body {
     to {
         display: block;
         opacity: 1;
-        font-size: 2em;
+        font-size: 1.2em;
     }
 }
 
-.projects {
+/* footer styling */
+.wid75 {
+    width: 75%;
+}
+.toright {
+    margin-left: 25%;
+}
+.toleft {
+    margin-right: 25%;
+}
+.footercards {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.footcard {
+    box-shadow: 1px 1px 5px rgba(171, 171, 171, 0.369);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footcard a {
+    all: unset;
+    cursor: pointer;
+}
+.icon {
+    width: 1em;
+}
+/* .projects {
     padding: 20px;
     margin-left: 20px;
     display: flex;
@@ -325,4 +348,4 @@ body {
     text-decoration: none;
     text-align: center;
     color: var(--black);
-}
+} */
