@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,20 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porjects</title>
     <style>
-        /* * {
-            border: solid black 1px
-        } */
-        #main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 90%;
-            margin: auto;
+        body {
+            background-color: url("../images/backgroundImage.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+        * {
+            /* border: solid black 1px */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #main {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            max-width: 1200px;
+            margin-inline: auto;
+            justify-content: center;
+        }
+
+        #main > * {
+            margin-inline: auto;
+        }
+
         a {
             all: unset;
-            max-width: 12em;
-            padding: 1em;
+            height: 100%;
+            width: fit-content;
+            padding: 0.5em;
         }
         .card {
             display: flex;
@@ -29,17 +43,16 @@
             justify-content: center;
             text-align: center;
             box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.11) ;
+            padding: 1em;
+            background: rgb(250 243 253);
             border-radius: 0.5em;
         }
         .card-text {
-            font-size: 0px;
+            font-weight: bold;
             transition: 0.5s ease-in-out;
         }
         .card:hover {
             box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.11) ;
-        }
-        .card:hover .card-text {
-            font-size: 2em;
         }
         img {
             padding: 1em;
@@ -47,14 +60,31 @@
             max-width: 10em;
             max-height: 10em;
         }
-        
+        @media only screen and (max-width: 700px) {
+            #main {
+                grid-template-columns: 45% 45%;
+            }
+            img {
+                padding: 1em;
+                margin: auto;
+                max-width: 6em;
+            }
+        }
+        @media only screen and (max-width: 350px) {
+            #main {                
+                grid-template-columns: 90%;
+            }
+            img {
+                max-width: 6em;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div id="main">
-        <a href="../projects/tictactoe/index.html">
+        <a href="https://mr-okey.github.io/TicTacToe/">
             <div class="card" id="tictactoe">
                 <img src="https://t3.ftcdn.net/jpg/02/66/49/72/360_F_266497240_sbKnQ0BEoOPafo9JaefZZz00WK7t8LHq.jpg"
                     alt="">
