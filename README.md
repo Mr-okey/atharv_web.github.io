@@ -1,5 +1,3 @@
-# portfollio
+<!-- [![visit Us](./images/visitUsBtn.png)](https://www.mr-okey.github.io/tiem) -->
 
-## Figma Design
-- https://www.figma.com/file/mPEFjguNRxFHS0sgJululL/Untitled?node-id=0%3A1&t=BCYr1I73wF64sD9c-1
-- website link :  https://mr-okey.github.io/portfollio/
+<a href="https://mr-okey.github.io" style="display: flex; justify-content: center;"><img src="./images/visitUsBtn.png" /></a>
