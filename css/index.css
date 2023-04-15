@@ -4,6 +4,7 @@
 
 body {
     overflow: hidden;
+    /* overflow: auto; */
 }
 
 * {
@@ -17,7 +18,7 @@ body {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background: url("../images//back.jpg");
+    background: url("../images/back.jpg");
     opacity: 0.09;
     background-size: 100vw;
     z-index: 1;
@@ -30,7 +31,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
-#prog-container {
+#prog-container, #LinkTree {
     position: relative;
     top: 25vh;
 }
@@ -57,4 +58,38 @@ body {
 }
 .hide {
     display: none;
+}
+#LinkTree:hover {
+    box-shadow: 2px 1px 3px rgb(40, 40, 40);
+    cursor: pointer;
+    background: none;
+    transform: scale(1.08);
+}
+#LinkTree img {
+
+    border-radius: 1em;
+}
+#LinkTree > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#LinkTree {
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    color: rgb(229, 220, 220);
+    margin-inline: auto;
+    position: relative;
+    border: 1px solid #828282;
+    border-radius: 1em;
+    margin-top: 2em;
+    z-index: 3;
+    padding: 0.5em 1em;
+    box-shadow: 2px 1px 3px rgb(73, 72, 72);
+    background: rgb(34, 35, 39);
+    width: fit-content;
+    transition: 0.5s;
 }
