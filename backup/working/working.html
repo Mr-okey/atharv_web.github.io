@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b25cc2a94e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./working.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
+    <title>Atharv Vyas</title>
+</head>
+
+<body>
+    <nav id="navBar">
+        <div id="date">
+            <b>Date : </b>
+            <span>
+                <b id="DD">dd</b>
+                <b id="MM">mm</b>
+                <b id="YYYY">yyyy</b>
+            </span>
+        </div>
+        <div class="navicons">
+            <a href="#"><span id="home"><i class="fa-solid fa-house"></i></span></a>
+            <a href="#"><span id="info"><i class="fa-solid fa-circle-info"></i></span></a>
+            <a href="#notes"><span id="folders"><i class="fa-regular fa-folder"></i></span></a>
+            <a href="#"><span id="contact"><i class="fa-solid fa-phone"></i></span></a>
+            <a href="#"><span id="modeSwitch"><i class="fa-solid fa-circle-half-stroke"></i></span></a>
+        </div>
+        <div id="time">
+            <div id="time-disp">
+                <p id="hh">00</p>
+                <p id="mm">00</p>
+                <p id="ss">00</p>
+            </div>
+            <div id="underline"></div>
+        </div>
+    </nav>
+
+    <div class="mainCard">
+        <div class="ProfilePic">
+            <img src="./images/profilePic.gif" alt="">
+            <div class="socialLinks">
+                <span>
+                    <a href="https://github.com/mr-okey/" id="githubLink" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mstatharv/" id="linkedinLink" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/atharvvyas12" id="twitterLink" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <span id="instagramLink">
+                        <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/atharv_vyas_00/" target="_blank"><img
+                                src="./images/instagraQR.jpg" alt="instagramQR" id="instagramQR"></a>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <div class="infoText">
+            <h1>Hey fellas!! </h1> <br>
+            <span>
+                My Self <b>Atharv vyas</b> <br>
+                a <b>developer</b> and a student <br>
+                a tech entuziast, every piece of technology exites me. <br>
+                not a nerd not a geek but a techie <br>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <b style="font-size: 25px;">Content</b>
+        <div class="contentCards">
+            <div class="contentCard-container">
+                <div class="contentcard Card1">
+                    <a href="../pages/project.html">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1336/1336494.png" alt="projects">
+                        <!-- <p id="proText">projects</p> -->
+                    </a>
+                    <p id="Text">projects</p>
+                </div>
+            </div>
+            <div class="contentCard-container">
+                <div class="contentcard Card2" id="notes">
+                    <!-- <a href="./pages/notes.html"> -->
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="">
+                    </a>
+                    <p id="Text">Notes</p>
+                    <!-- <p id="noteText">Notes</p> -->
+                </div>
+            </div>
+            <div class="contentCard-container">
+                <div class="contentcard Card3" id="notes">
+                    <!-- <a href="./pages/notes.html"> -->
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1187/1187595.png" alt="">
+                    </a>
+                    <p id="Text">Blogs (comming Soon)</p>
+                    <!-- <p id="blogText">Notes</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <hr>
+        <hr class="wid75 toleft">
+        <div class="footerContainers">
+            <div class="footercontainer">
+                <div class="footercards">
+                    <div class="footcard">
+                        <h3>About</h3>
+                        <pre>Geeky Head,
+pinocchio,
+                        </pre>
+                    </div>
+                    <div class="footcard">
+                        <h3>contact</h3>
+                        <a href="" id="footer-icon-call">
+                            <img src="https://cdn-icons-png.flaticon.com/128/597/597177.png" class="icon" alt="">
+                            &emsp;+91 *******889
+                        </a>
+                        <a href="mailto:vyasatharv889@gmail.com" id="footer-icon-mail">
+                            <img src="https://cdn-icons-png.flaticon.com/128/646/646135.png" class="icon" alt="">
+                            &emsp;@mail
+                        </a>
+                        <a href="#" id="footer-icon-facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" class="icon" alt="">
+                            &emsp;Facebook
+                            <script>
+                                let first = 0
+                                document.getElementById("footer-icon-facebook").addEventListener("click", (e)=>{
+                                    first += 1
+                                    if (first == 1){
+                                        e.preventDefault()
+                                        e.target.innerHTML += "😂"
+                                    } 
+                                })
+                            </script>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="wid75 toright">
+        <hr>
+    </footer>
+</body>
+
+<script type="text/javascript" src="./working.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+</html>

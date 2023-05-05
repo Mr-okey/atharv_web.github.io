@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+h1{
+    font-size:40px;
+}
+html{
+    scroll-behavior:smooth;
+}
+.main{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 16vw 86vw;
+    background-color: rgba(128, 0, 128, 0.377);
+    /* max-width: 100vw; */
+}
+.navbar{
+    position: fixed;
+    background:linear-gradient(
+        90deg,
+        /* purple, */
+        rgba(255, 102, 0, 1),
+        rgba(255, 102, 0, 0.87),
+        rgba(255, 102, 0, 0.671),
+        rgba(255, 102, 0, 0.571),
+        rgba(255, 102, 0, 0.471),
+        rgba(255, 102, 0, 0.371),
+        rgba(255, 102, 0, 0.271),
+        rgba(255, 102, 0, 0.220),
+        rgba(255, 102, 0, 0.671)
+        );
+        background-color: gainsboro;
+        overflow-wrap: break-word;
+        overflow:hidden;
+        width: 15%;
+        z-index: 999;
+        height: 100%;
+    }
+.page{
+    width:fit-content;
+    /* background-image: url("./images/page-bag.webp"); */
+    position: absolute;
+    left: calc(100vw - 85%);
+    border-left: 2vw;
+    border-right: 1vw solid transparent;
+}
+
+/* styling inside nav */
+.profile-pic{
+    background-color: purple;
+    background-image: url("./images/profile-img.png");
+    background-position: center;
+    background-position-y: 7px;
+    background-size:160px;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: static;
+    width: 150px;
+    content: "profile pic";
+    height: 150px;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-top: 25%;
+}
+.profile-pic:hover{
+    background-size:170px ;
+    transition: 0.2s;
+    background-color: white;
+    cursor: pointer;
+}
+.list{
+    margin-inline: auto;
+    list-style:none;
+    font-size: 25px;
+    margin-top: 30%;
+}
+.list li a{
+    all:unset;
+    text-shadow: 2px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(56, 2, 56);
+    text-decoration:none;
+}
+.list li a:hover{
+    font-size: 30px;
+    color:black;    
+}
+
+/* styling page inside  */
+
+/* Home page */
+.home-pg, .about-me, .achivements, .projects{
+    background: transparent;
+    height: 100vh;
+    padding: 2vh 2vw;
+    z-index: 0;
+}
+.home-pg{
+    width:82vw;
+}
+#spider-man:hover{
+    position: relative;
+    cursor: pointer;
+    /* animation: ani-spider-man 2s linear infinite; */
+}
+.name{
+    font-size: 45px;
+}
+.info *{
+    all: none;
+    display: inline;
+    font-size: 20px;
+}
+.links{
+    display: inline;
+    position: relative;
+    top:-42%;
+    left:80%;
+}
+.links a{
+    color:black
+}
+.links a:hover:nth-last-of-type(1), .links a:hover:nth-last-of-type(6),.links a:hover:nth-last-of-type(2){
+    color: blue;
+}
+.links a:hover:nth-last-of-type(3){
+    color:rgb(188, 240, 1);
+}
+.links a:hover:nth-last-of-type(4){
+    color:red ;
+}
+.links a:hover:nth-last-of-type(5){
+    background: linear-gradient(
+        pink 20%,
+        red 40%,
+        pink 40%
+    );
+    border-radius: 50%;
+}
+.links a{
+    position: inherit;
+    margin-left:0.7%;
+    margin-top:5%;
+    font-size: 2.5em;
+}
+.status{
+    width: 90%;
+    height: 1.5%;
+    background-color: rgba(255, 255, 0, 0.363);
+    position: absolute;
+    top:75vh;
+    padding: 21px;
+    overflow: hidden;
+}
+.status:hover, .moving-text:hover{
+    animation: none;
+    text-align: center;
+}
+.moving-text{
+    font-size: 20px;
+    position: relative;
+    animation-name: move-t;
+    animation-duration:  8s;
+    animation-timing-function:  linear;
+    animation-iteration-count:  infinite;
+}
+@keyframes move-t{
+    from{left:-1000px;}
+    to{left:1500px;}
+}
+
+/* about page */
+.about-me h1{
+    font-weight: bold;
+    color: black;
+    padding: 0.5%;
+    border: 2px;
+    border-style: outset;
+
+}
+.about-me *{
+    text-align: center;
+}
+.about-me #Hello-text-about-pg{
+    margin-top: 5vh;
+}
+.about-me quote{
+    font-style: italic;
+}
+.about-me :not(h1){
+    font-size: 20px;
+}
+.about-cont{
+    position: unset;
+    margin-top: 5%;
+    margin-inline: 9vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+}
+
+.block{
+    width: auto;
+    height: 30vh;
+    line-height: 40px;
+    margin-top: 2vh;
+    border-radius: 30px;
+    margin-inline:1vw ;
+    background:linear-gradient(
+        gray,
+        rgba(128, 128, 128, 0.956),
+        rgba(128, 128, 128, 0.856),
+        rgba(128, 128, 128, 0.756),
+        rgba(128, 128, 128, 0.656),
+        rgba(128, 128, 128, 0.556),
+        rgba(128, 128, 128, 0.456),
+        rgba(128, 128, 128, 0.356),
+        rgba(128, 128, 128, 0.256),
+        rgba(128, 128, 128, 0.156),
+        rgba(128, 128, 128, 0.056)
+    );
+}
