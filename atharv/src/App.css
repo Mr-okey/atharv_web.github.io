@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+/* dashboard component styling */
+
+#Dashboard-container {
+  perspective: 100px;
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+}
+
+#Dashboard:hover {
+  box-shadow: 0px 2px 3px #938f906b;
+}
+
+#Dashboard {
+  background: #FCE9F1;
+  color: #121212;
+  text-align: center;
+  transform: rotateX(10deg);
+  padding: 10px 50px;
+  border-radius: 0.7em;
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.Dash-btn:hover {
+  box-shadow: 0px 3px 6px #1212125c;
+  transform: translateY(-3px);
+  transition: 0.3s;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.313);
+}
+
+.Dash-btn {
+  cursor: pointer;
+  background-color: #73BBC9;
+  padding: 0.2em 0.6em;
+  border-radius: 0.2em;
+  font-weight: 0.4em;
+  font-size: 1.3em;
+  box-shadow: 0px 2px 3px #58656874;
+}
+
+/* page component styling */
+
+#page {
+  margin-inline: 2.5%;
+  margin-top: 2em;
+  padding: 2em;
+  border: 1px solid #ffffff42;
+  border-radius: 1em;
+}
