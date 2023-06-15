@@ -3,7 +3,7 @@ import Dashboard from './components/Dashboard';
 import Homepage from './components/Homepage';
 
 const handleResizeWindow = () => {
-  const elem = document.getElementById("App")
+  const elem = document.getElementById("main")
   // Resize the window to the desired dimensions
   // window.resizeTo(800, 600);
   // document.body.style.zoom = "80%";
