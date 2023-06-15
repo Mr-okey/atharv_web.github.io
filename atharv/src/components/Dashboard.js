@@ -6,7 +6,7 @@ export default function Dashboard() {
         <div id='Dashboard-container'>
             <div id='Dashboard'>
                 <div className='Dash-btn'>About</div>
-                <div className='Dash-btn'>Home</div>
+                <div className='Dash-btn Dash-btn-active' >Home</div>
                 <div className='Dash-btn'>Projects</div>
             </div>
         </div>
