@@ -1,13 +1,12 @@
 import './App.css';
 import Dashboard from './components/Dashboard';
-import Page from './components/Page';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
     <div className="App">
       <div id='main'>
-        <h1 id='app-title'>Atharv Vyas</h1>
-        <Page />
+        <Homepage />
         <Dashboard />
       </div>
     </div>
