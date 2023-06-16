@@ -183,24 +183,34 @@
 }
 
 /* *** */
+
+#Homepage-qualification  * {
+  user-select: none;
+}
+
 .icon {
   width: 0.8em;
   height: 0.8em;
 
 }
 
-#sk-pg-changing-heading {
-  margin-top: 5%;
-  display: flex;
-  align-items: baseline;
-  gap: 0.3em;
+#skills-pg {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 49% 50%;
+}
+
+#skills-pg-bgimg {
+  display: inline;
+  height: 100%;
 }
 
 #TV {
   position: relative;
-  left: 50%;
-  display: flex;
-  width: 50%;
+  /* left: 50%; */
+  display: inline-flex;
+  margin-top: 10%;
+  /* width: 50%; */
   flex-wrap: wrap;
   perspective: 80em;
   transform-style: preserve-3d;
