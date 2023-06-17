@@ -1,0 +1,85 @@
+/* rotating bars styling */
+
+#rotationBars-container {
+    width: 500px;
+    height: 500px;
+    /* background: black; */
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle {
+    width: 40px;
+    height: 330px;
+    max-height: 30vw;
+    position: absolute;
+    transform-origin: 50% 60%;
+    animation: rotate 5s infinite;
+    border-radius: 1em;
+
+}
+
+.pivot {
+    height: 40px;
+    max-width: 10vh;
+    max-height: 10vh;
+    background: url(../images/sphere.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(78%);
+    position: absolute;
+}
+
+#rectangle1 {
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    background: #FCE9F1;
+    /* height: 320px; */
+}
+
+#rectangle2 {
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    background: #F1D4E5;
+    transform: rotate(15deg);
+    /* height: 350px; */
+}
+
+#rectangle3 {
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    background: #73BBC9;
+    transform: rotate(35deg);
+    /* height: 360px; */
+}
+
+#rectangle4 {
+    animation-duration: 9s;
+    animation-timing-function: ease;
+    background: #c47ec5;
+    transform: rotate(30deg);
+    /* height: 300px; */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ProjectPg stylling */
+
+#ProjectPg {
+    /* border: 1px solid wheat; */
+    overflow: auto;
+}

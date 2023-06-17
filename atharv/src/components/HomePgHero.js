@@ -12,7 +12,9 @@ export default function HomePgHero() {
                     Web Developer
                 </b>
                 <p>
-                    not a designer*
+                    {/* innovation that defines me. */}
+                    {/* Unveiling my artistic innovation. */}
+                    Inspirer of Imagination
                 </p>
                 <a href='#skills-pg-heading'><div id='down-arrow'></div></a>
             </div>

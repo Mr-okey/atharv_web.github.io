@@ -20,11 +20,11 @@ export default function HomePgSkills() {
                 <div id='TV'>
                     <div className='skill-pg-box'>
                         <img draggable="false" src={reacticon} alt='' />
-                        <text>I create responsive Web-pages (with ReactJs)</text>
+                        <text>I create responsive Web-pages with ReactJs</text>
                     </div>
                     <div className='skill-pg-box'>
                         <img draggable="false" src={reduxIcon} alt='' />
-                        <text>Along react, just take it with a pinch of salt.</text>
+                        <text>Redux, just take it with a pinch of salt.</text>
                     </div>
                     <div className='skill-pg-box'>
                         <img draggable="false" src={chakraUIIcon} alt='' />
