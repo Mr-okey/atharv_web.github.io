@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cursor Position</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+        body {
+            font-size: 'Mukta';
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: #0a0a0a;
+            perspective: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        #origin {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 405px;
+            height: 400px;
+            /* background: linear-gradient(-40deg, rgb(143, 45, 45), rgba(30, 30, 30, 0.062)); */
+            background: url(./marsimg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8;
+            animation-fill-mode: forwards;
+        }
+
+        #overTextureGlass {
+            height: 100vh;
+            width: 100vw;
+            background: transparent;
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #overTextureGlass>text:not(.to-right) {
+            font-size: 5em;
+            /* width: 30%; */
+            display: inline;
+            /* margin-left: 10%; */
+            color: wheat;
+            text-align: center;
+        }
+        .to-right {
+            color: wheat;
+            position: absolute;
+            left: 80%;
+            bottom: 10%;
+            opacity: 0.2;
+            width: 20%;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="origin"></div>
+        <div id="overTextureGlass">
+            <text>Mars is a planet.</text>
+            <text>It rotates arround the Sun 💫 </text>
+            <text class="to-right">Mars Arround the sun goes Round and Round</text>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const origin = document.getElementById('origin');
+
+        container.addEventListener('mousemove', function (event) {
+            const rect = container.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const x = event.clientX - centerX;
+            const y = centerY - event.clientY; // Reverse y-axis for Cartesian coordinates
+
+            const distance = Math.sqrt(x * x + y * y);
+            let angle = Math.atan2(y, x);
+            let angleDegrees = (angle * 180 / Math.PI + 360) % 360; // Convert to degrees and ensure positive value
+
+            angleDegrees = angleDegrees >= 0 ? angleDegrees : 360 + angleDegrees;
+
+            const polarCoordinates = {
+                distance: distance,
+                angle: angleDegrees
+            };
+
+            origin.style.transform = `translate(-50%, -50%) rotateZ(-${angleDegrees}deg)`
+
+            console.log('Polar Coordinates:', polarCoordinates);
+        });
+    </script>
+</body>
+
+</html>
