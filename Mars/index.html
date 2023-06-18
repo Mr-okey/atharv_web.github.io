@@ -5,6 +5,9 @@
     <title>Cursor Position</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+        :root {
+            --gradint-background : linear-gradient(30deg, rgba(0,0,0,0), #0a0a0a);
+        }
         body {
             font-size: 'Mukta';
             margin: 0;
@@ -23,6 +26,15 @@
             transform-style: preserve-3d;
         }
 
+        #origin::after {
+            width: 405px;
+            height: 400px;
+            position: absolute;
+            content:'';
+            display: block;
+            border-radius: 50%;
+            background: var(--gradint-background, transparent);
+        }
         #origin {
             position: absolute;
             top: 50%;
@@ -44,7 +56,7 @@
             height: 100vh;
             width: 100vw;
             background: transparent;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(5px);
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -83,6 +95,7 @@
     <script>
         const container = document.getElementById('container');
         const origin = document.getElementById('origin');
+        const rootQuery = document.querySelector(":root")
 
         container.addEventListener('mousemove', function (event) {
             const rect = container.getBoundingClientRect();
@@ -102,7 +115,9 @@
                 angle: angleDegrees
             };
 
-            origin.style.transform = `translate(-50%, -50%) rotateZ(-${angleDegrees}deg)`
+            // planetGradient.style.background = `linear-gradient(-${angleDegrees}deg, rgba(0,0,0,0), #0a0a0a)`
+            rootQuery.style.setProperty("--gradint-background", `linear-gradient(-${angleDegrees+60}deg, rgba(0,0,0,0), #0a0a0a)`)
+            // origin.style.transform = `translate(-50%, -50%) rotateZ(-${angleDegrees}deg)`
 
             console.log('Polar Coordinates:', polarCoordinates);
         });
