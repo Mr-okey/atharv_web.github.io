@@ -28,7 +28,7 @@ export default function HomePgSkills() {
                     </div>
                     <div className='skill-pg-box'>
                         <img draggable="false" src={chakraUIIcon} alt='' />
-                        <text>Material UI designs, like some cherry on the cake.</text>
+                        <text>Chakra U.I. for some cherry on the cake.</text>
                     </div>
                     <div className='skill-pg-box'>
                         <img draggable="false" src={vanilaJSIcon} alt='' />

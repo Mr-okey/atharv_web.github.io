@@ -1,5 +1,11 @@
 /* rotating bars styling */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #rotationBars-container {
     width: 500px;
     height: 500px;
@@ -79,7 +85,12 @@
 
 /* ProjectPg stylling */
 
+#ProjectPg::-webkit-scrollbar {
+    display: none;
+}
 #ProjectPg {
-    /* border: 1px solid wheat; */
+    padding: 2%;
+    max-height: calc(100vh - 130px);
+    overflow-x: auto;
     overflow: auto;
 }
