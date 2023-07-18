@@ -1,3 +1,12 @@
 .App {
   text-align: center;
+  color: antiquewhite;
+}
+
+#animatedSticks {
+  height: 15vw;
+  width: 15vw;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
 }
