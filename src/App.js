@@ -1,14 +1,13 @@
 import './App.css';
-import RotatingSticks from './Components/RotatingSticks';
+import HomePg from './Pages/HomePg';
+import DefaultComp from './Components/Default';
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
-      {/* <div id='animatedSticks'>
-      <RotatingSticks />
-      </div> */}
-
+      <DefaultComp>
+        <HomePg />
+      </DefaultComp>
     </div>
   );
 }
