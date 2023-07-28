@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  color: antiquewhite;
+  color: #d7dcdc;
 }
 
 #animatedSticks {
@@ -10,3 +10,18 @@
   bottom: 10%;
   right: 5%;
 }
+#defaultPg {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+#defpg-child-pg {
+  height: 90%;
+  overflow: auto;
+}
+/* #default-navbar {
+  height: 10%;
+} */

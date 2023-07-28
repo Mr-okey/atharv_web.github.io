@@ -1,0 +1,29 @@
+:root {
+    --normal-font-size: 1.3em;
+    --lerge-font-size: 3em;
+}
+
+#HomePg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#HomePg-centerBox {
+    text-align: left;
+}
+#HomePg-centerBox p {
+    font-size: var(--normal-font-size);
+}
+#HomePg-centerBox strong {
+    font-size: var(--lerge-font-size);
+}
+
+@media only screen and (max-width: 450px) {
+    :root {
+        --normal-font-size: 20px;
+        --lerge-font-size: 35px;
+    }
+}
