@@ -26,6 +26,7 @@ a {
 
 .ProjectPg-projectsContainer {
     width: 90%;
+    height: max-content;
     display: flex;
     gap: 2%;
     margin-inline: auto;
@@ -42,7 +43,10 @@ a {
 }  
 
 .ProjectCard {
-    min-width: 31%;
+    /* min-width: 31%; */
+    --card-height : max(fit-content, 85%);
+    min-width: max(31%, 260px);
+    height: var(--card-height);
     overflow-y: auto;
     padding: 8px;
     border-radius: 12px;
@@ -80,4 +84,16 @@ a {
 .projectDesc {
     text-align: left;
     font-size: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        --border-col: #d5d5d547;
+    }
+    #ProjectPg-heading {
+        margin-top: 15%;
+    }
+    .ProjectPg-projectsContainer {
+        gap: 7%;
+    }
 }
