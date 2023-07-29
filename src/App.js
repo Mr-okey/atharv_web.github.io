@@ -7,8 +7,7 @@ function App() {
   return (
     <div className="App">
       <DefaultComp>
-        {/* <HomePg /> */}
-        <SkillPg />
+        <HomePg />
         <SkillPg />
       </DefaultComp>
     </div>
