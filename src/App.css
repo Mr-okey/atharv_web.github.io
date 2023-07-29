@@ -18,6 +18,9 @@
   justify-content: space-between;
   padding-bottom: 1%;
 }
+#defpg-child-pg::-webkit-scrollbar {
+  display: none;
+}
 #defpg-child-pg {
   height: 90%;
   overflow: auto;

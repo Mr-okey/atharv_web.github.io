@@ -1,0 +1,106 @@
+:root {
+    --border-rad: 15px;
+    --border-col: #ffffff30;
+    --VBar-col: #9EABCD;
+}
+
+#SkillPg {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#SkillPg-mainImg>img {
+    height: 55%;
+}
+
+#SkillPg-mainImg {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#SkillPg-skillBox-container {
+    /* background-color: #ffffff12; */
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+#SkillPg-skillBox::-webkit-scrollbar {
+    display: none;
+}
+/* 
+#SkillPg-skillBox::after {
+    content: "";
+    background: var(--border-col);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+} */
+#SkillPg-skillBox {
+    display: flex;
+    border: 2px solid var(--border-col);
+    padding: 3%;
+    border-radius: var(--border-rad);
+    width: 90%;
+}
+
+#SkillPg-skillBox-verticleBar {
+    display: block;
+    content: "";
+    position: relative;
+    border: 4px solid var(--VBar-col);
+    border-radius: var(--border-rad);
+    width: 0px;
+    height: 100%;
+}
+
+#SkillPg-skillBox-content::-webkit-scrollbar {
+    display: none;
+}
+#SkillPg-skillBox-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.SkillComp {
+    width: 100%;
+    padding: 30px;
+    padding-left: 0;
+}
+
+.SkillComp-heading {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2%;
+}
+
+.skillcompHline {
+    display: block;
+    content: "";
+    position: relative;
+    height: 3px;
+    width: 8%;
+    background-color: var(--VBar-col);
+}
+.SkillComp-desc {
+    margin-left: 5%;
+    margin-top: 2%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 400px) {
+    #SkillPg-mainImg>img {
+        width: 100%;
+        height: auto;
+    }   
+}

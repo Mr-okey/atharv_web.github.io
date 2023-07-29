@@ -6,7 +6,9 @@ export default function DefaultComp(props) {
   return (
     <div id='defaultPg'>
       <div id='defpg-child-pg'>
-        {props.children}
+        {props.children.map(childPg => {
+          return childPg
+        })}
       </div>
       <div id='default-navbar'>
         <NavBar />
