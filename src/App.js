@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <DefaultComp>
-        <ProjectPg />
         <HomePg />
         <SkillPg />
+        <ProjectPg />
       </DefaultComp>
     </div>
   );
