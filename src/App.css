@@ -24,9 +24,14 @@
   display: none;
 }
 
+#defpg-child-pg > *{
+  scroll-snap-align: center;
+}
 #defpg-child-pg {
   height: 90%;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 @media only screen and (max-width: 480px) {

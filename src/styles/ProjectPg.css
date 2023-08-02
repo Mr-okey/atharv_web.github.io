@@ -26,7 +26,8 @@ a {
 
 .ProjectPg-projectsContainer {
     width: 90%;
-    height: max-content;
+    height: 95%;
+    margin-bottom: 2.5%;
     display: flex;
     gap: 2%;
     margin-inline: auto;
@@ -43,14 +44,14 @@ a {
 }  
 
 .ProjectCard {
-    /* min-width: 31%; */
-    --card-height : max(fit-content, 85%);
-    min-width: max(31%, 260px);
+    --card-height : max(fit-content, 95%);
     height: var(--card-height);
+    min-width: max(31%, 260px);
     overflow-y: auto;
     padding: 8px;
     border-radius: 12px;
     border: 2px solid var(--border-col);
+    margin: 2.5% auto;
 }
 
 .projectImg {
