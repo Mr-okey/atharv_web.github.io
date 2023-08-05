@@ -46,6 +46,9 @@
     border: 2px solid var(--border-col);
     border-radius: var(--border-rad);
     display: flex;
+    background: #0303037d;
+    z-index: 2;
+    backdrop-filter: blur(6px);
 }
 
 #SkillPg-skillBox-verticleBar {

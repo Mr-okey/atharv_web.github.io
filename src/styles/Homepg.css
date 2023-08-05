@@ -5,6 +5,7 @@
 
 #HomePg {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,9 +22,30 @@
     font-size: var(--lerge-font-size);
 }
 
-@media only screen and (max-width: 450px) {
+#rotationBars-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: top right;
+    z-index: 1;
+    width: 30vh;
+    height: 30vh;
+    /* opacity: 0.5; */
+}
+@media only screen and (max-width: 680px) {
+    #rotationBars-container {
+        width: 30vw;
+        height: 30vh;
+    }
+}
+@media only screen and (max-width: 480px) {
     :root {
         --normal-font-size: 20px;
         --lerge-font-size: 35px;
     }
+    #rotationBars-container {
+        width: 40vw;
+        height: 30vh;
+    }    
 }
+
