@@ -1,7 +1,6 @@
 import React from 'react'
 import "../styles/PageDots.css"
 import { Link } from 'react-router-dom'
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 
 export default function PageDots() {
   const handleLinkClick = (targetid) => {
