@@ -31,6 +31,9 @@ export default function SkillPg() {
                             desc="With JavaScript, I learned how to create dynamic websites, adding interactivity, animations, and user-friendly features. It made my web applications more engaging and inclusive for users, enhancing the overall user experience."
                             heading="JavaScript" />
                         <SkillComp
+                            desc="ypeScript! It enhances JavaScript development with static typing, early error catching, and improved code maintainability."
+                            heading="Typescript" />
+                        <SkillComp
                             desc="Learning ReactJS allowed me to build scalable and interactive user interfaces through a component-based architecture. It significantly improved the efficiency of my web development projects and facilitated code reusability."
                             heading="ReactJS" />
                         <SkillComp

@@ -4,6 +4,8 @@ import HomePg from './Pages/HomePg';
 import SkillPg from './Pages/SkillPg';
 import ProjectPg from './Pages/ProjectPg';
 import DefaultComp from './Components/Default';
+import BlogPg from './Pages/BlogPg';
+import ContactPg from './Pages/ContactPg';
 import { Routes, Route } from 'react-router-dom';
 
 function HomePageRender(props) {
@@ -14,19 +16,18 @@ function HomePageRender(props) {
   </DefaultComp>
 }
 
+// empty tag added below to prevent error cause by map function in default component
 function BlogPageRender(props) {
   return <DefaultComp>
-    <HomePg />
-    <SkillPg />
-    <ProjectPg />
+    <BlogPg />
+    <></>
   </DefaultComp>
 }
 
 function ContactPageRender(props) {
   return <DefaultComp>
-    <HomePg />
-    <SkillPg />
-    <ProjectPg />
+    <ContactPg />
+    <></>
   </DefaultComp>
 }
 

@@ -12,7 +12,7 @@ export default function NotResponsive() {
   return (
     <div id='NotResponsive'>
         <div>
-            site Under Development <br />       
+            Site Under Development <br />       
             <button onClick={() => showPage()} id='showSiteBtn'>Show</button>
         </div>
     </div>

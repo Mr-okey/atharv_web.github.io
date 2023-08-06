@@ -1,6 +1,8 @@
 /* rotating bars styling */
 /* container must be 1:1 */
-
+:root {
+    --bar-height : 100%;
+}
 #rotationBars-container {
     display: flex;
     align-items: center;
@@ -17,25 +19,29 @@
 }
 
 .rectangle {
-    --height : 100%;
-    width: calc(var(--height) * 0.12);
-    height: var(--height);
+    width: calc(var(--bar-height) * 0.12);
+    height: var(--bar-height);
     max-height: 30vw;
     position: absolute;
     transform-origin: 50% 60%;
     animation: rotate 5s infinite;
-    border-radius: 1em;
+    border-radius: 1vw;
 
 }
 
 .pivot {
+    --height: calc(var(--bar-height) * 0.12);
     position: absolute;
+    /* height: var(--height); */
+    /* width: var(--height); */
     height: 15%;
     width: 15%;
     background: url(../images/sphere.png);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+    /* transform-origin: center; */
+    /* transform: translateY(calc(60% + var(--height))); */
     transform: translateY(78%);
 }
 
