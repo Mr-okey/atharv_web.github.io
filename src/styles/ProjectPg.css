@@ -96,7 +96,8 @@ a {
         --border-col: #d5d5d547;
     }
     #ProjectPg-heading {
-        margin-top: 15%;
+        margin-right: 35%;
+        margin-top: 25%;
     }
     .ProjectPg-projectsContainer {
         gap: 7%;
