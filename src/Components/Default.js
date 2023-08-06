@@ -10,7 +10,7 @@ export default function DefaultComp(props) {
       <NotResponsive />
       <PageDots />
       <div id='defpg-child-pg'>
-        {/* map function will show an error is you have less than 2 childrens under the default */}
+        {/* map function will show an error if there are less than 2 childrens under the defaul componentt */}
         {props.children.map(childPg => {
           return childPg
         })}

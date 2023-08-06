@@ -12,9 +12,15 @@ export default function PageDots() {
 
   return (
     <div id='PageDots'>
-      <Link className='pagedot' onClick={() => handleLinkClick("HomePg")} to="#HomePg"></Link>
-      <Link className='pagedot' onClick={() => handleLinkClick("SkillPg")} to="#SkillPg"></Link>
-      <Link className='pagedot' onClick={() => handleLinkClick("ProjectPg")} to="#ProjectPg"></Link>
+      <Link className='pagedot-box' onClick={() => handleLinkClick("HomePg")} to="#HomePg">
+        <div className='pagedot'></div>
+      </Link>
+      <Link className='pagedot-box' onClick={() => handleLinkClick("SkillPg")} to="#SkillPg">
+        <div className='pagedot'></div>
+      </Link>
+      <Link className='pagedot-box' onClick={() => handleLinkClick("ProjectPg")} to="#ProjectPg">
+        <div className='pagedot'></div>
+      </Link>
     </div>
   )
 }
