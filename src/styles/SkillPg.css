@@ -9,6 +9,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    position: relative;
 }
 
 #SkillPg-mainImg>img {
@@ -99,7 +100,13 @@
     text-align: left;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
+    #SkillPg-mainImg {
+        position: absolute;
+        /* transform: translateX(100%); */
+        top: 0;
+    }
+
     #SkillPg-mainImg>img {
         width: 100%;
         height: auto;
@@ -107,6 +114,7 @@
 
     #SkillPg-skillBox-container {
         padding-right: 0;
+        width: 100%;
     }
 
     .SkillComp-desc {

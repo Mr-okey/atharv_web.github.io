@@ -12,9 +12,8 @@ export default function NotResponsive() {
   return (
     <div id='NotResponsive'>
         <div>
-            site not responsive yet <br />
-            sorry for the inconvenience       
-            <button onClick={() => showPage()} id='showSiteBtn'>Show Anyway</button>
+            site Under Development <br />       
+            <button onClick={() => showPage()} id='showSiteBtn'>Show</button>
         </div>
     </div>
   )
