@@ -37,7 +37,7 @@ a {
     background: var(--bag-col);
     overflow-x: auto;
     overflow-y: hidden;
-    box-shadow: 2px 2px 50px 15px #ffffff10;
+    box-shadow: 2px 2px 50px 10px #ffffff08;
     z-index: 1;
 }
 
