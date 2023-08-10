@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Homepg.css"
-import RotatingSticks from '../Components/RotatingSticks'
+// import RotatingSticks from '../Components/RotatingSticks'
 
 export default function HomePg() {
     return (
