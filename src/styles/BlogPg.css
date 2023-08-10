@@ -8,7 +8,7 @@
 
 #BlogPg #commingSoonText::after {
     content: "Comming Soon ...";
-    animation: dotdotdot 3s linear 1;
+    animation: dotdotdot 3s ease-in-out 1;
     animation-delay: 3s;
 }
 

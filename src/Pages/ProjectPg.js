@@ -3,8 +3,7 @@ import torSS from "../images/torSS.png"
 import foocusSS from "../images/foocusSS.png"
 import tictactoiSS from "../images/tictactoiSS.png"
 import tipeitSS from "../images/tipeSS.png"
-import eduCareSS from "../images/educareSs.png"
-import cardDesignSS from "../images/cardDesignSs.png"
+import moreProjectsImg from "../images/moreProjects.png"
 
 import "../styles/ProjectPg.css"
 import { Link } from 'react-router-dom'
@@ -48,7 +47,7 @@ export default function ProjectPg() {
                     img={tipeitSS}
                     title="TipeIt"
                     desc="Just another Notepad, made with vanila javascript,"
-                    url="https://tipeit.netlify.app/"
+                    url="https://1447bits.github.io/typeit/"
                 />
                 <ProjectCard
                     img={tictactoiSS}
@@ -57,6 +56,12 @@ export default function ProjectPg() {
                     url="https://1447bits.github.io/TicTacToe/"
                 />
                 <ProjectCard
+                    img={moreProjectsImg}
+                    title="More.."
+                    desc=""
+                    url="https://1447bits.github.io/TicTacToe/"
+                />
+                {/* <ProjectCard
                     img={cardDesignSS}
                     title="Card Centric Design"
                     desc="FrontEnd project to develop a card centric design, and polish skills with vanila HTML/CSS"
@@ -67,7 +72,7 @@ export default function ProjectPg() {
                     title="Educare Frontend"
                     desc="FrontEnd project, developed a page with multiple elements usign vanila HTML/CSS"
                     url="https://1447bits.github.io/frontend/Assignment1/"
-                />
+                /> */}
             </div>
         </div>
     )
