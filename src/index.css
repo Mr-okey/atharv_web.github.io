@@ -14,7 +14,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: #101010; */
-  background: url("./images/mainBack.png");
+    background: url("./images/mainBack.png");
+    background-blend-mode: color;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

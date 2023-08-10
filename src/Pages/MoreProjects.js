@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import RotatingSticks from '../Components/RotatingSticks'
+// import RotatingSticks from '../Components/RotatingSticks'
 import "../styles/MoreProjects.css"
 import cardDesignSS from "../images/cardDesignSs.png"
 import educareSs from "../images/educareSs.png"
@@ -103,10 +103,10 @@ export default function MoreProjects(props) {
         </div>
     }
 
-    function changePrevProject(id) {
-        id = id - 1
-        setcurrentProjectPrev(GetProjectDetails(id))
-    }
+    // function changePrevProject(id) {
+    //     id = id - 1
+    //     setcurrentProjectPrev(GetProjectDetails(id))
+    // }
 
     function focusprev(num) {
         const cards = document.getElementsByClassName("ProjectPrev-container")
@@ -141,43 +141,43 @@ export default function MoreProjects(props) {
                 <ProjectPrev
                     img={torSS}
                     heading="Another Tor"
-                    active={activeid == 1}
+                    active={activeid === 1}
                     id={1}
                 />
                 <ProjectPrev
                     img={foocusSS}
                     heading="Foocus App"
                     id={2}
-                    active={activeid == 2}
+                    active={activeid === 2}
                 />
                 <ProjectPrev
                     img={cardDesignSS}
                     heading="cards Design"
-                    active={activeid == 3}
+                    active={activeid === 3}
                     id={3}
                 />
                 <ProjectPrev
                     img={tipeSS}
                     heading="TypeIt"
-                    active={activeid == 4}
+                    active={activeid === 4}
                     id={4}
                 />
                 <ProjectPrev
                     img={tictactoiSS}
                     heading="Tic Tac Toe"
-                    active={activeid == 5}
+                    active={activeid === 5}
                     id={5}
                 />
                 <ProjectPrev
                     img={stonepaperSS}
                     heading="Stone Paper Scissors"
-                    active={activeid == 6}
+                    active={activeid === 6}
                     id={6}
                 />
                 <ProjectPrev
                     img={educareSs}
                     heading="educare frontend"
-                    active={activeid == 7}
+                    active={activeid === 7}
                     id={7}
                 />
             </div>
