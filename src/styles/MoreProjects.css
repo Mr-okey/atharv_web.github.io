@@ -36,10 +36,10 @@
     display: none;
 }
 
+/* #moreProjectsMenu::-webkit-scrollbar-track-piece, */
 #moreProjectsMenu::-webkit-scrollbar {
     display: none;
 }
-
 
 #moreProjectsMenu {
     display: flex;
@@ -51,6 +51,7 @@
     margin-inline: auto;
     gap: 2em;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .ProjectPrev-container p {
@@ -186,9 +187,13 @@
         transform: translateX(0);
         opacity: 1;
     }
-    50% {
+    49% {
         opacity: 0;
         transform: translateX(-100px)
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(100px)
     }
     to {
         transform: translateX(0);
@@ -200,9 +205,13 @@
         transform: translateX(0);
         opacity: 1;
     }
-    50% {
+    49% {
         opacity: 0;
         transform: translateX(100px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-100px);
     }
     to {
         transform: translateX(0);

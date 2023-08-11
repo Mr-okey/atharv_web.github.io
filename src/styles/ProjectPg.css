@@ -20,12 +20,12 @@ a {
     margin-bottom: 5%;
 }
 
-.ProjectPg-projectsContainer::-webkit-scrollbar {
+#ProjectPg-projectsContainer::-webkit-scrollbar {
     display: none;
 }
 
 
-.ProjectPg-projectsContainer {
+#ProjectPg-projectsContainer {
     width: 90%;
     height: 95%;
     margin-bottom: 2.5%;
@@ -101,7 +101,7 @@ a {
         /* margin-right: 35%; */
         margin-top: 25%;
     }
-    .ProjectPg-projectsContainer {
+    #ProjectPg-projectsContainer {
         gap: 7%;
     }
 }

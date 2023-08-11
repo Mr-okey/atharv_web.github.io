@@ -35,7 +35,7 @@ export default function MoreProjects(props) {
         },
         {
             img: cardDesignSS,
-            heading: "card centric design"
+            heading: "card centric design",
             id: 3,
             status: "compleated",
             desc: "A card centric design webpage frontend, responsive, made with vanila html/css and javascript",

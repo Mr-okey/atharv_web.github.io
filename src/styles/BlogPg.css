@@ -9,7 +9,7 @@
 #BlogPg #commingSoonText::after {
     content: "Comming Soon ...";
     animation: dotdotdot 3s ease-in-out 1;
-    animation-delay: 3s;
+    animation-delay: 0.5s;
 }
 
 @keyframes dotdotdot {

@@ -25,12 +25,28 @@ function ProjectCard(props) {
 }
 
 export default function ProjectPg() {
+
+    function handleScroll(event) {
+        const container = document.getElementById("ProjectPg-projectsContainer");
+        console.log("scrolled")
+
+        if (!container) return;
+        const containerRect = container.getBoundingClientRect();
+        const containerLeftCenter = containerRect.left + containerRect.width / 2;
+        const cursorPosition = event.clientX;
+
+        const distanceFromLeftCenter = cursorPosition - containerLeftCenter;
+
+        container.scrollLeft += distanceFromLeftCenter;
+
+    }
+
     return (
         <div id='ProjectPg'>
             <h1 id='ProjectPg-heading'>
                 Projects
             </h1>
-            <div className='ProjectPg-projectsContainer'>
+            <div id='ProjectPg-projectsContainer' onMouseMove={handleScroll} >
                 <ProjectCard
                     img={torSS}
                     title="Anorther Tor"
@@ -66,18 +82,6 @@ export default function ProjectPg() {
                     url="/moreProjects"
                     target=""
                 />
-                {/* <ProjectCard
-                    img={cardDesignSS}
-                    title="Card Centric Design"
-                    desc="FrontEnd project to develop a card centric design, and polish skills with vanila HTML/CSS"
-                    url="https://1447bits.github.io/frontend/Assignment2/"
-                />
-                <ProjectCard
-                    img={eduCareSS}
-                    title="Educare Frontend"
-                    desc="FrontEnd project, developed a page with multiple elements usign vanila HTML/CSS"
-                    url="https://1447bits.github.io/frontend/Assignment1/"
-                /> */}
             </div>
         </div>
     )
