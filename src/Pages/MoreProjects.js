@@ -21,7 +21,7 @@ export default function MoreProjects(props) {
             id: 1,
             desc: "An Attempt to build a developer centric Social-Media application, a place where all your social presence available on one click, collaborative tools with open thread discussions. Made with React js",
             status: "under development",
-            github: "unavailable",
+            github: "#",
             deployment: "https://anothertor.netlify.app/"
         },
         {
@@ -93,20 +93,13 @@ export default function MoreProjects(props) {
                 <h1>{info.heading}</h1>
                 <p className='statustxt'>status : {info.status}</p>
                 <p className='projdesc'>{info.desc}</p>
-                <span> Github :
-                    <Link to={info.github} className='githublnk'> {info.github}</Link> <br />
-                </span>
-                <span> Deployment :
-                    <Link to={info.deployment} className='deployment'> {info.deployment}</Link>
+                <span className="links">
+                    <Link target='_blank' to={info.github} className='githublnk'>{info.github === "#" ? "Unavailable" : "Github"}</Link>
+                    <Link target='_blank' to={info.deployment} className='deployment'>{info.deployment === "#" ? "Unavailable" : "Deployment"}</Link>
                 </span>
             </div>
         </div>
     }
-
-    // function changePrevProject(id) {
-    //     id = id - 1
-    //     setcurrentProjectPrev(GetProjectDetails(id))
-    // }
 
     function focusprev(num) {
         const cards = document.getElementsByClassName("ProjectPrev-container")
@@ -115,10 +108,30 @@ export default function MoreProjects(props) {
             cards[i].classList.remove("active")
         }
         cards[num - 1].classList.add("active")
-        setTimeout(() => {
-            setactiveid(num)
-            setcurrentProjectPrev(GetProjectDetails(num - 1))
-        }, 100);
+        if (num !== activeid) {
+            if (num > activeid) {
+                // do goleftanimation
+                document.getElementById("ProjectDetails").classList.add("goleft")
+                setTimeout(() => {
+                    setactiveid(num)
+                    setcurrentProjectPrev(GetProjectDetails(num - 1))
+                    setTimeout(() => {
+                        document.getElementById("ProjectDetails").classList.remove("goleft")
+                    }, 300);
+                }, 300);
+            }
+            else {
+                // do gorightanimation
+                document.getElementById("ProjectDetails").classList.add("goright")
+                setTimeout(() => {
+                    setactiveid(num)
+                    setcurrentProjectPrev(GetProjectDetails(num - 1))
+                    setTimeout(() => {
+                        document.getElementById("ProjectDetails").classList.remove("goright")
+                    }, 350);
+                }, 350);
+            }
+        }
     }
 
     function ProjectPrev(props) {
@@ -132,54 +145,15 @@ export default function MoreProjects(props) {
 
     return (
         <div id='MoreProjects'>
-            {/* <div id="rotatingSticsContainer">
-                <div id='rotatingSticksBox'>
-                    <RotatingSticks />
-                </div>
-            </div> */}
             <div id='moreProjectsMenu'>
-                <ProjectPrev
-                    img={torSS}
-                    heading="Another Tor"
-                    active={activeid === 1}
-                    id={1}
-                />
-                <ProjectPrev
-                    img={foocusSS}
-                    heading="Foocus App"
-                    id={2}
-                    active={activeid === 2}
-                />
-                <ProjectPrev
-                    img={cardDesignSS}
-                    heading="cards Design"
-                    active={activeid === 3}
-                    id={3}
-                />
-                <ProjectPrev
-                    img={tipeSS}
-                    heading="TypeIt"
-                    active={activeid === 4}
-                    id={4}
-                />
-                <ProjectPrev
-                    img={tictactoiSS}
-                    heading="Tic Tac Toe"
-                    active={activeid === 5}
-                    id={5}
-                />
-                <ProjectPrev
-                    img={stonepaperSS}
-                    heading="Stone Paper Scissors"
-                    active={activeid === 6}
-                    id={6}
-                />
-                <ProjectPrev
-                    img={educareSs}
-                    heading="educare frontend"
-                    active={activeid === 7}
-                    id={7}
-                />
+                {projectDetails.map((project) => {
+                    return <ProjectPrev
+                        img={project.img}
+                        heading={project.heading}
+                        active={activeid === project.id}
+                        id={project.id}
+                    />
+                })}
             </div>
             <div id='ProjectDetails-container'>
                 {currentProjectPrev}

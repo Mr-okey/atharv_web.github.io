@@ -1,0 +1,11 @@
+/* * {
+    cursor: none;
+} */
+#cursor {
+    width: 30px;
+    height: 30px;
+    background: url(../images/cursor.png);
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+}
