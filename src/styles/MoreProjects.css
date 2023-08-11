@@ -132,6 +132,7 @@
     margin-inline: auto;
     padding-bottom: 0.2em;
     border-bottom: 2px solid seashell;
+    font-size: 1.6em;
 }
 
 #ProjectDetails .projImg > img {
@@ -145,7 +146,8 @@
 }
 
 #ProjectDetails #projectinfo a {
-    color: rgb(84, 84, 219);
+    color: rgba(130, 130, 229, 0.729);
+    cursor: pointer;
 }
 
 
