@@ -1,0 +1,83 @@
+#BlogPg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+#BlogPg #commingSoonText::after {
+    content: "Comming Soon ...";
+    animation: dotdotdot 3s ease-in-out 1;
+    animation-delay: 0.5s;
+}
+
+@keyframes dotdotdot {
+    from {
+        content: "";
+    }
+
+    0% {
+        content: "C";
+    }
+
+    6.25% {
+        content: "Co";
+    }
+
+    12.5% {
+        content: "Com";
+    }
+
+    18.75% {
+        content: "Comm";
+    }
+
+    25.0% {
+        content: "Commi";
+    }
+
+    31.25% {
+        content: "Commin";
+    }
+
+    37.5% {
+        content: "Comming";
+    }
+
+    43.75% {
+        content: "Comming ";
+    }
+
+    50.0% {
+        content: "Comming S";
+    }
+
+    56.25% {
+        content: "Comming So";
+    }
+
+    62.5% {
+        content: "Comming Soo";
+    }
+
+    68.75% {
+        content: "Comming Soon";
+    }
+
+    75.0% {
+        content: "Comming Soon ";
+    }
+
+    81.25% {
+        content: "Comming Soon .";
+    }
+
+    87.5% {
+        content: "Comming Soon ..";
+    }
+
+    93.75% {
+        content: "Comming Soon ...";
+    }
+}

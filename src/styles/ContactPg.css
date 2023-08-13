@@ -1,0 +1,61 @@
+:root {
+    --qroverbackground : transparent;
+    /* --qroverbackground: gold; */
+    --qrafterheight: 200px;
+    --qrafterwidth: 200px;
+    --qrafterpos: -200px;
+    --qraftershadow: none;
+}
+
+#ContactPg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp>img:hover {
+    opacity: .9;
+    cursor: pointer;
+    transform: scale(0.96);
+}
+
+#temp {
+    height: 200px;
+    width: 200px;
+}
+#temp img {
+    height: min(200px, 95%);
+    width: min(200px, 95%);
+    transition: 0.3s;
+}
+
+#temp::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: var(--qrafterheight);
+    width: var(--qrafterwidth);
+    transform: translateY(var(--qrafterpos));
+    transition: 0.3s;
+    background: var(--qroverbackground);
+    box-shadow: var(--qraftershadow);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#temp:hover {
+    animation: scanAnimation 3s ease-in-out infinite;
+    --qraftershadow: 0px 0px 50px 10px rgba(222, 248, 52, 0.174);
+    --qrafterheight: 5px;
+    --qroverbackground: rgba(255, 217, 0, 0.472);
+}
+
+@keyframes scanAnimation {
+    0% {
+        --qrafterpos: -210px;
+    }
+    100% {
+        --qrafterpos: 0px;
+    }
+}

@@ -1,0 +1,107 @@
+:root {
+    --def-text-color: #efeacb;
+    --border-col: #d5d5d577;
+    --bag-col: linear-gradient(to right, #ffffff03, #ffffff18, #ffffff01);
+}
+
+a {
+    all: unset;
+}
+
+#ProjectPg {
+    height: 100%;
+    padding: 2.5%;
+    display: grid;
+    grid-template-rows: 18% unset;
+}
+
+#ProjectPg-heading {
+    color: var(--def-text-color);
+    margin-bottom: 5%;
+}
+
+#ProjectPg-projectsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+
+#ProjectPg-projectsContainer {
+    width: 90%;
+    height: 95%;
+    margin-bottom: 2.5%;
+    display: flex;
+    gap: 2%;
+    margin-inline: auto;
+    border-radius: 12px;
+    padding: 3%;
+    background: var(--bag-col);
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow: 2px 2px 50px 10px #ffffff08;
+    z-index: 1;
+}
+
+.ProjectCard::-webkit-scrollbar {
+    display: none;
+}  
+
+.ProjectCard {
+    background: #0303039a;
+    --card-height : min(fit-content, 75%);
+    height: var(--card-height);
+    min-width: max(33%, 260px);
+    overflow-y: auto;
+    padding: 8px;
+    border-radius: 12px;
+    border: 2px solid var(--border-col);
+    margin: 2.5% auto;
+}
+
+.projectImg {
+    width: 100%;
+    padding: 2.5%;
+    margin-inline: auto;
+}
+
+.projectImg>img {
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 1.77;
+}
+
+.projectTitle:hover {
+    --def-text-color: #ddea54;
+    cursor: pointer;
+}
+
+.projectTitle {
+    text-decoration: none;
+    color: var(--def-text-color);
+    transition: 0.5s;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--def-text-color);
+    width: fit-content;
+    margin-inline: auto;
+    font-size: x-large;
+}
+
+.projectDesc {
+    text-align: left;
+    font-size: 1em;
+    width: 100%;
+    padding-inline: 5%;
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        --border-col: #d5d5d547;
+    }
+    #ProjectPg-heading {
+        /* margin-right: 35%; */
+        margin-top: 25%;
+    }
+    #ProjectPg-projectsContainer {
+        gap: 7%;
+    }
+}
