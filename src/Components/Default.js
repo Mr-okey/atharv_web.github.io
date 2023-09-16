@@ -8,7 +8,7 @@ export default function DefaultComp(props) {
     <div id='defaultPg'>
       <PageDots />
       <div id='defpg-child-pg'>
-        {/* map function will show an error if there are less than 2 childrens under the defaul componentt */}
+        {/* map function will show an error if there are less than 2 childrens under the default component */}
         {props.children.map(childPg => {
           return childPg
         })}
