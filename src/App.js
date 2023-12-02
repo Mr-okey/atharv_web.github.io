@@ -8,10 +8,12 @@ import BlogPg from './Pages/BlogPg';
 import ContactPg from './Pages/ContactPg';
 import { Routes, Route } from 'react-router-dom';
 import MoreProjects from './Pages/MoreProjects';
+import ExperiencePg from './Pages/ExperiencePg';
 
 function HomePageRender(props) {
   return <DefaultComp>
     <HomePg />
+    <ExperiencePg />
     <SkillPg />
     <ProjectPg />
   </DefaultComp>
@@ -32,7 +34,7 @@ function ContactPageRender(props) {
   </DefaultComp>
 }
 
-function MoreProhectsRender(props) {
+function MoreProjectPageRender(props) {
   return <DefaultComp>
     <MoreProjects />
     <></>
@@ -43,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/moreProjects" element={<MoreProhectsRender />} />
+        <Route exact path="/moreProjects" element={<MoreProjectPageRender />} />
         <Route exact path="/blog" element={<BlogPageRender />} />
         <Route exact path="/" element={<HomePageRender />} />
         <Route exact path="/contact" element={<ContactPageRender />} />
