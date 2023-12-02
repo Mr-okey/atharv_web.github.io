@@ -2,6 +2,7 @@
     all: unset;
     max-width: 1000px;
     margin-inline: auto;
+    z-index: 5;
 }
 
 #rotatingSticsContainer {
@@ -32,10 +33,6 @@
     width: 100%;
 }
 
-#PageDots {
-    display: none;
-}
-
 /* #moreProjectsMenu::-webkit-scrollbar-track-piece, */
 #moreProjectsMenu::-webkit-scrollbar {
     display: none;
@@ -57,9 +54,11 @@
 .ProjectPrev-container p {
     opacity: 0;
 }
+
 .ProjectPrev-container:hover p {
     opacity: 0.8;
 }
+
 .active p,
 .ProjectPrev-container:hover p {
     font-weight: bold;
@@ -79,6 +78,7 @@
 .ProjectPrev-container:not(.active) {
     opacity: 0.6;
 }
+
 .ProjectPrev-container {
     padding: 1%;
     min-width: max(5vw, 100px);
@@ -123,6 +123,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -132,6 +133,7 @@
     width: 100%;
     word-wrap: break-word;
 }
+
 #ProjectDetails #projectinfo>* {
     font-size: 1.2em;
     margin: 1em 0em
@@ -146,12 +148,13 @@
     font-size: 1.6em;
 }
 
-#ProjectDetails .projImg > img {
+#ProjectDetails .projImg>img {
     width: 100%;
     border-radius: 8px;
     padding: 2%;
     border: 5px solid rgba(128, 128, 128, 0.303);
 }
+
 #ProjectDetails .projImg {
     width: 100%;
     aspect-ratio: 1.77;
@@ -163,9 +166,11 @@
     justify-content: space-evenly;
     margin-top: 2em;
 }
+
 #ProjectDetails #projectinfo a:hover {
     transform: scale(0.92);
 }
+
 #ProjectDetails #projectinfo a {
     padding: 0.5em 0.9em;
     border-radius: 8px;
@@ -175,11 +180,12 @@
     transition: 0.2s;
 }
 
-.goleft{
-    animation: goLeftAnilation 0.7s ease 1;   
+.goleft {
+    animation: goLeftAnilation 0.7s ease 1;
 }
-.goright{
-    animation: goRightAnilation 0.7s ease 1;   
+
+.goright {
+    animation: goRightAnilation 0.7s ease 1;
 }
 
 @keyframes goLeftAnilation {
@@ -187,32 +193,39 @@
         transform: translateX(0);
         opacity: 1;
     }
+
     49% {
         opacity: 0;
         transform: translateX(-100px)
     }
+
     50% {
         opacity: 0;
         transform: translateX(100px)
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
 @keyframes goRightAnilation {
     from {
         transform: translateX(0);
         opacity: 1;
     }
+
     49% {
         opacity: 0;
         transform: translateX(100px);
     }
+
     50% {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -226,12 +239,14 @@
         flex-direction: column;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     #moreProjectsMenu {
         width: 90%;
         justify-content: flex-start;
     }
 }
+
 @media only screen and (max-width: 480px) {
 
     .active,

@@ -1,9 +1,14 @@
+/* display page dots only when home page exists */
+#defaultPg:has(#HomePg) #PageDots {
+    display: flex;
+}
+
 #PageDots {
     position: absolute;
     left: 0;
     transform-origin: left center;
     top: calc(100vh - 50%);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     margin-inline: 1%;
