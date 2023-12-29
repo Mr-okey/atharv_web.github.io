@@ -15,6 +15,9 @@ export default function PageDots() {
       <Link className='pagedot-box' onClick={() => handleLinkClick("HomePg")} to="#HomePg">
         <div className='pagedot'></div>
       </Link>
+      <Link className='pagedot-box' onClick={() => handleLinkClick("ExperiencePg")} to="#ExperiencePg">
+        <div className='pagedot'></div>
+      </Link>
       <Link className='pagedot-box' onClick={() => handleLinkClick("SkillPg")} to="#SkillPg">
         <div className='pagedot'></div>
       </Link>

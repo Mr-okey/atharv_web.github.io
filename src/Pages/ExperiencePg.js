@@ -23,13 +23,18 @@ export default function ExperiencePg() {
                     <div className='internships subsectionIndentleft'>
 
                         <div className='internshipInfo'>
-                            <span className='time'>[ Sept, 2023 - Ongoing ]</span>
-                            <span className='title'>Three js Developer Intern (Three.js)  | Zigy Prints.</span>
+                            <span className='time'>[ Dec, 2023 - Ongoing ]</span>
+                            <span className='title'>Web Developer Intern  | <a className='linkToCompany' target='_blank' href='https://www.janvry.com/'>Janvry</a>.</span>
+                        </div>
+
+                        <div className='internshipInfo'>
+                            <span className='time'>[ Sept, 2023 - Nov, 2023 ]</span>
+                            <span className='title'>Three js Developer Intern (Three.js)  | <a className='linkToCompany' target='_blank' href='https://in.linkedin.com/company/zigycustoms'>Zigy Prints</a>.</span>
                         </div>
 
                         <div className='internshipInfo'>
                             <span className='time'>[ Dec, 2022 - Jan, 2022 ]</span>
-                            <span className='title'> Frontend Developer | Areksoft.</span>
+                            <span className='title'> Frontend Developer | <a className='linkToCompany' target='_blank' href='https://www.areksoft.com/'>Areksoft</a>.</span>
                         </div>
 
                     </div>

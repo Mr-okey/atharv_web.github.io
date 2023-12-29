@@ -4,7 +4,8 @@ import "../styles/MoreProjects.css"
 import cardDesignSS from "../images/cardDesignSs.png"
 import educareSs from "../images/educareSs.png"
 import foocusSS from "../images/foocusSS.png"
-import stonepaperSS from "../images/stonepaperSS.png"
+// import stonepaperSS from "../images/stonepaperSS.png"
+import JanvryLogo from "../images/JanvryLogo.png"
 import tictactoiSS from "../images/tictactoiSS.png"
 import tipeSS from "../images/tipeSS.png"
 import torSS from "../images/torSS.png"
@@ -25,13 +26,13 @@ export default function MoreProjects(props) {
             deployment: "https://anothertor.netlify.app/"
         },
         {
-            img: foocusSS,
-            heading: "foocus",
+            img: JanvryLogo,
+            heading: "janvry Portfolio",
             id: 2,
-            status: "under development",
-            desc: "A productivity application, a note taking app cum task manager, main objective was to create an application help you increase productivity in zen mode. Made with react js",
-            github: "https://github.com/1447bits/foocus",
-            deployment: "https://foocusapp.netlify.app/"
+            status: "compleated",
+            desc: "Company Portfolio page made for <a href=\"https://janvrywebsite-punh.vercel.app\" target=\"_blank\" style=\"all:unset; font-weight:bold; cursor:pointer;\">Janvry</a>",
+            github: "#",
+            deployment: "https://janvrywebsite-punh.vercel.app/Exclusive"
         },
         {
             img: cardDesignSS,
@@ -52,23 +53,32 @@ export default function MoreProjects(props) {
             deployment: "https://1447bits.github.io/typeit/"
         },
         {
+            img: foocusSS,
+            heading: "foocus",
+            id: 5,
+            status: "under development",
+            desc: "A productivity application, a note taking app cum task manager, main objective was to create an application help you increase productivity in zen mode. Made with react js",
+            github: "https://github.com/1447bits/foocus",
+            deployment: "https://foocusapp.netlify.app/"
+        },
+        {
             img: tictactoiSS,
             heading: "Tic Tac Toe",
-            id: 5,
+            id: 6,
             status: "partically compleated",
             desc: "A fun project, a very familier game, with single and double player options, currently in single player mode your oponent is dumb but soon i will be updating it. made with vanila html/css and javascript",
             github: "https://github.com/1447bits/TicTacToe",
             deployment: "https://1447bits.github.io/TicTacToe/"
         },
-        {
-            img: stonepaperSS,
-            heading: "Stone Paper Scissors",
-            id: 6,
-            status: "compleated",
-            desc: "A fun project, a very familier single player game. made with vanila html/css and javascript",
-            github: "https://github.com/1447bits/stonePaperScissor",
-            deployment: "https://1447bits.github.io/stonePaperScissor/"
-        },
+        // {
+        //     img: stonepaperSS,
+        //     heading: "Stone Paper Scissors",
+        //     id: 6,
+        //     status: "compleated",
+        //     desc: "A fun project, a very familier single player game. made with vanila html/css and javascript",
+        //     github: "https://github.com/1447bits/stonePaperScissor",
+        //     deployment: "https://1447bits.github.io/stonePaperScissor/"
+        // },
         {
             img: educareSs,
             heading: "educare frontend",
@@ -92,7 +102,8 @@ export default function MoreProjects(props) {
             <div id='projectinfo'>
                 <h1>{info.heading}</h1>
                 <p className='statustxt'>status : {info.status}</p>
-                <p className='projdesc'>{info.desc}</p>
+                {/* <p className='projdesc'>{info.desc}</p> */}
+                <p className='projdesc' dangerouslySetInnerHTML={{ __html: info.desc }} ></p>
                 <span className="links">
                     <Link target='_blank' to={info.github} className='githublnk'>{info.github === "#" ? "Unavailable" : "Github"}</Link>
                     <Link target='_blank' to={info.deployment} className='deployment'>{info.deployment === "#" ? "Unavailable" : "Deployment"}</Link>
