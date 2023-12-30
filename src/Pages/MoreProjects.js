@@ -6,6 +6,7 @@ import educareSs from "../images/educareSs.png"
 import foocusSS from "../images/foocusSS.png"
 // import stonepaperSS from "../images/stonepaperSS.png"
 import JanvryLogo from "../images/JanvryLogo.png"
+import ACMIcon from "../images/ACMIcon.png"
 import tictactoiSS from "../images/tictactoiSS.png"
 import tipeSS from "../images/tipeSS.png"
 import torSS from "../images/torSS.png"
@@ -35,9 +36,18 @@ export default function MoreProjects(props) {
             deployment: "https://janvrywebsite-punh.vercel.app/Exclusive"
         },
         {
+            img: ACMIcon,
+            heading: "ACM-DYPIEMR",
+            id: 3,
+            status: "Under Development",
+            desc: "ACM (Association for Computing Machinery) student chapter @DYPIEMR is a Social Technical Society",
+            github: "https://github.com/officialacm/website-2k23",
+            deployment: "https://glittery-maamoul-278f7f.netlify.app/"
+        },
+        {
             img: cardDesignSS,
             heading: "card centric design",
-            id: 3,
+            id: 4,
             status: "compleated",
             desc: "A card centric design webpage frontend, responsive, made with vanila html/css and javascript",
             github: "https://github.com/1447bits/frontend/tree/main/Assignment2",
@@ -46,7 +56,7 @@ export default function MoreProjects(props) {
         {
             img: tipeSS,
             heading: "TipeIt",
-            id: 4,
+            id: 5,
             status: "compleated",
             desc: "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
             github: "https://github.com/1447bits/typeit",
@@ -55,7 +65,7 @@ export default function MoreProjects(props) {
         {
             img: foocusSS,
             heading: "foocus",
-            id: 5,
+            id: 6,
             status: "under development",
             desc: "A productivity application, a note taking app cum task manager, main objective was to create an application help you increase productivity in zen mode. Made with react js",
             github: "https://github.com/1447bits/foocus",
@@ -64,7 +74,7 @@ export default function MoreProjects(props) {
         {
             img: tictactoiSS,
             heading: "Tic Tac Toe",
-            id: 6,
+            id: 7,
             status: "partically compleated",
             desc: "A fun project, a very familier game, with single and double player options, currently in single player mode your oponent is dumb but soon i will be updating it. made with vanila html/css and javascript",
             github: "https://github.com/1447bits/TicTacToe",
@@ -82,7 +92,7 @@ export default function MoreProjects(props) {
         {
             img: educareSs,
             heading: "educare frontend",
-            id: 7,
+            id: 8,
             status: "compleated",
             desc: "This was the Front-end design assignment, ought to be a responsive webpage made with vanila html/css and javascript.",
             github: "https://github.com/1447bits/frontend/tree/main/Assignment1",
