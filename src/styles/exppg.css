@@ -79,6 +79,22 @@ a {
 
     #ExperiencePg .internshipInfo {
         display: grid;
-        grid-template-columns: 25% auto;
+        grid-template-columns: 40% auto;
     }
+
+    .pageContent::-webkit-scrollbar {
+        display: none;
+        margin-bottom: 100px;
+    }
+
+    .pageContent {
+        height: 75vh;
+        overflow: auto;
+    }
+
+    #ExperiencePg .internships,
+    #ExperiencePg .subsectionIndentleft {
+        margin: 50px 0 50px 0;
+    }
+
 }
