@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/* navbar styles */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: stretch;
+    font-family: 'Sometype Mono';
+    color: #BBBB88;
+    font-weight: 800;
+    margin: 0.8em 0;
+    font-size: 1.3em;
+    position: sticky;
+    top: 0;
+    background-color: #1e1e1e76;
+    backdrop-filter: blur(20px);
+
+    * {
+        transition: 0.3s;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .navItem {
+
+        .navLink {
+
+            all: unset;
+            scale: 5;
+            transition: 0.3s;
+            padding: 0.3rem 0.5rem;
+            border: 1px #bbbb8800;
+            border-radius: 0.5rem;
+
+
+        }
+
+        .active,
+        .navLink:hover {
+            opacity: 0.8;
+            border: 1px solid #bbbb88;
+        }
+    }
+}
+
+
+/* Hero page styling */
+
+#home {
+ 
+    width: 100%;
+    height: min(800px, 100dvh);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'DM Mono';
+    letter-spacing: 0.18em;
+    font-weight: 500;
+    color: #F5F5F5;
+
+    .homeHeroSection-1 {
+        width: min(96%, 1200px);
+        font-size: 2.5rem;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: stretch;
+        justify-content: stretch;
+        padding: 8% 0;
+
+        .welcomeText {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        
+        .devicesAnimationContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                rotate: 5deg;
+            }
+        }
+    }
+
+    .changingText {
+        font-size: 1.5rem;
+    }
+
+    .scrollDownindicator {
+        transition: 0.3s;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            scale: 0.8;
+        }
+    }
+
+}

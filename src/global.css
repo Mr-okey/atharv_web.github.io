@@ -1,5 +1,19 @@
+@import url(./styles/home.scss);
+
+:root {
+    --test: #8080805d;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: #F5F5F5;
+    max-width: 1440px;
+    margin-inline: auto;
 }

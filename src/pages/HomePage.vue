@@ -1,14 +1,15 @@
 <script>
+
+import HomeHero from "../components/forHomePage/Hero.vue"
+
 export default {
     name: "Home-page",
-    data() {
-        return {
-            helloMessage: "Welcome to 1447bits portfollio"
-        }
-    }
+    components: {
+        HomeHero
+    },
 }
 </script>
 
 <template>
-    <h1>{{ helloMessage }}</h1>
+    <HomeHero />
 </template>
