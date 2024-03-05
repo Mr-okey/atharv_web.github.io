@@ -17,7 +17,7 @@ export default {
             activeLinkId: 0,
             navItems: [
                 { id: "navItem-1", href: '#home', label: 'Home' },
-                { id: "navItem-2", href: '#about', label: 'EXP' },
+                { id: "navItem-2", href: '#exp', label: 'EXP' },
                 { id: "navItem-3", href: '#project', label: 'Project' },
                 { id: "navItem-4", href: '#contact', label: 'Contact' },
                 { id: "navItem-5", href: '#', label: 'Blog' }
