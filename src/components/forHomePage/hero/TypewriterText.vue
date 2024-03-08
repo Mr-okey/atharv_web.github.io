@@ -68,19 +68,20 @@ export default {
 
         // init the animation for first go
 
-        // const windowWidth = window.innerWidth
+        const windowWidth = window.innerWidth
 
-        // if (windowWidth >= 601) {
-        startLetterAnimation(this.texts[this.activeTextIndex].length)
+        // don't play animation if in mobile screen or screen less than 681px
+        if (windowWidth >= 601) {
+            startLetterAnimation(this.texts[this.activeTextIndex].length)
 
 
-        // interval loop every 8.2sec to repeat the animation with a new text
-        // setInterval(() => {
-        //     this.activeTextIndex = (this.activeTextIndex + 1) % this.texts.length
-        //     startLetterAnimation(this.texts[this.activeTextIndex].length)
-        // }, 8200);
-        // }
-
+            // interval loop every 8.2sec to repeat the animation with a new text
+            setInterval(() => {
+                this.activeTextIndex = (this.activeTextIndex + 1) % this.texts.length
+                startLetterAnimation(this.texts[this.activeTextIndex].length)
+            }, 8200);
+        }
     }
-} 
+
+}
 </script>

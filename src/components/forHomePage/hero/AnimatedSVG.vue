@@ -22,6 +22,7 @@ export default {
 
         tl.set(path, {
             strokeDasharray: `${pathLength}px`,
+            strokeDashoffset: `${pathLength}px`,
             scale: 1,
             rotate: '0deg',
         });
@@ -31,6 +32,7 @@ export default {
                 rotate: 0
             },
             {
+                delay: 3,
                 duration: 1,
                 strokeDashoffset: 0,
                 ease: 'circ.inOut'
