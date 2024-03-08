@@ -337,6 +337,12 @@ nav {
             align-items: center;
             flex-direction: column;
 
+            .projectDesc {
+                font-size: 0.8rem;
+                margin: 0.8rem 0;
+                opacity: 0.6;
+            }
+
             img {
                 width: 80%;
                 object-fit: contain;
