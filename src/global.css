@@ -1,5 +1,3 @@
-@import url(./styles/home.scss);
-
 :root {
     --test: #8080805d;
 }
@@ -17,3 +15,6 @@ body {
     max-width: 1440px;
     margin-inline: auto;
 }
+
+@import url(./styles/home.scss);
+@import url(./styles/home-responsive.scss); /* responsive styles */

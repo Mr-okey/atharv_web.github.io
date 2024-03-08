@@ -14,7 +14,6 @@ function startLetterAnimation(lineLength = 37) {
     tl.fromTo(
         ".anim-typewriter",
         {
-            duration: 6,
             width: "0",
         },
         {
@@ -35,7 +34,7 @@ function startLetterAnimation(lineLength = 37) {
         });
     tl.to(".anim-typewriter",
         {
-            delay: 0.8,
+            delay: 11,
             width: "0",
             duration: 0.5
         }
@@ -75,11 +74,11 @@ export default {
             startLetterAnimation(this.texts[this.activeTextIndex].length)
 
 
-            // interval loop every 8.2sec to repeat the animation with a new text
+            // interval loop every 10sec to repeat the animation with a new text
             setInterval(() => {
                 this.activeTextIndex = (this.activeTextIndex + 1) % this.texts.length
                 startLetterAnimation(this.texts[this.activeTextIndex].length)
-            }, 8200);
+            }, 20000);
         }
     }
 

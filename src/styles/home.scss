@@ -86,14 +86,21 @@ nav {
 
 
         .devicesAnimationContainer {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            
             svg {
-                /* rotate: 5deg; */
+                width: 100%;
+                aspect-ratio: 1;
+                
                 path {
-                    stroke-dashoffset: 0.8;
+                    
+                    min-width: 100%;
+                    max-width: 100%;
+                    aspect-ratio: 1;
+
                     stroke: #DFD1E1;
                     transform-origin: 25% 25%;
                 }
@@ -482,6 +489,3 @@ nav {
     }
 
 }
-
-
-@import url(./home-responsive.scss);
