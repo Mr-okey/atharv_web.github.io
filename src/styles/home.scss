@@ -22,25 +22,25 @@ nav {
     backdrop-filter: blur(20px);
     z-index: 999;
 
+    max-width: 95dvw;
+    margin-inline: auto;
+
     * {
         transition: 0.3s;
         cursor: pointer;
         user-select: none;
     }
 
+    .navLink {
+        all: unset;
+        transition: 0.3s;
+        padding: 0.3rem 0.5rem;
+        border: 1px #bbbb8800;
+        border-radius: 0.5rem;
+    }
+
+
     .navItem {
-
-        .navLink {
-
-            all: unset;
-            scale: 5;
-            transition: 0.3s;
-            padding: 0.3rem 0.5rem;
-            border: 1px #bbbb8800;
-            border-radius: 0.5rem;
-
-
-        }
 
         .active,
         .navLink:hover {
@@ -48,10 +48,16 @@ nav {
             border: 1px solid #bbbb88;
         }
     }
+
+    /* hamburgerMenu styles */
+
+    .hamburgerMenu {
+        display: none;
+    }
 }
 
 
-/* Hero page styling */
+/* Hero section styling */
 
 #home {
 
@@ -131,8 +137,11 @@ nav {
 
 }
 
+/* Exp section styling */
+
 #exp {
 
+    min-height: min(100dvh, 800px);
     font-family: 'DM Mono';
     padding: 1em;
 
@@ -261,3 +270,201 @@ nav {
 
 
 }
+
+/* projects section styling */
+
+#project {
+
+    padding: 1rem;
+    word-wrap: 100%;
+    font-family: 'DM Mono';
+
+    h1 {
+        text-align: center;
+    }
+
+    .allProjectGrid {
+        margin: 5% 0;
+        display: grid;
+        width: max(80%, 480px);
+        margin-inline: auto;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        .gridElem {
+            aspect-ratio: 1.7;
+            max-width: 100%;
+            overflow: hidden;
+            box-shadow: 1px 5px 12px 0 #BBBB8B30;
+            border-radius: 1rem;
+            transition: 0.3s;
+
+            &:hover {
+                box-shadow: 1px 5px 30px 0 #BBBB8B56;
+            }
+
+            img {
+                width: 100%;
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+
+        .gridHero {
+            grid-column: 1/3;
+            user-select: none;
+            grid-row: 1/3;
+            border-radius: 1rem;
+            aspect-ratio: 1.7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 80%;
+                object-fit: contain;
+                border-radius: 1rem;
+            }
+
+            .projectInfo {
+                margin: 1rem 0;
+                font-size: 1.5rem;
+                width: 100%;
+                text-align: center;
+
+                span {
+                    text-decoration: underline;
+                    text-underline-offset: 0.5rem;
+                    cursor: pointer;
+
+                    a {
+                        color: rgb(142, 142, 235);
+                    }
+
+                    a:active {
+                        color: rgb(225, 225, 251);
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+/* contact section styling */
+
+#contact {
+
+    padding: 1rem;
+    min-height: min(100dvh, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .icons-nd-form {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+        margin: 3rem 0;
+
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2rem;
+            width: 80%;
+            margin-inline: auto;
+
+
+            .icon {
+                padding: 0.8rem;
+                aspect-ratio: 1;
+                background: #343024;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #514c3e96;
+                border-radius: 0.5rem;
+                box-shadow: 1px 2px 25px 0 #33312aad;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .col-span2 {
+                grid-column: auto / span 2;
+                aspect-ratio: auto;
+            }
+        }
+
+        .form {
+            background: #343024;
+            widows: 85%;
+            border: 1px solid #514c3e96;
+            box-shadow: 1px 2px 25px 0 #33312aad;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 1.5rem;
+            width: 85%;
+            margin-inline: auto;
+            padding: 2rem;
+
+            button,
+            input {
+                all: unset;
+                padding: 0.8rem 1rem;
+                background: #EEF6D530;
+                color: #C4DB7E;
+                border-radius: 0.5rem;
+                font-weight: bold;
+                font-size: 1.2rem;
+
+                &::placeholder {
+                    color: #C4DB7E;
+                }
+            }
+
+            button {
+                background-color: #d6f28ac5;
+                color: #1E1E1E;
+                text-align: center;
+                user-select: none;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:active {
+                    scale: 0.96;
+                }
+            }
+        }
+
+    }
+
+    .bottomSection {
+        margin: 3rem auto 1rem auto;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: max(45%, 350px);
+
+        .icon {
+            transition: 0.2s;
+
+            &:hover {
+                cursor: pointer;
+                scale: 0.95;
+            }
+        }
+    }
+
+}
+
+
+@import url(./home-responsive.scss);
