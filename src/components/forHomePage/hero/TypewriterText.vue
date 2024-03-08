@@ -1,5 +1,6 @@
 <template>
     <p class="line-1 anim-typewriter">{{ texts[activeTextIndex] }}</p>
+    <p class="responsiveText">{{ texts[activeTextIndex] }}</p>
 </template>
 
 <script>
@@ -33,11 +34,11 @@ function startLetterAnimation(lineLength = 37) {
             ease: SteppedEase.config(1),
         });
     tl.to(".anim-typewriter",
-    {
-        delay: 0.8,
-        width: "0",
-        duration: 0.5
-    }
+        {
+            delay: 0.8,
+            width: "0",
+            duration: 0.5
+        }
     )
 
     tl.play();
@@ -64,15 +65,22 @@ export default {
     },
 
     mounted() {
-        
+
         // init the animation for first go
+
+        // const windowWidth = window.innerWidth
+
+        // if (windowWidth >= 601) {
         startLetterAnimation(this.texts[this.activeTextIndex].length)
+
 
         // interval loop every 8.2sec to repeat the animation with a new text
         // setInterval(() => {
         //     this.activeTextIndex = (this.activeTextIndex + 1) % this.texts.length
         //     startLetterAnimation(this.texts[this.activeTextIndex].length)
         // }, 8200);
+        // }
+
     }
 } 
 </script>
