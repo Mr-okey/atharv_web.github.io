@@ -77,6 +77,24 @@ export default {
             activeIndex: 0,
             Projects: [
                 {
+                    imagePath: require("../../../../public/assets/project-images/janvry-icon.png"),
+                    heading: "janvry Portfolio",
+                    id: 2,
+                    stack: ["react", "sass", "vercel", "js"],
+                    desc: "Company Portfolio page made for Janvry Studio",
+                    github: "#",
+                    deployment: "https://janvrywebsite-punh.vercel.app/Exclusive"
+                },
+                {
+                    imagePath: require("../../../../public/assets/project-images/another-notpad.png"),
+                    heading: "TipeIt",
+                    id: 5,
+                    stack: ["html", "css", "js"],
+                    desc: "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
+                    github: "https://github.com/1447bits/typeit",
+                    deployment: "https://1447bits.github.io/typeit/"
+                },
+                {
                     imagePath: require("../../../../public/assets/project-images/another-tor.png"),
                     heading: "Another Tor",
                     id: 1,
@@ -84,15 +102,6 @@ export default {
                     stack: ["react", "sass", "netlify", "js"],
                     github: "#",
                     deployment: "https://anothertor.netlify.app/"
-                },
-                {
-                    imagePath: require("../../../../public/assets/project-images/janvry-icon.png"),
-                    heading: "janvry Portfolio",
-                    id: 2,
-                    stack: ["react", "sass", "vercel", "js"],
-                    desc: "Company Portfolio page made for <a href=\"https://janvrywebsite-punh.vercel.app\" target=\"_blank\" style=\"all:unset; font-weight:bold; cursor:pointer;\">Janvry</a>",
-                    github: "#",
-                    deployment: "https://janvrywebsite-punh.vercel.app/Exclusive"
                 },
                 {
                     imagePath: require("../../../../public/assets/project-images/acm-icon.png"),
@@ -112,15 +121,6 @@ export default {
                     github: "https://github.com/1447bits/frontend/tree/main/Assignment2",
                     deployment: "https://1447bits.github.io/frontend/Assignment2/"
                 },
-                {
-                    imagePath: require("../../../../public/assets/project-images/another-notpad.png"),
-                    heading: "TipeIt",
-                    id: 5,
-                    stack: ["html", "css", "js"],
-                    desc: "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
-                    github: "https://github.com/1447bits/typeit",
-                    deployment: "https://1447bits.github.io/typeit/"
-                },
                 // {
                 //     imagePath: foocusSS,
                 //     heading: "foocus",
@@ -130,15 +130,15 @@ export default {
                 //     github: "https://github.com/1447bits/foocus",
                 //     deployment: "https://foocusapp.netlify.app/"
                 // },
-                {
-                    imagePath: require("../../../../public/assets/project-images/tic-tac-toe.png"),
-                    heading: "Tic Tac Toe",
-                    id: 7,
-                    stack: ["html", "css", "js", "fp"],
-                    desc: "A fun project, a very familier game, with single and double player options, currently in single player mode your oponent is dumb but soon i will be updating it. made with vanila html/css and javascript",
-                    github: "https://github.com/1447bits/TicTacToe",
-                    deployment: "https://1447bits.github.io/TicTacToe/"
-                },
+                // {
+                //     imagePath: require("../../../../public/assets/project-images/tic-tac-toe.png"),
+                //     heading: "Tic Tac Toe",
+                //     id: 7,
+                //     stack: ["html", "css", "js", "fp"],
+                //     desc: "A fun project, a very familier game, with single and double player options, currently in single player mode your oponent is dumb but soon i will be updating it. made with vanila html/css and javascript",
+                //     github: "https://github.com/1447bits/TicTacToe",
+                //     deployment: "https://1447bits.github.io/TicTacToe/"
+                // },
                 // {
                 //     imagePath: require("../../../../public/assets/project-images/stonepaperSS.png"),
                 //     heading: "Stone Paper Scissors",
@@ -148,15 +148,15 @@ export default {
                 //     github: "https://github.com/1447bits/stonePaperScissor",
                 //     deployment: "https://1447bits.github.io/stonePaperScissor/"
                 // },
-                {
-                    imagePath: require("../../../../public/assets/project-images/educareSs.png"),
-                    heading: "educare frontend",
-                    id: 8,
-                    stack: ["html", "css", "js"],
-                    desc: "This was the Front-end design assignment, ought to be a responsive webpage made with vanila html/css and javascript.",
-                    github: "https://github.com/1447bits/frontend/tree/main/Assignment1",
-                    deployment: "https://1447bits.github.io/frontend/Assignment1/"
-                }
+                // {
+                //     imagePath: require("../../../../public/assets/project-images/educareSs.png"),
+                //     heading: "educare frontend",
+                //     id: 8,
+                //     stack: ["html", "css", "js"],
+                //     desc: "This was the Front-end design assignment, ought to be a responsive webpage made with vanila html/css and javascript.",
+                //     github: "https://github.com/1447bits/frontend/tree/main/Assignment1",
+                //     deployment: "https://1447bits.github.io/frontend/Assignment1/"
+                // }
             ],
 
             skillIcons: {

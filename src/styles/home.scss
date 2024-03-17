@@ -458,7 +458,6 @@ nav {
 
             .icon {
                 padding: clamp(2%, 0.8rem, 15%);
-                aspect-ratio: 1;
                 background: #343024;
                 display: flex;
                 justify-content: center;
@@ -469,6 +468,7 @@ nav {
 
                 img {
                     width: 100%;
+                    aspect-ratio: 1;
                     object-fit: contain;
                 }
             }
