@@ -48,6 +48,7 @@ function playSVGAnimation(index) {
             strokeDasharray: `${pathLength}px`,
             strokeDashoffset: `${pathLength}px`,
             scale: 1,
+            opacity: 1,
         });
         tl.to(".deviceSVG",
             {
@@ -58,7 +59,7 @@ function playSVGAnimation(index) {
                 delay: 1,
                 duration: 4,
                 strokeDashoffset: 0,
-                ease: 'circ.inOut'
+                ease: 'expo.in'
             });
         tl.to(".deviceSVG",
             {
@@ -68,7 +69,8 @@ function playSVGAnimation(index) {
             {
                 delay: 10,
                 duration: 2,
-                scale: 5,
+                scale: 3,
+                opacity: 0,
             });
     }
 }

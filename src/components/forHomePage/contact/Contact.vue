@@ -10,7 +10,7 @@
             </div>
 
             <div class="form">
-                <input id="contactFormName" type="text" placeholder="Name" />
+                <input id="contactFormName" type="text" placeholder="Your Name" />
                 <input id="contactFormContact" type="text" placeholder="contact email" />
                 <textarea id="contactFormMessage" placeholder="Message |" />
 
@@ -61,6 +61,15 @@ export default {
                 require("../../../../public/assets/skill-icons/logos_aws.svg"),
                 require("../../../../public/assets/skill-icons/devicon_vuejs.svg"),
                 require("../../../../public/assets/skill-icons/devicon_canva.svg"),
+                require("../../../../public/assets/skill-icons/react-icon.svg"),
+                require("../../../../public/assets/skill-icons/figma-icon.svg"),
+                require("../../../../public/assets/skill-icons/tailwind.svg"),
+                require("../../../../public/assets/skill-icons/threejs.svg"),
+                require("../../../../public/assets/skill-icons/git.svg"),
+                require("../../../../public/assets/skill-icons/vercel.svg"),
+                require("../../../../public/assets/skill-icons/netlify.svg"),
+                require("../../../../public/assets/skill-icons/sass.svg"),
+                require("../../../../public/assets/skill-icons/linkIcon.svg"),
             ],
 
             socialIcons: [
@@ -100,12 +109,12 @@ export default {
             const contact = document.getElementById("contactFormContact").value;
             const message = document.getElementById("contactFormMessage").value;
 
-            if(name.length === 0 | contact.length === 0 | message.length === 0) {
+            if (name.length === 0 | contact.length === 0 | message.length === 0) {
                 alert("Please fill all fields")
                 return
             }
-            
-            const encodedMessage = this.encodeUrl(`Hi,${name}here,${message},contact me at: @${contact}`);
+
+            const encodedMessage = this.encodeUrl(`Hello!,${name} This side,${message}, contact me at : @${contact}`);
 
             const waMeLink = `https://wa.me/+919405525889?text=${encodedMessage}`;
 
