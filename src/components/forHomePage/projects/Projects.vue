@@ -3,7 +3,7 @@
 
         <h1>Projects</h1>
 
-        <div class="goLeft">
+        <div @click="(e) => handleGoLeft(e)" class="goLeft">
             <svg viewBox="0 0 56 105" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M9.93652 63.5833L3.74301 59.3536L0.101616 64.6856L4.83312 69.0792L9.93652 63.5833ZM54.3576 11.8366C56.6936 8.41605 55.8143 3.74941 52.3938 1.41342C48.9732 -0.922581 44.3065 -0.0433495 41.9705 3.37724L54.3576 11.8366ZM16.13 67.8129L54.3576 11.8366L41.9705 3.37724L3.74301 59.3536L16.13 67.8129ZM4.83312 69.0792L43.0607 104.576L53.2675 93.5845L15.0399 58.0873L4.83312 69.0792Z"
@@ -11,7 +11,7 @@
             </svg>
         </div>
 
-        <div class="goRight">
+        <div @click="(e) => handleGoRight(e)" class="goRight">
             <svg viewBox="0 0 56 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M45.8564 64.3201L52.05 60.0904L55.6914 65.4224L50.9598 69.816L45.8564 64.3201ZM1.43539 12.5734C-0.900609 9.15286 -0.0213768 4.48623 3.39921 2.15023C6.81979 -0.185765 11.4864 0.693467 13.8224 4.11405L1.43539 12.5734ZM39.6629 68.5498L1.43539 12.5734L13.8224 4.11405L52.05 60.0904L39.6629 68.5498ZM50.9598 69.816L12.7323 105.313L2.52551 94.3214L40.753 58.8241L50.9598 69.816Z"
@@ -19,7 +19,7 @@
             </svg>
         </div>
 
-        <div class="projectShowcaseContainer flex">
+        <div id="projectShowcaseContainer" class="projectShowcaseContainer flex">
 
             <div class="projectShowcase" v-for="(project, index) in Projects" :key="`${index}-projectPrev`">
 
@@ -69,9 +69,18 @@
 
 <script>
 
-
 export default {
     name: "ProjectsSection",
+    methods: {
+        handleGoLeft(){
+            const projectWindow = document.getElementById("projectShowcaseContainer")
+            projectWindow.scrollLeft -= projectWindow.offsetWidth;
+        },
+        handleGoRight(){
+            const projectWindow = document.getElementById("projectShowcaseContainer")
+            projectWindow.scrollLeft += projectWindow.offsetWidth;
+        },
+    },
     data() {
         return {
             activeIndex: 0,
