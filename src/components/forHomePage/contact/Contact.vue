@@ -95,7 +95,7 @@ export default {
                 {
                     imgPath: require("../../../../public/assets/socialMediaIcons/ri_instagram-fill.svg"),
                     title: "instagram",
-                    href: "https://www.instagram.com/atharv_vyas_00/"
+                    href: "https://www.instagram.com/atharv.1447/"
                 },
             ]
         }
