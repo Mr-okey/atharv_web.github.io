@@ -219,9 +219,9 @@ nav {
             .experienceInfoContainer {
                 display: flex;
                 flex-direction: column;
-                width: fit-content;
+                width: max-content;
                 align-items: start;
-                margin-left: 5em;
+                margin-left: 10em;
                 min-width: fit-content;
 
                 .experienceInfo {
@@ -396,19 +396,21 @@ nav {
 
                 .nameAndStack {
                     width: 100%;
-                    display: grid;
-                    grid-template-columns: 20% 75%;
+                    display: flex;
 
+                    
                     .name {
                         font-size: 1.6rem;
                         font-weight: bold;
+                        width: max-content;
                     }
 
                     .linksAndStack {
                         margin-left: 2rem;
-                        width: max-content;
                         justify-content: space-between;
                         width: 100%;
+                        display: flex;
+                        gap: 1rem;
 
                         .links,
                         .stack {
@@ -450,15 +452,15 @@ nav {
 
         .icons {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(7, 1fr);
             width: 80%;
             gap: clamp(2%, 3rem, 5%);
             margin-inline: auto;
 
 
             .icon {
-                padding: clamp(2%, 0.8rem, 15%);
-                background: #343024;
+                padding: clamp(2%, 0.8rem, 10%);
+                background: #e5f7b247;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -467,11 +469,14 @@ nav {
                 box-shadow: 1px 2px 25px 0 #33312aad;
 
                 img {
-                    width: 100%;
                     aspect-ratio: 1;
+                    width: 100%;
                     object-fit: contain;
                 }
             }
+
+            
+
 
             .col-span2 {
                 grid-column: auto / span 2;
@@ -546,4 +551,25 @@ nav {
         }
     }
 
+}
+
+/* site-details styling */
+
+#site-details {
+    max-width: 100%;
+    opacity: 0.8;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    a {
+        all: unset;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+        cursor: pointer;
+    }
 }

@@ -86,6 +86,15 @@ export default {
             activeIndex: 0,
             Projects: [
                 {
+                    imagePath: require("../../../../public/assets/project-images/tst-ss.png"),
+                    heading: "Tiger Safari Trails",
+                    id: 6,
+                    stack: ['next', 'firebase', "ts", 'vercel', "otpless" ],
+                    desc: "Company Portfolio page made for Janvry Studio",
+                    github: "#",
+                    deployment: "https://tigersafaritrails.in/"
+                },
+                {
                     imagePath: require("../../../../public/assets/project-images/janvry-icon.png"),
                     heading: "janvry Portfolio",
                     id: 2,
@@ -189,12 +198,14 @@ export default {
                 'codepen': require("../../../../public/assets/skill-icons/codepen-icon.svg"),
                 'arch': require("../../../../public/assets/skill-icons/arch-linux.svg"),
                 'vscode': require("../../../../public/assets/skill-icons/vscode-icon.svg"),
+                'firebase': require("../../../../public/assets/skill-icons/firebase.svg"),
                 'jupyter': require("../../../../public/assets/skill-icons/jupyter-icon.svg"),
                 'docker': require("../../../../public/assets/skill-icons/docker-icon.svg"),
                 'django': require("../../../../public/assets/skill-icons/django-icon.svg"),
                 'aws': require("../../../../public/assets/skill-icons/logos_aws.svg"),
                 'vue': require("../../../../public/assets/skill-icons/devicon_vuejs.svg"),
                 'canva': require("../../../../public/assets/skill-icons/devicon_canva.svg"),
+                'otpless': require("../../../../public/assets/skill-icons/otpless.svg"),
                 'react': require("../../../../public/assets/skill-icons/react-icon.svg"),
                 'figma': require("../../../../public/assets/skill-icons/figma-icon.svg"),
                 'tailwind': require("../../../../public/assets/skill-icons/tailwind.svg"),

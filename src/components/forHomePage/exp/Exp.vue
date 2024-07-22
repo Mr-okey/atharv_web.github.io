@@ -82,6 +82,13 @@ export default {
 
             pastExp: [
                 {
+                    start: "April, 2024",
+                    end: "Present",
+                    position: "FullStack Developer",
+                    orgName: "Pooka Labs",
+                    orgUrl: "#"
+                },
+                {
                     start: "Dec, 2023",
                     end: "Jan, 2024",
                     position: "Frontend Developer",

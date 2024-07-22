@@ -1,6 +1,7 @@
 <script>
 
 import HomeHero from "../components/forHomePage/hero/Hero.vue"
+import SiteDetails from "../components/forHomePage/SiteDetails/SiteDetails.vue"
 import Exp from '../components/forHomePage/exp/Exp.vue'
 import Projects from '../components/forHomePage/projects/Projects.vue'
 import Contact from '../components/forHomePage/contact/Contact.vue'
@@ -11,7 +12,8 @@ export default {
         HomeHero,
         Exp,
         Projects,
-        Contact
+        Contact,
+        SiteDetails
     },
 }
 
@@ -22,4 +24,5 @@ export default {
     <Exp />
     <projects />
     <Contact />
+    <SiteDetails />
 </template>

@@ -4,7 +4,8 @@
 
         <div class="icons-nd-form">
             <div class="icons">
-                <div v-for="(iconPath, index) in skillIcons" :key='`${index}-skillIcon`' class="icon">
+                <div v-for="(iconPath, index) in skillIcons" :key='`${index}-skillIcon`'
+                    :class='`icon ${index === 8 || index === 21 || index === 30 ? "span2" : ""}`'>
                     <img :src="iconPath" alt="skillIcon">
                 </div>
             </div>
@@ -52,23 +53,25 @@ export default {
                 require("../../../../public/assets/skill-icons/css-icon.svg"),
                 require("../../../../public/assets/skill-icons/sass.svg"),
                 require("../../../../public/assets/skill-icons/html-icon.svg"),
+                require("../../../../public/assets/skill-icons/otpless.svg"),
+                require("../../../../public/assets/skill-icons/firebase.svg"),
                 // require("../../../../public/assets/skill-icons/expressjs-icon.svg"),
                 require("../../../../public/assets/skill-icons/replit-icon.svg"),
                 require("../../../../public/assets/skill-icons/redux-icon.svg"),
                 // require("../../../../public/assets/skill-icons/linux-icon.svg"),
-                // require("../../../../public/assets/skill-icons/github-pages.svg"),
-                // require("../../../../public/assets/skill-icons/github-icon.svg"),
+                require("../../../../public/assets/skill-icons/github-pages.svg"),
+                require("../../../../public/assets/skill-icons/github-icon.svg"),
                 require("../../../../public/assets/skill-icons/cpp-icon.svg"),
-                // require("../../../../public/assets/skill-icons/codepen-icon.svg"),
-                // require("../../../../public/assets/skill-icons/arch-linux.svg"),
-                // require("../../../../public/assets/skill-icons/vscode-icon.svg"),
+                require("../../../../public/assets/skill-icons/codepen-icon.svg"),
+                require("../../../../public/assets/skill-icons/arch-linux.svg"),
+                require("../../../../public/assets/skill-icons/vscode-icon.svg"),
                 require("../../../../public/assets/skill-icons/tailwind.svg"),
                 require("../../../../public/assets/skill-icons/devicon_canva.svg"),
                 require("../../../../public/assets/skill-icons/figma-icon.svg"),
                 require("../../../../public/assets/skill-icons/vercel.svg"),
                 require("../../../../public/assets/skill-icons/netlify.svg"),
                 require("../../../../public/assets/skill-icons/slack-icon.svg"),
-                // require("../../../../public/assets/skill-icons/markdown-icon.svg"),
+                require("../../../../public/assets/skill-icons/markdown-icon.svg"),
             ],
 
             socialIcons: [
