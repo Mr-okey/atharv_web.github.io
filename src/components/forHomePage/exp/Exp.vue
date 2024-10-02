@@ -82,8 +82,15 @@ export default {
 
             pastExp: [
                 {
-                    start: "April, 2024",
+                    start: "Sept, 2024",
                     end: "Present",
+                    position: "FullStack Developer",
+                    orgName: "Altrd",
+                    orgUrl: "https://www.altrdtech.com/"
+                },
+                {
+                    start: "April, 2024",
+                    end: "July, 2024",
                     position: "FullStack Developer",
                     orgName: "Pooka Labs",
                     orgUrl: "#"
@@ -93,21 +100,14 @@ export default {
                     end: "Jan, 2024",
                     position: "Frontend Developer",
                     orgName: "Janvry Studios",
-                    orgUrl: "#"
+                    orgUrl: "https://www.janvry.com/"
                 },
                 {
                     start: "Sept, 2023",
                     end: "Nov, 2023",
                     position: "Three js Developer Intern",
                     orgName: "Zigy Prints",
-                    orgUrl: "#"
-                },
-                {
-                    start: "Dec, 2022",
-                    end: "Jan, 2022",
-                    position: "Frontend Developer",
-                    orgName: "Areksoft",
-                    orgUrl: "#"
+                    orgUrl: "https://www.linkedin.com/company/zigycustoms/?originalSubdomain=in"
                 },
             ]
         }

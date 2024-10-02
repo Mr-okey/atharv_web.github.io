@@ -88,56 +88,65 @@ export default {
                 {
                     imagePath: require("../../../../public/assets/project-images/tst-ss.png"),
                     heading: "Tiger Safari Trails",
-                    id: 6,
+                    id: 0,
                     stack: ['next', 'firebase', "ts", 'vercel', "otpless" ],
-                    desc: "Company Portfolio page made for Janvry Studio",
+                    desc: "A Safari Booking Website, simplifying tiger safari bookings aggregating all Tiger Safari Operators at one place to create a one stop for safari trip seeking users with facilities to have an enquiry and one ot one chat with Safari Operators",
                     github: "#",
                     deployment: "https://tigersafaritrails.in/"
                 },
                 {
                     imagePath: require("../../../../public/assets/project-images/janvry-icon.png"),
                     heading: "janvry Portfolio",
-                    id: 2,
+                    id: 1,
                     stack: ["react", "sass", "vercel", "js"],
                     desc: "Company Portfolio page made for Janvry Studio",
                     github: "#",
                     deployment: "https://janvrywebsite-punh.vercel.app/Exclusive"
                 },
                 {
-                    imagePath: require("../../../../public/assets/project-images/another-notpad.png"),
-                    heading: "TipeIt",
-                    id: 5,
-                    stack: ["html", "css", "js"],
-                    desc: "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
-                    github: "https://github.com/1447bits/typeit",
-                    deployment: "https://1447bits.github.io/typeit/"
-                },
-                {
                     imagePath: require("../../../../public/assets/project-images/another-tor.png"),
                     heading: "Another Tor",
-                    id: 1,
+                    id: 2,
                     desc: "An Attempt to build a developer centric Social-Media application, a place where all your social presence available on one click, collaborative tools with open thread discussions. Made with React js",
                     stack: ["react", "sass", "netlify", "js"],
                     github: "#",
                     deployment: "https://anothertor.netlify.app/"
                 },
                 {
+                    imagePath: require("../../../../public/assets/project-images/cardDesignSs.png"),
+                    heading: "card centric design",
+                    id: 3,
+                    stack: ["html", "scc", "js"],
+                    desc: "A card centric design webpage frontend, responsive, made with vanila html/css and javascript",
+                    github: "https://github.com/1447bits/frontend/tree/main/Assignment2",
+                    deployment: "https://1447bits.github.io/frontend/Assignment2/"
+                },
+                {
+                    imagePath: require("../../../../public/assets/project-images/ppt-to-slide.png"),
+                    heading: "PPT to Site",
+                    id: 5,
+                    stack: ["html", "css", "js"],
+                    desc: "A fun project/Idea to crease a site from PPT (Presentations), Made with vanila html/css and javascript",
+                    github: "https://github.com/1447bits/img-slider",
+                    deployment: "https://tamak.netlify.app/"
+                },
+                {
                     imagePath: require("../../../../public/assets/project-images/acm-icon.png"),
                     heading: "ACM-DYPIEMR",
-                    id: 3,
+                    id: 4,
                     stack: ["react", "sass", "netlify"],
                     desc: "ACM (Association for Computing Machinery) student chapter @DYPIEMR is a Social Technical Society",
                     github: "#",
                     deployment: "https://glittery-maamoul-278f7f.netlify.app/"
                 },
                 {
-                    imagePath: require("../../../../public/assets/project-images/cardDesignSs.png"),
-                    heading: "card centric design",
-                    id: 4,
-                    stack: ["html", "scc", "js"],
-                    desc: "A card centric design webpage frontend, responsive, made with vanila html/css and javascript",
-                    github: "https://github.com/1447bits/frontend/tree/main/Assignment2",
-                    deployment: "https://1447bits.github.io/frontend/Assignment2/"
+                    imagePath: require("../../../../public/assets/project-images/another-notpad.png"),
+                    heading: "TipeIt",
+                    id: 6,
+                    stack: ["html", "css", "js"],
+                    desc: "A fun project, Inspired by \"keybr.com\", A notepad to jot down your thoughts. Made with vanila html/css and javascript",
+                    github: "https://github.com/1447bits/typeit",
+                    deployment: "https://1447bits.github.io/typeit/"
                 },
                 // {
                 //     imagePath: foocusSS,
