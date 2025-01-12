@@ -2,63 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
-/* navbar styles */
-
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 2.5rem;
-    align-items: stretch;
-    font-family: 'Sometype Mono';
-    color: #BBBB88;
-    font-weight: 800;
-    padding: 0.8em 0;
-    font-size: 1.3em;
-    position: sticky;
-    top: 0;
-    background-color: #1e1e1e76;
-    backdrop-filter: blur(20px);
-    z-index: 999;
-
-    * {
-        transition: 0.3s;
-        cursor: pointer;
-        user-select: none;
-    }
-
-    .navLink {
-        all: unset;
-        transition: 0.3s;
-        padding: 0.3rem 0.5rem;
-        border: 1px #bbbb8800;
-        border-radius: 0.5rem;
-    }
-
-
-    .navItem {
-
-        .active,
-        .navLink:hover {
-            opacity: 0.8;
-            border: 1px solid #bbbb88;
-        }
-    }
-
-    /* hamburgerMenu styles */
-
-    .hamburgerMenu {
-        display: none;
-    }
+:root {
+    --containerSize: 2rem;
 }
 
+/* navbar styles */
+/* none */
+
+.home-page>* {
+    height: 100vh;
+}
 
 /* Hero section styling */
 
 #home {
 
     width: 100%;
-    height: min(800px, 100dvh);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -73,6 +32,8 @@ nav {
         font-size: 2.5rem;
         display: grid;
         grid-template-columns: 70% 30%;
+        max-height: 70%;
+        height: 70%;
         align-items: stretch;
         justify-content: stretch;
         padding: 5% 0;
@@ -111,6 +72,7 @@ nav {
             svg {
                 width: 100%;
                 aspect-ratio: 1;
+                overflow: visible;
 
                 path {
 
@@ -168,8 +130,6 @@ nav {
 /* Exp section styling */
 
 #exp {
-
-    min-height: min(100dvh, 800px);
     font-family: 'DM Mono';
     padding: 1em;
 
@@ -312,7 +272,6 @@ nav {
     width: 90%;
     margin-inline: auto;
     font-family: 'DM Mono';
-    min-height: min(800px, 100dvh);
     position: relative;
 
 
@@ -398,7 +357,7 @@ nav {
                     width: 100%;
                     display: flex;
 
-                    
+
                     .name {
                         font-size: 1.6rem;
                         font-weight: bold;
@@ -435,7 +394,6 @@ nav {
 #contact {
 
     padding: 1rem;
-    min-height: min(100dvh, 800px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -475,7 +433,7 @@ nav {
                 }
             }
 
-            
+
 
 
             .col-span2 {
@@ -562,6 +520,7 @@ nav {
     text-align: center;
     font-size: 1rem;
     margin-bottom: 10px;
+    max-height: fit-content;
 
     a {
         all: unset;

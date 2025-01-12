@@ -20,9 +20,11 @@ export default {
 </script>
 
 <template>
-    <HomeHero />
-    <Exp />
-    <projects />
-    <Contact />
-    <SiteDetails />
+    <div class="home-page">
+        <HomeHero />
+        <Exp />
+        <projects />
+        <Contact />
+        <SiteDetails />
+    </div>
 </template>

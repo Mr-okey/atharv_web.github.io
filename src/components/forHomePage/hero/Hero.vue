@@ -7,7 +7,7 @@
                     <i>I am,</i>
                     <i class="name">Atharv vyas </i>
                 </p>
-                <p><i>Web Developer - AI Student</i></p>
+                <p><i>FullStack Developer - ML Student</i></p>
             </div>
 
             <div class="devicesAnimationContainer">
