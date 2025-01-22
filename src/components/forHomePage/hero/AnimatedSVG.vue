@@ -85,19 +85,23 @@ export default {
                 gsap.to(path, {
                     strokeDashoffset: 0,
                     duration: 5,
-                    ease: "power1.inOut"
+                    ease: "none"
                 })
+
+                // add slight rotation/tilt
                 gsap.to(path, {
                     rotate: 10,
                     duration: 1,
                     ease: "power1.inOut",
                     delay: 5,
                 })
+
+                // add delay and face out
                 gsap.to(path, {
                     scale: 1.2,
                     duration: 1,
                     opacity: 0,
-                    delay: 9,
+                    delay: 14,
                     ease: "power1.inOut"
                 })
             }
@@ -113,8 +117,7 @@ export default {
         setInterval(() => {
             this.currDeviceIndex = (this.currDeviceIndex + 1) % this.pathRefs.length
             this.animatePath(this.pathRefs[this.currDeviceIndex])
-        }, 10000)
+        }, 15000)
     }
 }
 </script>
-s

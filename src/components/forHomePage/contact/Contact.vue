@@ -58,6 +58,7 @@ export default {
                 // require("../../../../public/assets/skill-icons/expressjs-icon.svg"),
                 require("../../../../public/assets/skill-icons/replit-icon.svg"),
                 require("../../../../public/assets/skill-icons/redux-icon.svg"),
+                require("../../../../public/assets/skill-icons/shopify-icon.webp"),
                 // require("../../../../public/assets/skill-icons/linux-icon.svg"),
                 require("../../../../public/assets/skill-icons/github-pages.svg"),
                 require("../../../../public/assets/skill-icons/github-icon.svg"),
