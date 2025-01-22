@@ -72,11 +72,11 @@
 export default {
     name: "ProjectsSection",
     methods: {
-        handleGoLeft(){
+        handleGoLeft() {
             const projectWindow = document.getElementById("projectShowcaseContainer")
             projectWindow.scrollLeft -= projectWindow.offsetWidth;
         },
-        handleGoRight(){
+        handleGoRight() {
             const projectWindow = document.getElementById("projectShowcaseContainer")
             projectWindow.scrollLeft += projectWindow.offsetWidth;
         },
@@ -89,15 +89,33 @@ export default {
                     imagePath: require("../../../../public/assets/project-images/tst-ss.png"),
                     heading: "Tiger Safari Trails",
                     id: 0,
-                    stack: ['next', 'firebase', "ts", 'vercel', "otpless" ],
+                    stack: ['next', 'firebase', "ts", 'vercel', "otpless"],
                     desc: "A Safari Booking Website, simplifying tiger safari bookings aggregating all Tiger Safari Operators at one place to create a one stop for safari trip seeking users with facilities to have an enquiry and one ot one chat with Safari Operators",
                     github: "#",
                     deployment: "https://tigersafaritrails.in/"
                 },
                 {
+                    imagePath: require("../../../../public/assets/project-images/cava-prev.png"),
+                    heading: "(#AskCava) D2C Chatbot",
+                    id: 1,
+                    stack: ["js", "shopify"],
+                    desc: "The Cava D2C Sales Bot is an AI-powered, conversational recommendation bot designed for direct-to-consumer (D2C) websites. Tailored to help customers find the right products based on their specific needs, the bot provides a seamless, personalized shopping experience by guiding users to products that best match their preferences.",
+                    github: "#",
+                    deployment: "https://cavaathleisure.com/"
+                },
+                {
+                    imagePath: require("../../../../public/assets/project-images/myvi-prev.png"),
+                    heading: "Vi-IMC 2024",
+                    id: 2,
+                    stack: ['next', "ts"],
+                    desc: "This AI-powered tool, presented at the VI booth during IMC 2024, was developed to empower MSME (Micro, Small, and Medium Enterprises) Owners By filling out a few basic details, business owners could generate a professional, catchy jingle to promote their Businesses",
+                    github: "#",
+                    deployment: "https://myvi-events.in/"
+                },
+                {
                     imagePath: require("../../../../public/assets/project-images/janvry-icon.png"),
                     heading: "janvry Portfolio",
-                    id: 1,
+                    id: 3,
                     stack: ["react", "sass", "vercel", "js"],
                     desc: "Company Portfolio page made for Janvry Studio",
                     github: "#",
@@ -106,7 +124,7 @@ export default {
                 {
                     imagePath: require("../../../../public/assets/project-images/another-tor.png"),
                     heading: "Another Tor",
-                    id: 2,
+                    id: 4,
                     desc: "An Attempt to build a developer centric Social-Media application, a place where all your social presence available on one click, collaborative tools with open thread discussions. Made with React js",
                     stack: ["react", "sass", "netlify", "js"],
                     github: "#",
@@ -115,29 +133,11 @@ export default {
                 {
                     imagePath: require("../../../../public/assets/project-images/cardDesignSs.png"),
                     heading: "card centric design",
-                    id: 3,
+                    id: 5,
                     stack: ["html", "scc", "js"],
                     desc: "A card centric design webpage frontend, responsive, made with vanila html/css and javascript",
                     github: "https://github.com/1447bits/frontend/tree/main/Assignment2",
                     deployment: "https://1447bits.github.io/frontend/Assignment2/"
-                },
-                {
-                    imagePath: require("../../../../public/assets/project-images/ppt-to-slide.png"),
-                    heading: "PPT to Site",
-                    id: 5,
-                    stack: ["html", "css", "js"],
-                    desc: "A fun project/Idea to crease a site from PPT (Presentations), Made with vanila html/css and javascript",
-                    github: "https://github.com/1447bits/img-slider",
-                    deployment: "https://tamak.netlify.app/"
-                },
-                {
-                    imagePath: require("../../../../public/assets/project-images/acm-icon.png"),
-                    heading: "ACM-DYPIEMR",
-                    id: 4,
-                    stack: ["react", "sass", "netlify"],
-                    desc: "ACM (Association for Computing Machinery) student chapter @DYPIEMR is a Social Technical Society",
-                    github: "#",
-                    deployment: "https://acm-dypimer.netlify.app/"
                 },
                 {
                     imagePath: require("../../../../public/assets/project-images/another-notpad.png"),
@@ -148,45 +148,28 @@ export default {
                     github: "https://github.com/1447bits/typeit",
                     deployment: "https://1447bits.github.io/typeit/"
                 },
-                // {
-                //     imagePath: foocusSS,
-                //     heading: "foocus",
-                //     id: 6,
-                //     stack: ["react", "css", "js"],
-                //     desc: "A productivity application, a note taking app cum task manager, main objective was to create an application help you increase productivity in zen mode. Made with react js",
-                //     github: "https://github.com/1447bits/foocus",
-                //     deployment: "https://foocusapp.netlify.app/"
-                // },
-                // {
-                //     imagePath: require("../../../../public/assets/project-images/tic-tac-toe.png"),
-                //     heading: "Tic Tac Toe",
-                //     id: 7,
-                //     stack: ["html", "css", "js", "fp"],
-                //     desc: "A fun project, a very familier game, with single and double player options, currently in single player mode your oponent is dumb but soon i will be updating it. made with vanila html/css and javascript",
-                //     github: "https://github.com/1447bits/TicTacToe",
-                //     deployment: "https://1447bits.github.io/TicTacToe/"
-                // },
-                // {
-                //     imagePath: require("../../../../public/assets/project-images/stonepaperSS.png"),
-                //     heading: "Stone Paper Scissors",
-                //     id: 6,
-                //     stack: ["html", "css", "js"],
-                //     desc: "A fun project, a very familier single player game. made with vanila html/css and javascript",
-                //     github: "https://github.com/1447bits/stonePaperScissor",
-                //     deployment: "https://1447bits.github.io/stonePaperScissor/"
-                // },
-                // {
-                //     imagePath: require("../../../../public/assets/project-images/educareSs.png"),
-                //     heading: "educare frontend",
-                //     id: 8,
-                //     stack: ["html", "css", "js"],
-                //     desc: "This was the Front-end design assignment, ought to be a responsive webpage made with vanila html/css and javascript.",
-                //     github: "https://github.com/1447bits/frontend/tree/main/Assignment1",
-                //     deployment: "https://1447bits.github.io/frontend/Assignment1/"
-                // }
+                {
+                    imagePath: require("../../../../public/assets/project-images/acm-website-prev.png"),
+                    heading: "ACM-DYPIEMR",
+                    id: 7,
+                    stack: ["react", "sass", "netlify"],
+                    desc: "ACM (Association for Computing Machinery) student chapter @DYPIEMR is a Social Technical Society",
+                    github: "#",
+                    deployment: "https://acm-dypimer.netlify.app/"
+                },
+                {
+                    imagePath: require("../../../../public/assets/project-images/ppt-to-slide.png"),
+                    heading: "PPT to Site",
+                    id: 8,
+                    stack: ["html", "css", "js"],
+                    desc: "A fun project/Idea to crease a site from PPT (Presentations), Made with vanila html/css and javascript",
+                    github: "https://github.com/1447bits/img-slider",
+                    deployment: "https://tamak.netlify.app/"
+                },
             ],
 
             skillIcons: {
+                'shopify': require("../../../../public/assets/skill-icons/shopify-icon.webp"),
                 'ts': require("../../../../public/assets/skill-icons/typescript-icon.svg"),
                 'slack': require("../../../../public/assets/skill-icons/slack-icon.svg"),
                 'replit': require("../../../../public/assets/skill-icons/replit-icon.svg"),
