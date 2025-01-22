@@ -34,7 +34,7 @@
 
             .anim-typewriter {
                 max-width: 90vw;
-                
+
             }
 
             .responsiveText {
@@ -48,6 +48,23 @@
         }
 
     }
+
+    /* exp styling */
+    #exp {
+
+        .theTimeline {
+            font-size: 0.8rem;
+        }
+
+        .otherResponsibilities {
+            width: 85%;
+            text-align: center;
+            margin: 3rem auto;
+        }
+
+
+    }
+
 
     /* projects section styling */
 
@@ -68,6 +85,11 @@
                 }
 
                 .projectDetails {
+                    font-size: 0.7rem;
+
+                    img {
+                        height: 1rem;
+                    }
 
                     .nameAndStack {
                         display: flex;
@@ -76,11 +98,11 @@
 
                         .linksAndStack {
                             display: flex;
-                            flex-direction: column;
+                            flex-direction: row;
+                            justify-content: center;
                             margin-left: 0;
                         }
                     }
-
 
                     .projectDesc {
                         text-align: center;
@@ -91,7 +113,6 @@
         }
 
     }
-
 
     /* contact section styling */
 
@@ -112,6 +133,18 @@
                 }
             }
 
+            .form {
+                gap: 1.5rem;
+                padding: 1.5rem;
+
+                button,
+                textarea,
+                input {
+                    padding: 0.5rem 1rem;
+                }
+            }
+
+
         }
 
         .bottomSection {
@@ -130,21 +163,20 @@
 
     }
 
-
     /* guessNumberComp styling */
 
     #guessNumberComp {
-    
+
         .counter-container {
             margin: 10px auto;
         }
-    
+
         .counter span {
             font-size: 2rem;
             padding: 5px;
             margin: 0 5px;
         }
-        
+
     }
 
 

@@ -72,7 +72,7 @@ export default {
                     backgroundColor: colors[Math.floor(Math.random() * colors.length)],
                     ease: "sine",
                     onComplete: () => {
-                        animate(); // Recursively call for continuous animation
+                        animate(); 
                     }
                 });
             };
