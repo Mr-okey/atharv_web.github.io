@@ -137,7 +137,7 @@ export default {
                     stack: ["react", "sass", "netlify"],
                     desc: "ACM (Association for Computing Machinery) student chapter @DYPIEMR is a Social Technical Society",
                     github: "#",
-                    deployment: "https://glittery-maamoul-278f7f.netlify.app/"
+                    deployment: "https://acm-dypimer.netlify.app/"
                 },
                 {
                     imagePath: require("../../../../public/assets/project-images/another-notpad.png"),
