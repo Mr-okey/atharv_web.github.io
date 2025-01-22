@@ -1,62 +1,11 @@
 @media only screen and (max-width: 600px) {
 
-    /* navbar styles */
-
-    nav {
-
-        .navItem {
-            display: none;
-        }
-
-        .hamburgerMenu {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding-inline: 3rem;
-
-            .hamburgerIcon {
-                width: 2rem;
-
-                svg {
-                    width: 100%;
-                }
-            }
-
-            .hidden {
-                visibility: hidden;
-                opacity: 0;
-            }
-
-            .visible {
-                visibility: visible;
-            }
-
-            .hamburgerMenuPopup {
-                position: absolute;
-                top: 100%;
-                right: 2%;
-                display: flex;
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-                background-color: #0f0e0e7e;
-                border-radius: 1rem;
-                backdrop-filter: blue(25px);
-                padding: 1rem;
-                transition: 0.2s;
-            }
-        }
-    }
-
     /* Hero section styling */
 
     #home {
         .homeHeroSection-1 {
             display: flex;
             flex-direction: column-reverse;
-            gap: 2rem;
             font-size: 1.5rem;
 
             .welcomeText {
@@ -78,8 +27,14 @@
         }
 
         .changingText {
+            .line-1 {
+                white-space: wrap;
+                font-size: 0.8rem;
+            }
+
             .anim-typewriter {
-                display: none;
+                max-width: 90vw;
+                
             }
 
             .responsiveText {
@@ -173,6 +128,23 @@
 
         }
 
+    }
+
+
+    /* guessNumberComp styling */
+
+    #guessNumberComp {
+    
+        .counter-container {
+            margin: 10px auto;
+        }
+    
+        .counter span {
+            font-size: 2rem;
+            padding: 5px;
+            margin: 0 5px;
+        }
+        
     }
 
 

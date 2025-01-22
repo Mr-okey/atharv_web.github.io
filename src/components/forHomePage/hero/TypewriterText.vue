@@ -1,54 +1,34 @@
 <template>
-    <p class="line-1 anim-typewriter">{{ texts[activeTextIndex] }}</p>
-    <p class="responsiveText">{{ texts[activeTextIndex] }}</p>
+    <p class="line-1 anim-typewriter"></p>
 </template>
 
 <script>
-import { SteppedEase } from 'gsap';
-import gsap from 'gsap';
 
-function startLetterAnimation(lineLength = 37) {
+function startLetterAnimation(text) {
+    const textElement = document.querySelector('.anim-typewriter');
+    const len = text.length
+    textElement.innerHTML = ""
+    let currentText = 0;
+    let intervalId;
 
-    const tl = gsap.timeline({ paused: false });
-
-    tl.fromTo(
-        ".anim-typewriter",
-        {
-            width: "0",
-        },
-        {
-            duration: 6,
-            width: "100%",
-            ease: SteppedEase.config(lineLength),
-        });
-
-    tl.fromTo(".anim-typewriter",
-        {
-            "border-right-color": "rgba(255,255,255,0.75)"
-        },
-        {
-            "border-right-color": "rgba(255,255,255,0)",
-            duration: 1,
-            repeat: -1,
-            ease: SteppedEase.config(1),
-        });
-    tl.to(".anim-typewriter",
-        {
-            delay: 11,
-            width: "0",
-            duration: 0.5
+    intervalId = setInterval(() => {
+        if (currentText < len) {
+            textElement.innerHTML += text[currentText];
+            currentText += 1
+        } else {
+            clearInterval(intervalId);
         }
-    )
-
-    tl.play();
-
+    }, 100); 
 }
+
+
 
 export default {
     name: "changing-typewriter-text-home-hero",
     data() {
         return {
             activeTextIndex: 0,
+            currentText: "",
             texts: [
                 "Why Complicate Simple things :)",
                 "A Passionate programmer, obsessed with tech and Ai ^^",
@@ -67,22 +47,12 @@ export default {
     },
 
     mounted() {
+        startLetterAnimation(this.texts[this.activeTextIndex])
 
-        // init the animation for first go
-
-        const windowWidth = window.innerWidth
-
-        // don't play animation if in mobile screen or screen less than 681px
-        if (windowWidth >= 601) {
-            startLetterAnimation(this.texts[this.activeTextIndex].length)
-
-
-            // interval loop every 10sec to repeat the animation with a new text
-            setInterval(() => {
-                this.activeTextIndex = (this.activeTextIndex + 1) % this.texts.length
-                startLetterAnimation(this.texts[this.activeTextIndex].length)
-            }, 20000);
-        }
+        setInterval(() => {
+            this.activeTextIndex = (this.activeTextIndex + 1) % this.texts.length
+            startLetterAnimation(this.texts[this.activeTextIndex])
+        }, 20000); 
     }
 
 }

@@ -2,7 +2,8 @@
     <div class="deviceSVG">
 
         <!-- ML -->
-        <svg v-show="currDeviceIndex === 0" width="276" height="276" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg v-show="currDeviceIndex === 0" width="276" height="276" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M7.00001 4.5C6.46801 4.49985 5.94553 4.64117 5.48615 4.90948C5.02676 5.17778 4.64698 5.56343 4.38575 6.02687C4.12451 6.49032 3.99121 7.0149 3.99952 7.54684C4.00782 8.07877 4.15743 8.59894 4.43301 9.054C3.74855 9.18625 3.13149 9.55267 2.68776 10.0903C2.24404 10.628 2.00134 11.3034 2.00134 12.0005C2.00134 12.6976 2.24404 13.373 2.68776 13.9107C3.13149 14.4483 3.74855 14.8147 4.43301 14.947M7.00001 4.5C7.00001 3.83696 7.2634 3.20107 7.73224 2.73223C8.20108 2.26339 8.83697 2 9.50001 2C10.1631 2 10.7989 2.26339 11.2678 2.73223C11.7366 3.20107 12 3.83696 12 4.5V19.5C12 20.163 11.7366 20.7989 11.2678 21.2678C10.7989 21.7366 10.1631 22 9.50001 22C8.83697 22 8.20108 21.7366 7.73224 21.2678C7.2634 20.7989 7.00001 20.163 7.00001 19.5C6.46816 19.5 5.94586 19.3587 5.48661 19.0904C5.02737 18.8222 4.64769 18.4367 4.38649 17.9734C4.12528 17.5101 3.99194 16.9857 4.00011 16.4539C4.00829 15.9221 4.15769 15.402 4.43301 14.947M7.00001 4.5C7.00001 5.318 7.39301 6.044 8.00001 6.5M4.43301 14.947C4.79189 14.3529 5.34568 13.9016 6.00001 13.67M19.25 4.75L17 7H15M19.25 19.25L17 17H15M19.25 12H15M18.5 4.75C18.5 4.94891 18.579 5.13968 18.7197 5.28033C18.8603 5.42098 19.0511 5.5 19.25 5.5C19.4489 5.5 19.6397 5.42098 19.7803 5.28033C19.921 5.13968 20 4.94891 20 4.75C20 4.55109 19.921 4.36032 19.7803 4.21967C19.6397 4.07902 19.4489 4 19.25 4C19.0511 4 18.8603 4.07902 18.7197 4.21967C18.579 4.36032 18.5 4.55109 18.5 4.75ZM18.5 19.25C18.5 19.0511 18.579 18.8603 18.7197 18.7197C18.8603 18.579 19.0511 18.5 19.25 18.5C19.4489 18.5 19.6397 18.579 19.7803 18.7197C19.921 18.8603 20 19.0511 20 19.25C20 19.4489 19.921 19.6397 19.7803 19.7803C19.6397 19.921 19.4489 20 19.25 20C19.0511 20 18.8603 19.921 18.7197 19.7803C18.579 19.6397 18.5 19.4489 18.5 19.25ZM18.5 12C18.5 12.1989 18.579 12.3897 18.7197 12.5303C18.8603 12.671 19.0511 12.75 19.25 12.75C19.4489 12.75 19.6397 12.671 19.7803 12.5303C19.921 12.3897 20 12.1989 20 12C20 11.8011 19.921 11.6103 19.7803 11.4697C19.6397 11.329 19.4489 11.25 19.25 11.25C19.0511 11.25 18.8603 11.329 18.7197 11.4697C18.579 11.6103 18.5 11.8011 18.5 12Z"
                 stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -54,46 +55,6 @@
 </template>
 
 <script>
-import gsap from 'gsap/gsap-core';
-
-function playSVGAnimation(index) {
-
-    const path = document.querySelectorAll(".deviceSVG path");
-    const pathLength = path[index].getTotalLength()
-
-    if (path) {
-
-        const tl = gsap.timeline({ paused: false });
-
-        tl.set(path[index], {
-            strokeDasharray: `${pathLength}px`,
-            strokeDashoffset: `${pathLength}px`,
-            scale: 1,
-        });
-        tl.to(".deviceSVG",
-            {
-                rotate: '0deg',
-                opacity: 1,
-            });
-        tl.to(path[index],
-            {
-                duration: 4,
-                strokeDashoffset: 0,
-                ease: 'sine.in'
-            });
-        tl.to(".deviceSVG",
-            {
-                rotate: '7deg',
-            });
-        tl.to(path[index],
-            {
-                delay: 10,
-                duration: 2,
-                scale: 3,
-                opacity: -2,
-            });
-    }
-}
 
 export default {
     name: "animated-svg-devices",
@@ -106,17 +67,9 @@ export default {
     },
 
     mounted() {
-
-        const windowWidth = window.innerWidth;
-        if (windowWidth >= 601) {
-
-            playSVGAnimation(0)
-
-            setInterval(() => {
-                this.currDeviceIndex = (this.currDeviceIndex + 1) % this.numberOfSvg
-                playSVGAnimation(this.currDeviceIndex)
-            }, 18000);
-        }
+        setInterval(() => {
+            this.currDeviceIndex = (this.currDeviceIndex + 1) % this.numberOfSvg
+        }, 18000);
     }
 
 
