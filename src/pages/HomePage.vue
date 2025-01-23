@@ -1,6 +1,7 @@
 <script>
 
 import pageBg from "@/components/forHomePage/pageBg.vue"
+import about from "@/components/forHomePage/about/about.vue"
 import HomeHero from "../components/forHomePage/hero/Hero.vue"
 import SiteDetails from "../components/forHomePage/SiteDetails/SiteDetails.vue"
 import Exp from '../components/forHomePage/exp/Exp.vue'
@@ -13,6 +14,7 @@ export default {
     components: {
         pageBg,
         HomeHero,
+        about,
         Exp,
         Projects,
         Contact,
@@ -28,6 +30,7 @@ export default {
     <div class="home-page">
         <pageBg />
         <HomeHero />
+        <about />
         <Exp />
         <projects />
         <Contact />

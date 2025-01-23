@@ -40,7 +40,7 @@ export default {
                 "I admire *Ustad Nusrat Fateh ali khan* very much, ''playlists''",
                 "People like to feel superior, I like to do mistakes",
                 "After watching ZNMD I watched Mr. Robot",
-                "My small dream \\AMD 7950X3D, RTX 4090, 256GB DDR5, 4TB Gen4 SSD\\",
+                "My small dream \\Personal Quantum computer 🤌\\",
                 "Demons are real!, they wake up as soon as i open my laptops lid ;)"
             ]
         }

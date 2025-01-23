@@ -39,7 +39,7 @@
         background-color: white;
         opacity: 0.1;
     }
-    
+
     .circle-1 {
         height: 250px;
         width: 250px;
@@ -47,6 +47,7 @@
         right: 20%;
         opacity: 0.15;
     }
+
     .circle-2 {
         height: 150px;
         width: 150px;
@@ -54,6 +55,7 @@
         right: 90%;
         opacity: 0.20;
     }
+
     .circle-3 {
         height: 100px;
         width: 100px;
@@ -193,6 +195,28 @@
         display: none;
     }
 
+}
+
+/* about Section styling */
+
+#aboutSection {
+    min-height: 100dvh;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    pre {
+        overflow-wrap: normal;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-size: 1.2em;
+        max-width: 60%;
+        margin-inline: auto;
+    }
 }
 
 /* Exp section styling */
@@ -343,7 +367,7 @@
 
     padding: 1rem;
     word-wrap: 100%;
-    width: 90%;
+    width: 75%;
     margin-inline: auto;
     font-family: 'DM Mono';
     position: relative;

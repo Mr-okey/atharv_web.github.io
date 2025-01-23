@@ -49,7 +49,18 @@
 
     }
 
+    /* about Section styling */
+
+    #aboutSection {    
+        pre {
+            font-size: 0.9em;
+            max-width: 90%;
+        }
+    }
+    
+
     /* exp styling */
+
     #exp {
 
         .theTimeline {
@@ -77,8 +88,8 @@
 
             .projectShowcase {
                 padding: 0;
-                margin: 5%;
-                min-width: 90%;
+                margin: 12.5%;
+                min-width: 75%;
 
                 .projectPrevImg {
                     width: 100%;
@@ -95,6 +106,10 @@
                         display: flex;
                         gap: 1rem;
                         flex-direction: column;
+
+                        .name {
+                            font-size: 1.2rem;
+                        }
 
                         .linksAndStack {
                             display: flex;
