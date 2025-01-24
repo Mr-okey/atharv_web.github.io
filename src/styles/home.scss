@@ -444,10 +444,11 @@
             .projectPrevImg {
                 margin-inline: auto;
                 width: 90%;
-                aspect-ratio: 1.77;
-
+                
                 img {
                     width: 100%;
+                    object-fit: contain;
+                    aspect-ratio: 1.77;
                     border-radius: 0.5rem;
                 }
             }

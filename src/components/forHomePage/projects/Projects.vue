@@ -98,7 +98,7 @@ export default {
                     imagePath: require("../../../../public/assets/project-images/cava-prev.png"),
                     heading: "(#AskCava) D2C Chatbot",
                     id: 1,
-                    stack: ["js", "shopify"],
+                    stack: ["js", "shopify", "python"],
                     desc: "The Cava D2C Sales Bot is an AI-powered, conversational recommendation bot designed for direct-to-consumer (D2C) websites. Tailored to help customers find the right products based on their specific needs, the bot provides a seamless, personalized shopping experience by guiding users to products that best match their preferences.",
                     github: "#",
                     deployment: "https://cavaathleisure.com/"
@@ -107,7 +107,7 @@ export default {
                     imagePath: require("../../../../public/assets/project-images/myvi-prev.png"),
                     heading: "Vi-IMC 2024",
                     id: 2,
-                    stack: ['next', "ts"],
+                    stack: ['next', "ts", "python"],
                     desc: "This AI-powered tool, presented at the VI booth during IMC 2024, was developed to empower MSME (Micro, Small, and Medium Enterprises) Owners By filling out a few basic details, business owners could generate a professional, catchy jingle to promote their Businesses",
                     github: "#",
                     deployment: "https://myvi-events.in/"
