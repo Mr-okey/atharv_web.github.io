@@ -31,6 +31,9 @@
 </template>
 
 <script>
+
+import gsap from 'gsap'
+
 export default {
     name: "contact-section",
     data() {
@@ -104,6 +107,7 @@ export default {
             ]
         }
     },
+
     methods: {
         handleFormSubmit(event) {
             event.preventDefault();
@@ -129,7 +133,39 @@ export default {
                 .replace(/'/g, '%27')
                 .replace(/"/g, '%22')
                 .replace(/%20/g, '+');
+        },
+        animateSkillIcons(iconElements) {
+            gsap.from(iconElements, {
+                opacity: 0,
+                y: 10,
+                scale: 0.8,
+                stagger: 0.05,
+                duration: 0.1,
+                ease: 'power2.out'
+            })
+        }
+    },
+    mounted() {
+        // Create IntersectionObserver for skill icons
+        const skillIconsContainer = document.querySelector('.icons')
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const iconElements = entry.target.querySelectorAll('.icon')
+                    this.animateSkillIcons(iconElements)
+                    observer.disconnect() // Stop observing after animation
+                }
+            })
+        }, {
+            threshold: 0.4 // Trigger when 20% of the container is visible
+        })
+
+        if (skillIconsContainer) {
+            observer.observe(skillIconsContainer)
         }
     }
+
+
 }
 </script>

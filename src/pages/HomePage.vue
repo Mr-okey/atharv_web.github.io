@@ -7,7 +7,7 @@ import SiteDetails from "../components/forHomePage/SiteDetails/SiteDetails.vue"
 import Exp from '../components/forHomePage/exp/Exp.vue'
 import Projects from '../components/forHomePage/projects/Projects.vue'
 import Contact from '../components/forHomePage/contact/Contact.vue'
-import guessNumberComp from "@/components/forHomePage/SiteDetails/guessNumberComp.vue"
+// import ExpTimer from "@/components/forHomePage/exp/ExpTimer.vue"
 
 export default {
     name: "Home-page",
@@ -16,9 +16,9 @@ export default {
         HomeHero,
         about,
         Exp,
+        // ExpTimer,
         Projects,
         Contact,
-        guessNumberComp,
         SiteDetails
     },
 }
@@ -32,9 +32,9 @@ export default {
         <HomeHero />
         <about />
         <Exp />
+        <!-- <ExpTimer /> -->
         <projects />
         <Contact />
-        <guessNumberComp />
         <SiteDetails />
     </div>
 </template>

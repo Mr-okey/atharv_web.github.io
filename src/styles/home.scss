@@ -4,6 +4,7 @@
 
 :root {
     --containerSize: 2rem;
+    --primaryWHite: #F5F5F5;
 }
 
 
@@ -77,7 +78,7 @@
     font-family: 'DM Mono';
     letter-spacing: 0.18em;
     font-weight: 500;
-    color: #F5F5F5;
+    color: ;
 
     .homeHeroSection-1 {
         width: min(96%, 1200px);
@@ -106,7 +107,6 @@
                 }
 
                 .name {
-                    font-size: 4rem;
                     font-weight: bold;
                     font-style: normal;
                     opacity: 1;
@@ -125,6 +125,7 @@
                 width: 100%;
                 aspect-ratio: 1;
                 overflow: visible;
+                opacity: 0.85;
 
                 path {
 
@@ -132,7 +133,7 @@
                     max-width: 100%;
                     aspect-ratio: 1;
 
-                    stroke: #DFD1E1;
+                    stroke: var(--primaryWHite);
                     transform-origin: 50% 50%;
 
                     stroke-dasharray: 0;
@@ -167,6 +168,8 @@
             overflow: hidden;
             box-sizing: content-box;
             max-width: 100%;
+            color: var(--primaryWHite);
+            opacity: 0.85;
         }
 
         /* extra spacing after last letter */
@@ -217,6 +220,15 @@
         max-width: 60%;
         margin-inline: auto;
     }
+}
+
+/* ExperienceTimer styling */
+#ExperienceTimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 /* Exp section styling */
@@ -500,7 +512,7 @@
     .icons-nd-form {
         width: 90%;
         display: grid;
-        grid-template-columns: 55% 45%;
+        grid-template-columns: 60% 40%;
         gap: 2rem;
         margin: 3rem auto;
         justify-content: center;
@@ -512,6 +524,7 @@
             width: 80%;
             gap: clamp(2%, 3rem, 5%);
             margin-inline: auto;
+            height: 25rem;
 
 
             .icon {
@@ -606,46 +619,6 @@
                 scale: 0.95;
             }
         }
-    }
-
-}
-
-/* guessNumberComp styling */
-
-#guessNumberComp {
-    margin: 2rem auto;
-    height: max-content;
-    min-height: max-content;
-    max-height: max-content;
-    text-align: center;
-    max-width: 100%;
-
-    .counter-container {
-        max-width: 100%;
-        margin: 50px auto;
-        text-align: center;
-    }
-
-    .counter {
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-between;
-        max-width: 95vw;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .counter span {
-        font-size: 3rem;
-        font-weight: bold;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 0 5px;
-    }
-
-    .bottomText {
-        font-size: 1.2rem;
-        margin: 2rem 0;
     }
 
 }
