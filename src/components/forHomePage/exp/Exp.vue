@@ -7,7 +7,7 @@
 
             <div class="timelineContainer">
 
-                <div class="aboveTheTimeline">
+                <div style="display: flex" class="aboveTheTimeline">
                     <div v-for="(exp, index) in pastExp" :key="`${index}-pastExp`">
                         <AboveTimeLineComponent v-if="index % 2 === 0" :duration-text="`[ ${exp.start} - ${exp.end} ]`"
                             :position-name="exp.position" :company-name="exp.orgName" :company-href="exp.orgUrl" />
@@ -15,7 +15,7 @@
                 </div>
 
 
-                <div class="belowTheTimeline">
+                <div style="display: flex" class="belowTheTimeline">
                     <div v-for="(exp, index) in pastExp" :key="`${index}-pastExp`">
                         <BelowTimeLineComponent v-if="index % 2 !== 0" :duration-text="`[ ${exp.start} - ${exp.end} ]`"
                             :position-name="exp.position" :company-name="exp.orgName" :company-href="exp.orgUrl" />
