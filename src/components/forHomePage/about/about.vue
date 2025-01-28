@@ -28,7 +28,7 @@ When I'm not coding, you'll find me leading technical initiatives in student clu
             if (this.typingIndex < this.fullText.length) {
                 this.displayedText += this.fullText[this.typingIndex];
                 this.typingIndex++;
-                setTimeout(this.typeText, 25); // Adjust typing speed by changing the timeout (in ms)
+                setTimeout(this.typeText, 10); // Adjust typing speed by changing the timeout (in ms)
             } else {
                 // Once typing is complete, show the header
                 this.headerVisible = true;
