@@ -1,7 +1,7 @@
 <template>
     <div id="aboutSection">
         <!-- Initially hidden header, will show with a slide-in effect once typing is complete -->
-        <h1 ref="sectionHeader" v-if="headerVisible">About me</h1>
+        <h1 ref="sectionHeader" v-if="headerVisible" id="aboutme">About me <a href="#aboutme">&#128279;</a></h1>
         <pre ref="typingText" v-text="displayedText"></pre>
     </div>
 </template>

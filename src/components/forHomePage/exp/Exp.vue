@@ -3,7 +3,7 @@
     <div id="exp">
 
         <div class="theTimeline">
-            <h2>The Timeline</h2>
+            <h2>The Timeline <a href="#exp">&#128279;</a></h2>
 
             <div class="timelineContainer">
 
