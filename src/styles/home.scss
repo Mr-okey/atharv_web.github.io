@@ -617,13 +617,12 @@ a {
 
             .icon {
                 padding: clamp(2%, 0.8rem, 10%);
-                background: #464c3747;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border: 1px solid #514c3e96;
                 border-radius: 0.5rem;
-                box-shadow: 1px 2px 25px 0 #33312aad;
+                box-shadow: 1px 2px 4px 0 #33312aad;
 
                 img {
                     aspect-ratio: 1;
@@ -643,16 +642,16 @@ a {
 
         .form {
             background: #0f0f0e;
-            max-width: 85%;
-            border: 1px solid #514c3e96;
-            box-shadow: 1px 2px 25px 0 #343430ad;
+            max-width: 100%;
+            font-family: 'DM Mono';
+            box-shadow: 1px 2px 4px 0 #343430ad;
             display: flex;
             flex-direction: column;
             border-radius: 5%;
             justify-content: space-around;
             gap: 1.5rem;
             margin-inline: auto;
-            padding: 2rem;
+            padding: 2.5rem 2rem;
 
             button,
             textarea,
@@ -662,8 +661,7 @@ a {
                 background: #46494030;
                 color: #C4DB7E;
                 border-radius: 0.5rem;
-                font-weight: bold;
-                font-size: 1.2rem;
+                font-size: 1rem;
 
                 &::placeholder {
                     color: #C4DB7E;
@@ -675,13 +673,14 @@ a {
                 color: unset;
                 border: unset;
                 text-decoration: none;
-                background-color: #a4ba69;
+                background-color: #bbbb88;
                 color: #1E1E1E;
                 text-align: center;
                 user-select: none;
                 cursor: pointer;
                 transition: 0.3s;
                 border-radius: 0.5rem;
+                font-weight: bold;
 
                 &:active {
                     scale: 0.96;
